@@ -2,7 +2,7 @@ import random
 from copy import copy
 from clases import Operador
 import numpy as np
-from parametros import min_prop, max_prop, min_operadores, max_operadores, rango
+from parametros import min_prop, max_prop, min_operadores, max_operadores, rango, can_del
 
 can_prop = random.randint(min_prop, max_prop)
 can_operadores = random.randint(min_operadores, max_operadores)
@@ -46,7 +46,9 @@ for i in range(0, can_operadores):
     # print("cantidad de prop disp: " + str(len(prop_disponibles)))
     can_add = random.randint(0, len(prop_sin_prec))  # CAMBIAR CANTIDAD DE PROPOSICIONES EN ADD(?)
     add = crear_add(can_add, prop_sin_prec)
-    can_del = random.randint(0, can_prec)  # esto es porque del debe ser un subconjunto de prec
+    if can_del > can_prec:
+        can_del == random.randint(0, can_prec)
+    # can_del = random.randint(0, can_prec)  # esto es porque del debe ser un subconjunto de prec
     delet = crear_del(can_del, list(prec))  # solo escogemos proposiciones que estén en prec
     operador = Operador(i, prec, add, delet)
     operadores_disponibles.add(operador)

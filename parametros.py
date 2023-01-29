@@ -7,3 +7,5 @@ max_operadores = 30
 min_operadores = 15
 
 rango = 3
+
+can_del = 3
