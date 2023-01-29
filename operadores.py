@@ -47,7 +47,9 @@ for i in range(0, can_operadores):
     can_add = random.randint(0, len(prop_sin_prec))  # CAMBIAR CANTIDAD DE PROPOSICIONES EN ADD(?)
     add = crear_add(can_add, prop_sin_prec)
     if can_del > can_prec:
-        can_del == random.randint(0, can_prec)
+        can_del = random.randint(0, can_prec)
+    # else:
+    #     can_del = can_delet
     # can_del = random.randint(0, can_prec)  # esto es porque del debe ser un subconjunto de prec
     delet = crear_del(can_del, list(prec))  # solo escogemos proposiciones que estén en prec
     operador = Operador(i, prec, add, delet)
