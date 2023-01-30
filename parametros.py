@@ -3,8 +3,8 @@ max_prop = 100
 min_prop = 50
 
 # máximo y mínimo número de operadores existentes posibles
-max_operadores = 200
-min_operadores = 100
+max_operadores = 100
+min_operadores = 60
 
 rango = 3
 
