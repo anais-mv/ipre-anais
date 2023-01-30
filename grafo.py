@@ -85,7 +85,7 @@ while len(open) != 0:
                 estados.append(hijo)
                 open.append(hijo)
                 estados_prop.append(hijo.prop)
-                if len(estados) % 10000 == 0:
+                if len(estados) % 50000 == 0:
                     print(len(estados))
 
 
