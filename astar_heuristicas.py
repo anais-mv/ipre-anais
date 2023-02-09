@@ -6,7 +6,6 @@ class DefaultHeuristic:
         self.no_encontrado = 0
 
     def default_heuristic(self):
-        print("no encontado")
         # self.no_encontrado += 1
         return 99999999
 
@@ -41,11 +40,11 @@ class Heuristica:
             for operador in self.operadores:
                 if operador.es_aplicable(estado):
                     hijo = estado.aplicar_operador(operador)
-                    if hijo in self.estados:
-                        hijo.largo = estado.largo + 1
-                        if hijo.prop not in self.vistos:
-                            self.open.append(hijo)
-                            self.vistos.add(hijo.prop)
+                    hijo.largo = estado.largo + 1
+                    if hijo.prop not in self.vistos:
+                        self.open.append(hijo)
+                        self.vistos.add(hijo.prop)
+                        if hijo in self.estados:
                             self.heuristica[hijo.prop] = hijo.largo
                         # op_original = self.obtener_op_original(operador)
                         # if op_original.es_aplicable(hijo):

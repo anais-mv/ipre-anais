@@ -1,6 +1,6 @@
 from grafo import estados, estado_inicial, estado_objetivo
 from operadores import operadores_disponibles
-from operadores_inversos import nuevos_operadores
+from op_inversos import nuevos_operadores
 from astar_heuristicas import Heuristica
 from binary_heap import BinaryHeap
 import time

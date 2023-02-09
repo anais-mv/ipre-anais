@@ -81,6 +81,7 @@ while len(open) != 0:
         if operador.es_aplicable(estado):
             hijo = estado.aplicar_operador(operador)
             # print(type(hijo))
+            # print("can actual: " + str(len(estados)))
             if hijo.prop not in estados_prop:
                 estados.append(hijo)
                 open.append(hijo)
