@@ -8,7 +8,7 @@ import pickle
 can_prop = random.randint(min_prop, max_prop)
 can_operadores = random.randint(min_operadores, max_operadores)
 prop_disponibles = list(np.linspace(1, can_prop, can_prop))
-OP_PREDEFINIDOS = False
+OP_PREDEFINIDOS = True
 
 
 def crear_prec(can, proposiciones):
