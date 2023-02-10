@@ -1,11 +1,16 @@
 from clases import Estado
 from copy import copy
-from operadores import prop_disponibles, operadores_disponibles
+from operadores import prop_disponibles, operadores_disponibles, OP_PREDEFINIDOS
 import random
 from parametros import min_operadores
 from operadores import can_operadores
+import pickle
 
 min_aplicables = random.randint(min_operadores, can_operadores)
+if OP_PREDEFINIDOS:
+    GRAFO_PREDEFINIDO = True
+else:
+    GRAFO_PREDEFINIDO = False
 
 
 def crear_estado(prop):
@@ -71,23 +76,32 @@ def obtener_proposiciones(estado):
     return estado.prop
 
 
-estado_inicial = crear_estado_inicial(prop_disponibles, min_aplicables, operadores_disponibles)
-estados_prop = [estado_inicial.prop]
-estados = [estado_inicial]
-open = [estado_inicial]
-while len(open) != 0:
-    estado = open.pop(0)
-    for operador in operadores_disponibles:
-        if operador.es_aplicable(estado):
-            hijo = estado.aplicar_operador(operador)
-            # print(type(hijo))
-            # print("can actual: " + str(len(estados)))
-            if hijo.prop not in estados_prop:
-                estados.append(hijo)
-                open.append(hijo)
-                estados_prop.append(hijo.prop)
-                if len(estados) % 50000 == 0:
-                    print(len(estados))
+if GRAFO_PREDEFINIDO:
+    file = open("grafo.json", "rb")
+    estados = pickle.load(file)
+    file.close()
+    estado_inicial = estados[0]
+else:
+    estado_inicial = crear_estado_inicial(prop_disponibles, min_aplicables, operadores_disponibles)
+    estados_prop = [estado_inicial.prop]
+    estados = [estado_inicial]
+    open_ = [estado_inicial]
+    while len(open_) != 0:
+        estado = open_.pop(0)
+        for operador in operadores_disponibles:
+            if operador.es_aplicable(estado):
+                hijo = estado.aplicar_operador(operador)
+                # print(type(hijo))
+                # print("can actual: " + str(len(estados)))
+                if hijo.prop not in estados_prop:
+                    estados.append(hijo)
+                    open_.append(hijo)
+                    estados_prop.append(hijo.prop)
+                    if len(estados) % 50000 == 0:
+                        print(len(estados))
+    file = open("grafo.json", "wb")
+    pickle.dump(estados, file)
+    file.close()
 
 
 # try:

@@ -54,8 +54,8 @@ class Heuristica:
                         #             self.open.append(hijo)
                         #             self.vistos.add(hijo.prop)
                         #             self.heuristica[str(hijo.prop)] = hijo.largo
-            if self.explorados % 500 == 0:
-                print("explorados: " + str(self.explorados))
+            # if self.explorados % 500 == 0:
+            #     print("explorados: " + str(self.explorados))
             if len(self.open) == 0:
                 self.continuar = False
 
