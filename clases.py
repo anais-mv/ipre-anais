@@ -20,6 +20,9 @@ class Operador:
         for proposicion in self.prec:
             if proposicion not in estado.prop:
                 return False
+        for proposicion in self.add:
+            if proposicion in estado.prop:
+                return False
         return True
 
 

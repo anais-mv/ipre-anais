@@ -19,7 +19,7 @@ class Heuristica:
     def __init__(self, obj, operadores, op_originales, estados):
         self.open = []
         self.vistos = set()
-        self.inicial = obj
+        self.inicial = estados[-1]
         self.operadores = operadores
         self.explorados = 0
         self.op_originales = op_originales

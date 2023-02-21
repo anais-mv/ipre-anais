@@ -2,11 +2,14 @@ from clases import Estado
 from copy import copy
 from operadores import prop_disponibles, operadores_disponibles, OP_PREDEFINIDOS
 import random
-from parametros import min_operadores
-from operadores import can_operadores
+# from parametros import min_operadores
+# from operadores import can_operadores
 import pickle
 
-min_aplicables = random.randint(min_operadores, can_operadores)
+# min_aplicables = random.randint(min_operadores, can_operadores)
+# min_aplicables = random.randint(0, can_operadores)
+# print(min_aplicables, len(operadores_disponibles))
+min_aplicables = 5
 if OP_PREDEFINIDOS:
     GRAFO_PREDEFINIDO = True
 else:
@@ -47,6 +50,7 @@ def crear_estado_inicial(prop, min_op_aplicables, operadores):
             op_aplicables += 1
     # si la cantidad de operadores aplicables es mayor o igual a la cantidad mínima
     # lo devolvemos como estado inicial
+    # print(op_aplicables)
     if op_aplicables >= min_op_aplicables:
         # print("tenemos " + str(op_aplicables) + " operadores aplicables")
         return estado
@@ -76,6 +80,7 @@ def obtener_proposiciones(estado):
     return estado.prop
 
 
+maximo = False
 if GRAFO_PREDEFINIDO:
     file = open("grafo.json", "rb")
     estados = pickle.load(file)
@@ -86,7 +91,7 @@ else:
     estados_prop = [estado_inicial.prop]
     estados = [estado_inicial]
     open_ = [estado_inicial]
-    while len(open_) != 0:
+    while len(open_) != 0 and maximo is False:
         estado = open_.pop(0)
         for operador in operadores_disponibles:
             if operador.es_aplicable(estado):
@@ -99,6 +104,8 @@ else:
                     estados_prop.append(hijo.prop)
                     if len(estados) % 50000 == 0:
                         print(len(estados))
+                    if len(estados) == 80000:
+                        maximo = True
     file = open("grafo.json", "wb")
     pickle.dump(estados, file)
     file.close()
@@ -122,5 +129,6 @@ else:
 print("cantidad estados: " + str(len(estados)))
 # print(len(estados))
 # lista = list(map(obtener_proposiciones, estados))
-estado_objetivo = random.choice(estados)
+# estado_objetivo = random.choice(estados)
+estado_objetivo = estados[-1]
 # print(estado_objetivo)
