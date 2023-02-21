@@ -104,8 +104,6 @@ else:
                     estados_prop.append(hijo.prop)
                     if len(estados) % 50000 == 0:
                         print(len(estados))
-                    if len(estados) == 80000:
-                        maximo = True
     file = open("grafo.json", "wb")
     pickle.dump(estados, file)
     file.close()

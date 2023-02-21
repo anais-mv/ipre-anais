@@ -1,13 +1,13 @@
 from grafo import estados, estado_inicial, estado_objetivo
 from operadores import operadores_disponibles
-from op_inversos import nuevos_operadores
+# from op_inversos import nuevos_operadores
 from astar_heuristicas import Heuristica
 from binary_heap import BinaryHeap
 import time
 
 
 inicio = time.process_time()
-busqueda = Heuristica(estado_objetivo, nuevos_operadores, operadores_disponibles, estados)
+busqueda = Heuristica(operadores_disponibles, estados)
 tiempo_total = time.process_time() - inicio
 print("tiempo crear heurística: " + str(tiempo_total))
 

@@ -16,13 +16,12 @@ def default_heuristic():
 
 
 class Heuristica:
-    def __init__(self, obj, operadores, op_originales, estados):
+    def __init__(self, operadores, estados):
         self.open = []
         self.vistos = set()
         self.inicial = estados[-1]
         self.operadores = operadores
         self.explorados = 0
-        self.op_originales = op_originales
         self.estados = estados
         self.heuristica = defaultdict(default_heuristic)
         self.iniciar()
@@ -58,11 +57,6 @@ class Heuristica:
             #     print("explorados: " + str(self.explorados))
             if len(self.open) == 0:
                 self.continuar = False
-
-    def obtener_op_original(self, op):
-        for operador in self.op_originales:
-            if operador.id == op.id:
-                return operador
 
     def iniciar(self):
         self.heuristica[self.inicial.prop] = 0

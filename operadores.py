@@ -59,9 +59,19 @@ else:
         delet = crear_del(can_del, list(prec))  # solo escogemos proposiciones que estén en prec
         operador = Operador(i, prec, add, delet)
         operadores_disponibles.add(operador)
+    # OPERADORES INVERSOS
+    proposiciones_operadores = set()
+    nuevos_operadores = set()
+    for operador in operadores_disponibles:
+        prec = operador.prec.union(operador.add)
+        nuevo_prec = set()
+        for proposicion in prec:
+            if proposicion not in operador.delet:
+                nuevo_prec.add(proposicion)
+        nuevo_op = Operador(operador.id, nuevo_prec, operador.delet, operador.add)
+        nuevos_operadores.add(nuevo_op)
+    for op in nuevos_operadores:
+        operadores_disponibles.add(op)
     file = open("op.json", "wb")
     pickle.dump(operadores_disponibles, file)
     file.close()
-
-# for op in operadores:
-#    print(op)
