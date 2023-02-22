@@ -125,8 +125,5 @@ else:
 #         bien += 1
 
 print("cantidad estados: " + str(len(estados)))
-# print(len(estados))
-# lista = list(map(obtener_proposiciones, estados))
-# estado_objetivo = random.choice(estados)
-estado_objetivo = estados[-1]
-# print(estado_objetivo)
+estado_objetivo = random.choice(estados)
+# estado_objetivo = estados[-1]
