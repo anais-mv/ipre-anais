@@ -16,10 +16,10 @@ def default_heuristic():
 
 
 class Heuristica:
-    def __init__(self, operadores, estados):
+    def __init__(self, operadores, estados, obj):
         self.open = []
         self.vistos = set()
-        self.inicial = estados[-1]
+        self.inicial = obj
         self.operadores = operadores
         self.explorados = 0
         self.estados = estados
@@ -33,6 +33,8 @@ class Heuristica:
     def explorar(self):
         print("CANTIDAD DE OPERADORES: " + str(len(self.operadores)))
         self.open.append(self.inicial)
+        self.vistos.add(self.inicial.prop)
+        self.heuristica[self.inicial.prop] = 0
         while len(self.open) != 0:
             estado = self.sgte_estado()
             self.explorados += 1

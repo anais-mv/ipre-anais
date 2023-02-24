@@ -7,7 +7,8 @@ import time
 
 
 inicio = time.process_time()
-busqueda = Heuristica(operadores_disponibles, estados)
+busqueda = Heuristica(operadores_disponibles, estados, estado_objetivo)
+print(busqueda.heuristica[estado_objetivo.prop])
 tiempo_total = time.process_time() - inicio
 print("tiempo crear heurística: " + str(tiempo_total))
 
@@ -34,9 +35,10 @@ class Astar(object):
         nodo_inicial.key = nodo_inicial.g + nodo_inicial.largo*1000  # asignamos f con peso alto
         self.open.insert(nodo_inicial)  # agregamos el nodo a la open
         self.vistos.add(nodo_inicial.prop)
+        # print(self.heuristic.keys())
         while not self.open.is_empty():
             estado = self.open.extract()
-            if estado == estado_objetivo:
+            if estado.prop == estado_objetivo.prop:
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 # print("solución encontrada")
                 self.recuperar_camino(estado)
@@ -45,19 +47,19 @@ class Astar(object):
                 print("can vistos: " + str(len(self.vistos)))
                 return self.camino, self.expansions, self.tiempo_final
             if estado.prop not in self.closed:
-                op_aplicados = 0
+                # op_aplicados = 0
                 self.expansions += 1
                 self.closed.add(estado.prop)
                 for op in self.operadores:
                     if op.es_aplicable(estado):
-                        op_aplicados += 1
+                        # op_aplicados += 1
                         hijo = estado.aplicar_operador(op)
-                        costo_camino = estado.g + op_aplicados
+                        costo_camino = estado.g + 1
                         nuevo = True if hijo.prop not in self.vistos else False
                         if nuevo or costo_camino < hijo.g:
+                            hijo.largo = self.heuristic[hijo.prop]
                             if nuevo:
                                 self.vistos.add(hijo.prop)
-                                hijo.largo = self.heuristic[hijo.prop]
                                 if hijo.largo == 99999999:
                                     self.no_encontrado += 1
                             hijo.g = costo_camino

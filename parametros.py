@@ -1,10 +1,10 @@
 # máximo y mínimo número de proposiciones existentes posibles
-max_prop = 200
-min_prop = 100
+max_prop = 100
+min_prop = 50
 
 # máximo y mínimo número de operadores existentes posibles
-max_operadores = 500
-min_operadores = 300
+max_operadores = 300
+min_operadores = 100
 
 rango = 3
 
