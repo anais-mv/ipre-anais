@@ -32,12 +32,19 @@ class Astar(object):
         nodo_inicial = self.inicial
         nodo_inicial.g = 0  # asignamos g
         nodo_inicial.largo = self.heuristic[self.inicial.prop]  # asignamos h
-        nodo_inicial.key = nodo_inicial.g + nodo_inicial.largo*1000  # asignamos f con peso alto
+        nodo_inicial.key = nodo_inicial.g + nodo_inicial.largo  # asignamos f con peso alto
         self.open.insert(nodo_inicial)  # agregamos el nodo a la open
         self.vistos.add(nodo_inicial.prop)
         # print(self.heuristic.keys())
         while not self.open.is_empty():
             estado = self.open.extract()
+            print("h:", estado.largo, "g:", estado.g, "f:", estado.largo + estado.g)
+            # open_array = self.open.array
+            # nuevo = []
+            # for elemento in open_array:
+            #     if elemento is not None:
+            #         nuevo.append((elemento.largo, elemento.g, elemento.key))
+            # print(nuevo)
             if estado.prop == estado_objetivo.prop:
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 # print("solución encontrada")
@@ -50,8 +57,9 @@ class Astar(object):
                 # op_aplicados = 0
                 self.expansions += 1
                 self.closed.add(estado.prop)
+                op_ant_id = estado.op_anterior.id if estado.op_anterior is not None else 0
                 for op in self.operadores:
-                    if op.es_aplicable(estado):
+                    if op.es_aplicable(estado) and op_ant_id != op.id:
                         # op_aplicados += 1
                         hijo = estado.aplicar_operador(op)
                         costo_camino = estado.g + 1
@@ -63,7 +71,7 @@ class Astar(object):
                                 if hijo.largo == 99999999:
                                     self.no_encontrado += 1
                             hijo.g = costo_camino
-                            hijo.key = hijo.g + hijo.largo
+                            hijo.key = 10000*(hijo.g + hijo.largo) - hijo.g # hijo.g + hijo.largo
                             self.open.insert(hijo)
         self.tiempo_final = time.process_time()
         return None

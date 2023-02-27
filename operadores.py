@@ -47,6 +47,7 @@ if OP_PREDEFINIDOS:
     file.close()
 else:
     operadores_disponibles = set()
+    set_operadores = set()
     for i in range(0, can_operadores):
         can_prec = random.randint(1, can_prop - rango)
         prec, prop_sin_prec = crear_prec(can_prec, prop_disponibles)
@@ -59,6 +60,7 @@ else:
         delet = crear_del(can_del, list(prec))  # solo escogemos proposiciones que estén en prec
         operador = Operador(i, prec, add, delet)
         operadores_disponibles.add(operador)
+        set_operadores.add((operador.prec, operador.add, operador.delet))
     # OPERADORES INVERSOS
     proposiciones_operadores = set()
     nuevos_operadores = set()
@@ -69,7 +71,10 @@ else:
             if proposicion not in operador.delet:
                 nuevo_prec.add(proposicion)
         nuevo_op = Operador(operador.id, nuevo_prec, operador.delet, operador.add)
-        nuevos_operadores.add(nuevo_op)
+        if (nuevo_op.prec, nuevo_op.add, nuevo_op.delet) not in set_operadores:
+            nuevos_operadores.add(nuevo_op)
+        else:
+            print("AAAAAAAAAAAAAAAAAAAAAAAAAAAA")
     for op in nuevos_operadores:
         operadores_disponibles.add(op)
     file = open("op.json", "wb")
