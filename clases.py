@@ -42,7 +42,9 @@ class Estado:
         return hash(self.prop)
 
     def succ(self):
+        print(self.padre)
         sucesores = []
+        print("tipo", type(self.operadores))
         for op in self.operadores:
             if op.es_aplicable(self):
                 hijo = self.aplicar_operador(op)
@@ -60,7 +62,7 @@ class Estado:
             # creamos una lista con las proposiciones eliminadas
             nuevas_proposiciones = self.borrar_proposiciones(op.delet, nuevas_proposiciones)
             # creamos el estado hijo
-            estado_hijo = Estado(nuevas_proposiciones, self, op)
+            estado_hijo = Estado(nuevas_proposiciones, self.operadores, self, op)
             return estado_hijo
 
     def agregar_proposiciones(self, prop_add, copia):

@@ -39,16 +39,16 @@ class Astar(object):
                 self.expansions += 1
                 self.closed.add(estado.prop)
                 sucesores = estado.succ()
-                for estado in sucesores:
-                    costo_camino = estado.g + 1
-                    nuevo = True if estado.prop not in self.vistos else False
-                    if nuevo or costo_camino < estado.g:
-                        estado.largo = self.heuristic[estado.prop]
+                for hijo in sucesores:
+                    costo_camino = hijo.g + 1
+                    nuevo = True if hijo.prop not in self.vistos else False
+                    if nuevo or costo_camino < hijo.g:
+                        hijo.largo = self.heuristic[hijo.prop]
                         if nuevo:
-                            self.vistos.add(estado.prop)
-                        estado.g = costo_camino
-                        estado.key = 10000*(estado.g + estado.largo) - estado.g
-                        self.open.insert(estado)
+                            self.vistos.add(hijo.prop)
+                        hijo.g = costo_camino
+                        hijo.key = 10000*(hijo.g + hijo.largo) - hijo.g
+                        self.open.insert(hijo)
         self.tiempo_final = time.process_time()
         return None
 
