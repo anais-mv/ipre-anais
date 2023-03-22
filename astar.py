@@ -40,7 +40,7 @@ class Astar(object):
                 self.closed.add(estado.prop)
                 sucesores = estado.succ()
                 for hijo in sucesores:
-                    costo_camino = hijo.g + 1
+                    costo_camino = estado.g + 1
                     nuevo = True if hijo.prop not in self.vistos else False
                     if nuevo or costo_camino < hijo.g:
                         hijo.largo = self.heuristic[hijo.prop]

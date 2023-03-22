@@ -42,9 +42,7 @@ class Estado:
         return hash(self.prop)
 
     def succ(self):
-        print(self.padre)
         sucesores = []
-        print("tipo", type(self.operadores))
         for op in self.operadores:
             if op.es_aplicable(self):
                 hijo = self.aplicar_operador(op)
