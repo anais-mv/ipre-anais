@@ -12,7 +12,7 @@ else:
     GRAFO_PREDEFINIDO = False
 
 
-def crear_estado(prop):
+def crear_estado(prop, operadores):
     # prop = las proposiciones que existen en el sistema
     # empezamos con un set vacío de proposiciones
     proposiciones = set()
@@ -25,7 +25,7 @@ def crear_estado(prop):
         copia.remove(proposicion)
         proposiciones.add(proposicion)
     # se crea el estado
-    estado = Estado(proposiciones)
+    estado = Estado(proposiciones, operadores)
     return estado
 
 
@@ -33,7 +33,7 @@ def crear_estado_inicial(prop, min_op_aplicables, operadores):
     # min_op_aplicables = la cantidad mínima de operadores aplicables en el estado para poder
     #                     usarlo como estado inicial
     # operadores = los operadores que existen en el sistema
-    estado = crear_estado(prop)
+    estado = crear_estado(prop, operadores)
     op_aplicables = 0
     # vemos cuantos operadores de los existentes se pueden aplicar en él
     for operador in operadores:
@@ -49,10 +49,12 @@ def crear_estado_inicial(prop, min_op_aplicables, operadores):
 
 
 class Grafo():
-    def __init__(self, proposiciones_disp, minimo_aplicable, op_disponibles):
+    def __init__(self, proposiciones_disp, minimo_aplicable, op_disponibles, est):
+        self.estadisticas = None
         self.prop_disp = proposiciones_disp
         self.min_ap = minimo_aplicable
         self.op_disp = op_disponibles
+        self.estadisticas = est
         self.crear_grafo()
 
     def crear_grafo(self):
@@ -68,11 +70,13 @@ class Grafo():
                         self.estados.add(hijo)
                         open_.append(hijo)
                         if len(self.estados) % 50000 == 0:
-                            print(len(estados))
+                            print(len(self.estados))
+        self.estadisticas["can_op"] = len(self.op_disp)
+        self.estadisticas["can_prop"] = len(self.prop_disp)
 
     def guardar_grafo(self, nombre):
         file = open(nombre, "wb")
-        pickle.dump(self.estados, file)
+        pickle.dump(self, file)
         file.close()
 
     def obtener_estado_objetivo(self):
@@ -86,35 +90,3 @@ def cargar_grafo(nombre):
     estados = pickle.load(file)
     file.close()
     return estados
-
-
-if __name__ == "__main__":
-    if GRAFO_PREDEFINIDO:
-        file = open("grafo.json", "rb")
-        estados = pickle.load(file)
-        file.close()
-        estado_inicial = estados[0]
-    else:
-        estado_inicial = crear_estado_inicial(prop_disponibles, min_ap, operadores_disponibles)
-        # estados_prop = {estado_inicial.prop}
-        estados = {estado_inicial}
-        open_ = [estado_inicial]
-        while len(open_) != 0:
-            estado = open_.pop(0)
-            for operador in operadores_disponibles:
-                if operador.es_aplicable(estado):
-                    hijo = estado.aplicar_operador(operador)
-                    # print(type(hijo))
-                    # print("can actual: " + str(len(estados)))
-                    if hijo not in estados:
-                        estados.add(hijo)
-                        open_.append(hijo)
-                        # estados_prop.add(hijo.prop)
-                        if len(estados) % 50000 == 0:
-                            print(len(estados))
-        file = open("grafo.json", "wb")
-        pickle.dump(estados, file)
-        file.close()
-    print("cantidad estados: " + str(len(estados)))
-    estado_objetivo = random.choice(list(estados))
-    # estado_objetivo = estados[-1]

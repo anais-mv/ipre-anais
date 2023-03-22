@@ -27,7 +27,7 @@ class Operador:
 
 
 class Estado:
-    def __init__(self, proposiciones, padre=None, op_anterior=None):
+    def __init__(self, proposiciones, ops, padre=None, op_anterior=None, dict=None):
         self.prop = frozenset(proposiciones)
         self.padre = padre
         self.op_anterior = op_anterior
@@ -35,6 +35,19 @@ class Estado:
         self.g = 10000000000
         self.key = -1
         self.heap_index = 0
+        self.operadores = ops
+        self.dict = dict
+
+    def __hash__(self):
+        return hash(self.prop)
+
+    def succ(self):
+        sucesores = []
+        for op in self.operadores:
+            if op.es_aplicable(self):
+                hijo = self.aplicar_operador(op)
+                sucesores.append(hijo)
+        return sucesores
 
     def aplicar_operador(self, op):
         permiso = op.es_aplicable(self)
@@ -66,6 +79,9 @@ class Estado:
         #     if proposicion not in prop_del:
         #         nuevas_proposiciones.add(proposicion)
         # return nuevas_proposiciones
+
+    def heuristic(self):
+        return self.dict[self.prop]
 
     def __str__(self):
         return str(self.prop)

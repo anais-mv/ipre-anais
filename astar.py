@@ -1,16 +1,5 @@
-from grafo import estados, estado_inicial, estado_objetivo
-from operadores import operadores_disponibles
-# from op_inversos import nuevos_operadores
-from astar_heuristicas import Heuristica
 from binary_heap import BinaryHeap
 import time
-
-
-inicio = time.process_time()
-busqueda = Heuristica(operadores_disponibles, estados, estado_objetivo)
-print(busqueda.heuristica[estado_objetivo.prop])
-tiempo_total = time.process_time() - inicio
-print("tiempo crear heurística: " + str(tiempo_total))
 
 
 class Astar(object):
@@ -35,17 +24,10 @@ class Astar(object):
         nodo_inicial.key = nodo_inicial.g + nodo_inicial.largo  # asignamos f con peso alto
         self.open.insert(nodo_inicial)  # agregamos el nodo a la open
         self.vistos.add(nodo_inicial.prop)
-        # print(self.heuristic.keys())
         while not self.open.is_empty():
             estado = self.open.extract()
-            print("h:", estado.largo, "g:", estado.g, "f:", estado.largo + estado.g)
-            # open_array = self.open.array
-            # nuevo = []
-            # for elemento in open_array:
-            #     if elemento is not None:
-            #         nuevo.append((elemento.largo, elemento.g, elemento.key))
-            # print(nuevo)
-            if estado.prop == estado_objetivo.prop:
+            # print("h:", estado.largo, "g:", estado.g, "f:", estado.largo + estado.g)
+            if estado.prop == self.final.prop:
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 # print("solución encontrada")
                 self.recuperar_camino(estado)
@@ -54,25 +36,19 @@ class Astar(object):
                 print("can vistos: " + str(len(self.vistos)))
                 return self.camino, self.expansions, self.tiempo_final
             if estado.prop not in self.closed:
-                # op_aplicados = 0
                 self.expansions += 1
                 self.closed.add(estado.prop)
-                op_ant_id = estado.op_anterior.id if estado.op_anterior is not None else 0
-                for op in self.operadores:
-                    if op.es_aplicable(estado) and op_ant_id != op.id:
-                        # op_aplicados += 1
-                        hijo = estado.aplicar_operador(op)
-                        costo_camino = estado.g + 1
-                        nuevo = True if hijo.prop not in self.vistos else False
-                        if nuevo or costo_camino < hijo.g:
-                            hijo.largo = self.heuristic[hijo.prop]
-                            if nuevo:
-                                self.vistos.add(hijo.prop)
-                                if hijo.largo == 99999999:
-                                    self.no_encontrado += 1
-                            hijo.g = costo_camino
-                            hijo.key = 10000*(hijo.g + hijo.largo) - hijo.g # hijo.g + hijo.largo
-                            self.open.insert(hijo)
+                sucesores = estado.succ()
+                for estado in sucesores:
+                    costo_camino = estado.g + 1
+                    nuevo = True if estado.prop not in self.vistos else False
+                    if nuevo or costo_camino < estado.g:
+                        estado.largo = self.heuristic[estado.prop]
+                        if nuevo:
+                            self.vistos.add(estado.prop)
+                        estado.g = costo_camino
+                        estado.key = 10000*(estado.g + estado.largo) - estado.g
+                        self.open.insert(estado)
         self.tiempo_final = time.process_time()
         return None
 
@@ -84,18 +60,3 @@ class Astar(object):
             self.camino.append(op)
         if padre != self.inicial and padre is not None:
             self.recuperar_camino(padre)
-
-
-a_star = Astar(estado_inicial, estado_objetivo, operadores_disponibles, busqueda.heuristica)
-sol, exp, tim = a_star.search()
-# print("probando solución")
-print("can no encontrado: " + str(a_star.no_encontrado))
-estado_actual = estado_inicial
-for op in sol:
-    estado_actual = estado_actual.aplicar_operador(op)
-if estado_actual.prop == estado_objetivo.prop:
-    print("CORRECTO")
-    print("nodos expandidos: " + str(exp))
-    print("tiempo: " + str(tim))
-else:
-    print("INCORRECTO")
