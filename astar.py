@@ -18,32 +18,37 @@ class Astar(object):
 
     def search(self):
         self.tiempo_inicio = time.process_time()
-        nodo_inicial = self.inicial
+        nodo_inicial = MultiNode(self.inicial)
         nodo_inicial.g = 0  # asignamos g
-        nodo_inicial.largo = self.heuristic[self.inicial.prop]  # asignamos h
+        nodo_inicial.h = self.heuristic[self.inicial.prop]  # asignamos h
         nodo_inicial.key = nodo_inicial.g + nodo_inicial.largo  # asignamos f con peso alto
         self.open.insert(nodo_inicial)  # agregamos el nodo a la open
         self.vistos.add(nodo_inicial.prop)
         while not self.open.is_empty():
-            estado = self.open.extract()
+            n = self.open.extract()
             # print("h:", estado.largo, "g:", estado.g, "f:", estado.largo + estado.g)
-            if estado.prop == self.final.prop:
+            if n.state.is_goal() : 
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 # print("solución encontrada")
-                self.recuperar_camino(estado)
-                self.camino = list(reversed(self.camino))
-                print("g: " + str(estado.g))
+                #self.recuperar_camino(estado)
+                #self.camino = list(reversed(self.camino))
+                print("g: " + str(n.g))
                 print("can vistos: " + str(len(self.vistos)))
                 return self.camino, self.expansions, self.tiempo_final
-            if estado.prop not in self.closed:
+            if n.state.prop not in self.closed:
                 self.expansions += 1
-                self.closed.add(estado.prop)
-                sucesores = estado.succ()
+                self.closed.add(n.state.prop)
+                sucesores = n.state.succ()
                 for hijo in sucesores:
-                    costo_camino = estado.g + 1
+                    child_node = Node(hijo, n)
+                    ## child_node = self.vistos.get(child_state)  ## vistos get retorna none si no está en vistos (si es nuevo)
+                    ## is_new = child_node is None  # es la primera vez que veo a child_state
+                    costo_camino = n.g + 1
                     nuevo = True if hijo.prop not in self.vistos else False
                     if nuevo or costo_camino < hijo.g:
-                        hijo.largo = self.heuristic[hijo.prop]
+                        
+
+                        hijo.h = self.heuristic[hijo.prop]
                         if nuevo:
                             self.vistos.add(hijo.prop)
                         hijo.g = costo_camino

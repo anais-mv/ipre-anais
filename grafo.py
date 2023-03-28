@@ -1,4 +1,4 @@
-from clases import Estado
+from planning_problem import Estado
 from copy import copy
 # from operadores import prop_disponibles, operadores_disponibles, OP_PREDEFINIDOS, can_prop
 from operadores import OP_PREDEFINIDOS

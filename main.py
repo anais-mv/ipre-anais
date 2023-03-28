@@ -50,6 +50,8 @@ if __name__ == "__main__":
 
     # BÚSQUEDA
     estado_objetivo = grafo.obtener_estado_objetivo()
+    for e in estados:
+        e.goal = estado_objetivo
     inicio = time.process_time()
     bus_heuristica = Heuristica(op_disp, grafo.estados, estado_objetivo)
     print(f"Tiempo en crear heurística: {time.process_time() - inicio}")
@@ -60,6 +62,7 @@ if __name__ == "__main__":
     print(f"Tiempo en realizar búsqueda A*: {time.process_time() - inicio}")
     print("nodos expandidos: " + str(exp))
 
+    # print("Iniciando FS")
     # fs = FocalSearch(grafo.estado_inicial, bus_heuristica.zero_heuristic, 2)
-    # result = fs.discrepancy_search(2, "best")
+    # result = fs.heuristic_search(2 )
     # print(result)

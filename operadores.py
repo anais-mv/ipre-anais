@@ -1,6 +1,6 @@
 import random
 from copy import copy
-from clases import Operador
+from planning_problem import Operador
 import numpy as np
 from parametros import min_prop, max_prop, min_operadores, max_operadores, rango, max_add
 import pickle

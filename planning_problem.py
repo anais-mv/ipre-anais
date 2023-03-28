@@ -27,7 +27,7 @@ class Operador:
 
 
 class Estado:
-    def __init__(self, proposiciones, ops, padre=None, op_anterior=None, dict=None):
+    def __init__(self, proposiciones, ops, padre=None, op_anterior=None, dict=None, goal=None):
         self.prop = frozenset(proposiciones)
         self.padre = padre
         self.op_anterior = op_anterior
@@ -37,9 +37,13 @@ class Estado:
         self.heap_index = 0
         self.operadores = ops
         self.dict = dict
+        self.goal = goal
 
     def __hash__(self):
         return hash(self.prop)
+        
+    def is_goal(self):
+        return True if self.goal == self else False
 
     def succ(self):
         sucesores = []
