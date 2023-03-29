@@ -62,7 +62,11 @@ if __name__ == "__main__":
     print(f"Tiempo en realizar búsqueda A*: {time.process_time() - inicio}")
     print("nodos expandidos: " + str(exp))
 
-    # print("Iniciando FS")
+    print("Iniciando FS")
     # fs = FocalSearch(grafo.estado_inicial, bus_heuristica.zero_heuristic, 2)
-    # result = fs.heuristic_search(2 )
-    # print(result)
+    fs = FocalSearch(grafo.estado_inicial, a_star.heuristic, 2)
+    result = fs.heuristic_search(2)
+    print(result)
+    if estado_objetivo.prop == result.state.prop:
+        print("bien")
+    print("nodos expandidos focal:", fs.expansions)

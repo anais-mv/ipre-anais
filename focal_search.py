@@ -1206,11 +1206,14 @@ class FocalSearch:
                 self.solution = n
                 return n
 
-            succ = n.state.h_successors()
+            succ = n.state.succ()
             self.expansions += 1
-            for child_state, action, cost, h_nn in succ:
+            # for child_state, action, cost, h_nn in succ:
+            for child_state in succ:
                 # print("? check", child_state.board)
                 child_node = self.generated.get(child_state)
+                cost = 1
+                h_nn = self.heuristic(child_state)
                 is_new = child_node is None  # es la primera vez que veo a child_state
                 path_cost = n.g + cost  # costo del camino encontrado hasta child_state
                 if is_new or path_cost < child_node.g:
@@ -1218,14 +1221,14 @@ class FocalSearch:
                     # un mejor camino, entonces lo agregamos a open
                     if is_new:  # creamos el nodo de child_state
                         child_node = MultiNode(child_state, n)
-                        child_node.h[0] = h_nn
-                        child_node.h[1] = self.heuristic(child_state)
+                        child_node.h[0] = h_nn # h focal
+                        child_node.h[1] = self.heuristic(child_state) # h admisible
                         self.generated[child_state] = child_node
                         # print("+ new")
-                    child_node.action = action
+                    # child_node.action = action
                     child_node.parent = n
                     child_node.g = path_cost
-                    child_node.key[0] = h_nn
+                    child_node.key[0] = h_nn # h focal
                     child_node.key[1] = self.fvalue(child_node.g,child_node.h[1]) # actualizamos el f de child_node
 
                     self.open.insert(child_node)

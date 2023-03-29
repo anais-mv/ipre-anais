@@ -41,8 +41,12 @@ class Estado:
 
     def __hash__(self):
         return hash(self.prop)
-        
+
     def is_goal(self):
+        if self.goal is None:
+            print("none")
+            print(self.prop)
+            print(self.padre)
         return True if self.goal == self else False
 
     def succ(self):
@@ -64,7 +68,7 @@ class Estado:
             # creamos una lista con las proposiciones eliminadas
             nuevas_proposiciones = self.borrar_proposiciones(op.delet, nuevas_proposiciones)
             # creamos el estado hijo
-            estado_hijo = Estado(nuevas_proposiciones, self.operadores, self, op)
+            estado_hijo = Estado(nuevas_proposiciones, self.operadores, self, op, goal=self.goal)
             return estado_hijo
 
     def agregar_proposiciones(self, prop_add, copia):

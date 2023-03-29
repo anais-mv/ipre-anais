@@ -61,7 +61,7 @@ class BinaryHeap:
         return element
 
     def insert(self, element):
-        if element.heap_index == 0:  # element no está en el heap
+        if element.heap_index == [0, 0]:  # element no está en el heap
             self.size += 1
             self.percolateup(self.size, element)
         else:  # element está en el heap; suponemos que su key ha cambiado
