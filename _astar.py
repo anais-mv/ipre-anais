@@ -85,7 +85,7 @@ class Astar:
         # para cada estado alguna vez generado, generated almacena
         # el Node que le corresponde
         self.generated = {}
-        self.generated[self.initial_state] = initial_node
+        self.generated[| = initial_node
         while not self.open.is_empty():
 
             if time.time()-start_search > 30*60 :
