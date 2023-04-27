@@ -70,7 +70,7 @@ class Astar(object):
                             child_node = MultiNode(hijo, n)
                             # child_node.h = self.heuristic(hijo)
                             child_node.h = self.h_lmcut(child_node.to_pyperplan_search_node())
-                            # print("heuristic hlmcut:", child_node.h)
+                            print("heuristic hlmcut:", child_node.h)
                             self.vistos[hijo] = child_node
                         child_node.g = costo_camino
                         child_node_key = [10000*(child_node.g + child_node.h) - child_node.g]
