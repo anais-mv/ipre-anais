@@ -30,6 +30,7 @@ class Astar(object):
             self.pyperplan_operators.append(op_pyperplan)
         self.pyperplan_task = Task("task", set(prop), self.inicial, self.final, self.pyperplan_operators)
         self.h_lmcut = LmCutHeuristic(self.pyperplan_task)
+        print(self.final)
 
     def heuristic(self, estado):
         return self.heuristica[estado.prop]
@@ -57,6 +58,7 @@ class Astar(object):
                 return self.camino, self.expansions, self.tiempo_final
             if n.state not in self.closed:
                 self.expansions += 1
+                print("------------------------------------------------------")
                 self.closed.add(n.state)
                 estado_n = Estado(n.state, self.operadores)
                 sucesores = estado_n.succ()
@@ -70,6 +72,8 @@ class Astar(object):
                             child_node = MultiNode(hijo, n)
                             # child_node.h = self.heuristic(hijo)
                             child_node.h = self.h_lmcut(child_node.to_pyperplan_search_node())
+                            if child_node.h == 0:
+                                print(child_node.state)
                             print("heuristic hlmcut:", child_node.h)
                             self.vistos[hijo] = child_node
                         child_node.g = costo_camino
