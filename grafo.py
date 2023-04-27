@@ -21,7 +21,7 @@ def crear_estado(prop, operadores):
     copia = copy(prop)
     # se escogen las proposiciones que tendrá el estado
     for i in range(0, can):
-        proposicion = int(random.choice(copia))
+        proposicion = str(random.choice(copia))
         copia.remove(proposicion)
         proposiciones.add(proposicion)
     # se crea el estado

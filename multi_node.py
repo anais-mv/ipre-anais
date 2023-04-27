@@ -1,4 +1,5 @@
 from multi_binary_heap import MultiBinaryHeap
+from pyperplan.search.searchspace import SearchNode
 
 
 class MultiNode:
@@ -17,6 +18,9 @@ class MultiNode:
         self.g0 = 0
         self.g1 = 0
         self.bp = None
+
+    def to_pyperplan_search_node(self):
+        return SearchNode(self.state, self.parent, str(self.action), self.g)
 
     def __repr__(self):
         return self.state.__repr__() + 'h=' + str(self.h) + '\n' +'key=' + str(self.key) + '\n' + "hindex=" + str(self.heap_index) + '\n'

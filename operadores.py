@@ -43,7 +43,8 @@ def crear_del(can, proposiciones):
 
 def crear_operadores(max_p, min_p, max_op, min_op, rango, max_add):
     can_prop = random.randint(min_p, max_p)
-    prop_disponibles = list(np.linspace(1, can_prop, can_prop))
+    # prop_disponibles = list(np.linspace(1, can_prop, can_prop))
+    prop_disponibles = [str(i) for i in range(1, can_prop + 1)]
     can_operadores = random.randint(min_op, max_op)
     operadores_disponibles = set()
     set_operadores = set()
@@ -68,7 +69,7 @@ def crear_operadores(max_p, min_p, max_op, min_op, rango, max_add):
         for proposicion in prec:
             if proposicion not in operador.delet:
                 nuevo_prec.add(proposicion)
-        nuevo_op = Operador(operador.id, nuevo_prec, operador.delet, operador.add)
+        nuevo_op = Operador("-" + str(operador.id), nuevo_prec, operador.delet, operador.add)
         if (nuevo_op.prec, nuevo_op.add, nuevo_op.delet) not in set_operadores:
             nuevos_operadores.add(nuevo_op)
     for op in nuevos_operadores:

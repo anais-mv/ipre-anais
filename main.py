@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     # A*
     inicio = time.process_time()
-    a_star = Astar(grafo.estado_inicial, estado_objetivo, op_disp, bus_heuristica.heuristica)
+    a_star = Astar(grafo.estado_inicial, estado_objetivo, op_disp, bus_heuristica.heuristica, prop_disp)
     sol, exp, tim = a_star.search()
     print(f"Tiempo en realizar búsqueda A*: {time.process_time() - inicio}")
     print("nodos expandidos: " + str(exp))

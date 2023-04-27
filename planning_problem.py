@@ -54,7 +54,7 @@ class Estado:
         for op in self.operadores:
             if op.es_aplicable(self):
                 hijo = self.aplicar_operador(op)
-                sucesores.append(hijo)
+                sucesores.append(hijo.prop)
         return sucesores
 
     def aplicar_operador(self, op):
