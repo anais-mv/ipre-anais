@@ -34,6 +34,12 @@ class Astar(object):
 
     def heuristic(self, estado):
         return self.heuristica[estado.prop]
+    
+    def is_goal(self, estado):
+        for prop in self.final:
+            if prop not in estado:
+                return False
+        return True
 
     def search(self):
         self.tiempo_inicio = time.process_time()
@@ -48,7 +54,8 @@ class Astar(object):
         while not self.open.is_empty():
             n = self.open.extract()
             # if n.state.is_goal():
-            if n.state == self.pyperplan_task.goals:
+            # if n.state == self.final:
+            if self.is_goal(n.state):
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 # print("solución encontrada")
                 # self.recuperar_camino(n.state)
@@ -75,6 +82,10 @@ class Astar(object):
                             if child_node.h == 0:
                                 print(child_node.state)
                             print("heuristic hlmcut:", child_node.h)
+                            if self.is_goal(child_node.state):
+                                print(True)
+                            else:
+                                print(False)
                             self.vistos[hijo] = child_node
                         child_node.g = costo_camino
                         child_node_key = [10000*(child_node.g + child_node.h) - child_node.g]
