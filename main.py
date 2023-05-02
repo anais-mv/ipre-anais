@@ -7,7 +7,6 @@ import sys
 from datetime import datetime
 import time
 from focal_search import FocalSearch
-print("hola")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
