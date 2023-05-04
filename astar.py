@@ -12,7 +12,7 @@ from pyperplan.search.searchspace import SearchNode
 
 
 class Astar(object):
-    def __init__(self, inicial, final, op, heuristica, prop):
+    def __init__(self, inicial, final, op, heuristica, prop, h_type="lmcut"):
         super(Astar, self).__init__()
         self.expansions = 0
         self.vistos = {}
@@ -29,11 +29,18 @@ class Astar(object):
             op_pyperplan = Operator("op"+str(op.id), op.prec, op.add, op.delet)
             self.pyperplan_operators.append(op_pyperplan)
         self.pyperplan_task = Task("task", set(prop), self.inicial, self.final, self.pyperplan_operators)
-        self.h_lmcut = LmCutHeuristic(self.pyperplan_task)
-        print(self.final)
+        if h_type == "lmcut":
+            # self.h_lmcut = LmCutHeuristic(self.pyperplan_task)
+            self.h_function = LmCutHeuristic(self.pyperplan_task)
+        elif h_type == "h*":
+            self.h_function = self.perfect_heuristic
 
-    def heuristic(self, estado):
-        return self.heuristica[estado.prop]
+    def perfect_heuristic(self, estado):
+        return self.heuristica[estado.state]
+    
+    def pyperplan_lmcut_heuristic(self, estado):
+        sn = estado.to_pyperplan_search_node()
+        return self.h_lmcut(sn)
     
     def is_goal(self, estado):
         for prop in self.final:
@@ -46,8 +53,8 @@ class Astar(object):
         nodo_inicial = MultiNode(self.inicial)
         nodo_inicial.g = 0  # asignamos g
         # nodo_inicial.h = self.heuristic(self.inicial)  # asignamos h
-        sn = nodo_inicial.to_pyperplan_search_node()
-        nodo_inicial.h = self.h_lmcut(sn)
+        # sn = nodo_inicial.to_pyperplan_search_node()
+        nodo_inicial.h = self.h_function(nodo_inicial)
         nodo_inicial.key = [nodo_inicial.g + nodo_inicial.h] * MultiBinaryHeap.Max  # asignamos f
         self.open.insert(nodo_inicial)  # agregamos el nodo a la open
         self.vistos[self.inicial] = nodo_inicial
@@ -55,6 +62,7 @@ class Astar(object):
             n = self.open.extract()
             # if n.state.is_goal():
             # if n.state == self.final:
+            print(f"-----------expanded g:{n.g} h:{n.h}------------")
             if self.is_goal(n.state):
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 # print("solución encontrada")
@@ -65,7 +73,6 @@ class Astar(object):
                 return self.camino, self.expansions, self.tiempo_final
             if n.state not in self.closed:
                 self.expansions += 1
-                print("------------------------------------------------------")
                 self.closed.add(n.state)
                 estado_n = Estado(n.state, self.operadores)
                 sucesores = estado_n.succ()
@@ -78,10 +85,9 @@ class Astar(object):
                         if is_new:
                             child_node = MultiNode(hijo, n)
                             # child_node.h = self.heuristic(hijo)
-                            child_node.h = self.h_lmcut(child_node.to_pyperplan_search_node())
-                            if child_node.h == 0:
-                                print(child_node.state)
-                            print("heuristic hlmcut:", child_node.h)
+                            # child_node.h = self.h_lmcut(child_node.to_pyperplan_search_node())
+                            child_node.h = self.h_function(child_node)
+                            print("generated heuristic:", child_node.h)
                             if self.is_goal(child_node.state):
                                 print(True)
                             else:

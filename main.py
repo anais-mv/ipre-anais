@@ -57,8 +57,16 @@ if __name__ == "__main__":
     print(f"Tiempo en crear heurística: {time.process_time() - inicio}")
 
     # A*
+    print("A* HLMCUT")
     inicio = time.process_time()
-    a_star = Astar(grafo.estado_inicial, estado_objetivo, op_disp, bus_heuristica.heuristica, prop_disp)
+    a_star = Astar(grafo.estado_inicial, estado_objetivo, op_disp, bus_heuristica.heuristica, prop_disp, "lmcut")
+    sol, exp, tim = a_star.search()
+    print(f"Tiempo en realizar búsqueda A*: {time.process_time() - inicio}")
+    print("nodos expandidos: " + str(exp))
+
+    print("A* H PERFECT")
+    inicio = time.process_time()
+    a_star = Astar(grafo.estado_inicial, estado_objetivo, op_disp, bus_heuristica.heuristica, prop_disp, "h*")
     sol, exp, tim = a_star.search()
     print(f"Tiempo en realizar búsqueda A*: {time.process_time() - inicio}")
     print("nodos expandidos: " + str(exp))
