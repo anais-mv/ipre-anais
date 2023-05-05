@@ -419,7 +419,7 @@ class FocalSearch:
 
         initial_node = MultiNode(self.initial_state)
         initial_node.g = 0
-        initial_node.h[0] = self.heuristic(self.initial_state)
+        initial_node.h[0] = self.heuristic(initial_node)
         initial_node.h[1] = initial_node.h[0]
         initial_node.key[0] = (0, initial_node.h[0])  # asignamos el valor f
         initial_node.key[1] = self.fvalue(initial_node.g,initial_node.h[1])
@@ -438,15 +438,16 @@ class FocalSearch:
             m = self.open.extract(n.heap_index[1])   # extrae m de la open
 
             
-            if n.state.is_goal():
+            if self.is_goal(n.state):
                 self.end_time = time.process_time()
                 self.solution = n
                 return n
 
-            succ = n.state.succ()
+            estado_n = Estado(n.state, self.operadores)
+            succ = estado_n.succ()
             succ_h_nn = []
             for sucesor in succ:
-                h_sucesor = self.heuristic(sucesor)
+                h_sucesor = self.heuristic(MultiNode(sucesor))
                 succ_h_nn.append((sucesor, "action name", 1, h_sucesor))
 
             # quedarse con los beam mejores estados ordenados por trusts
@@ -474,7 +475,7 @@ class FocalSearch:
                     if is_new:  # creamos el nodo de child_state
                         child_node = MultiNode(child_state, n)
                         child_node.h[0] = h_nn
-                        child_node.h[1] = self.heuristic(child_state)
+                        child_node.h[1] = self.heuristic(child_node)
                         self.generated[child_state] = child_node
                     child_node.action = action
                     child_node.parent = n
