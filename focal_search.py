@@ -6,6 +6,7 @@ from heapq import heappush, heappop  # para beam_ahead
 # from common.debug import debug_compare
 from math import log2
 from collections import deque
+from planning_problem import Estado
 
 class FakeMultiBinHeap(MultiBinaryHeap):
     def __init__(self, original_bin_heap):
@@ -40,10 +41,17 @@ class FocalSearch:
     def __init__(self, initial_state, heuristic, weight=1):
         self.expansions = 0
         self.generated = 0
-        self.initial_state = initial_state
+        self.initial_state = initial_state.prop
         self.weight = weight
         self.heuristic = heuristic
+        self.goal = initial_state.goal.prop
+        self.operadores = initial_state.operadores
 
+    def is_goal(self, state):
+        for prop in self.goal:
+            if prop not in state:
+                return False
+        return True
 
     def estimate_suboptimality(self):
         # retorna min_{s\in Open} costo_solucion / (g(s)+h(s))
@@ -135,7 +143,8 @@ class FocalSearch:
             m = self.open.extract(n.heap_index[1])   # extrae m de la open
 
             
-            if n.state.is_goal():
+            # if n.state.is_goal():
+            if self.is_goal(n.state):
                 self.end_time = time.process_time()
                 self.solution = n
                 return n
@@ -315,7 +324,8 @@ class FocalSearch:
 
         initial_node = MultiNode(self.initial_state)
         initial_node.g = 0
-        initial_node.h[0] = self.heuristic(self.initial_state)
+        # initial_node.h[0] = self.heuristic(self.initial_state)
+        initial_node.h[0] = self.heuristic(initial_node)
         initial_node.h[1] = initial_node.h[0]
 
         initial_node.key[0] = initial_node.h[0]  # asignamos el valor f
@@ -334,20 +344,22 @@ class FocalSearch:
             n = self.preferred.extract()
             m = self.open.extract(n.heap_index[1])   # extrae m de la open
             assert (n==m)
-            
-            if n.state.is_goal():
+
+            if self.is_goal(n.state):
                 self.end_time = time.process_time()
                 self.solution = n
                 return n
 
-            succ = n.state.succ()
+            estado_n = Estado(n.state, self.operadores)
+            succ = estado_n.succ()
             self.expansions += 1
             # for child_state, action, cost, h_nn in succ:
             for child_state in succ:
                 # print("? check", child_state.board)
                 child_node = self.generated.get(child_state)
                 cost = 1
-                h_nn = self.heuristic(child_state)
+                # H ADMISIBLE -- CAMBIAR
+                h_nn = self.heuristic(MultiNode(child_state, n))
                 is_new = child_node is None  # es la primera vez que veo a child_state
                 path_cost = n.g + cost  # costo del camino encontrado hasta child_state
                 if is_new or path_cost < child_node.g:
@@ -356,7 +368,8 @@ class FocalSearch:
                     if is_new:  # creamos el nodo de child_state
                         child_node = MultiNode(child_state, n)
                         child_node.h[0] = h_nn # h focal
-                        child_node.h[1] = self.heuristic(child_state) # h admisible
+                        # child_node.h[1] = self.heuristic(child_state) # h admisible
+                        child_node.h[1] = self.heuristic(child_node)
                         self.generated[child_state] = child_node
                         # print("+ new")
                     # child_node.action = action

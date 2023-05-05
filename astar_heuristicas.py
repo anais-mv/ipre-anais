@@ -49,6 +49,7 @@ class Heuristica:
                             self.heuristica[hijo.prop] = hijo.largo
             if len(self.open) == 0:
                 self.continuar = False
+
     def is_goal(self, estado):
         for prop in self.inicial:
             if prop not in estado:

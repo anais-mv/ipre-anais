@@ -70,21 +70,21 @@ if __name__ == "__main__":
     # FOCAL SEARCH
     print("Iniciando FS")
     # fs = FocalSearch(grafo.estado_inicial, bus_heuristica.zero_heuristic, 2)
-    fs = FocalSearch(grafo.estado_inicial, a_star.heuristic, 2)
+    fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
     result = fs.heuristic_search(2)
     print(result)
     print("nodos expandidos focal:", fs.expansions)
     
     # FDS BEST
     print("Iniciando FDS BEST")
-    fs = FocalSearch(grafo.estado_inicial, a_star.heuristic, 2)
+    fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
     result = fs.heuristic_discrepancy_search(2, "best")
     print(result)
     print("nodos expandidos fds best:", fs.expansions)
 
     # FDS POSITION
     print("Iniciando FDS POSITION")
-    fs = FocalSearch(grafo.estado_inicial, a_star.heuristic, 2)
+    fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
     result = fs.heuristic_discrepancy_search(2, "position")
     print(result)
     print("nodos expandidos fds position:", fs.expansions)

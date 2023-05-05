@@ -96,3 +96,7 @@ class Estado:
 
     def __eq__(self, otro):
         return True if self.prop == otro.prop else False
+        # try:
+        #     return True if self.prop == otro.prop else False
+        # except AttributeError:
+        #     return True if self.prop == otro else False
