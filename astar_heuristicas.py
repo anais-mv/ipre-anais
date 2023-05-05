@@ -49,7 +49,29 @@ class Heuristica:
                             self.heuristica[hijo.prop] = hijo.largo
             if len(self.open) == 0:
                 self.continuar = False
+    def is_goal(self, estado):
+        for prop in self.inicial:
+            if prop not in estado:
+                return False
+        return True
 
+    """
+    def explorar(self):
+        self.open.append(self.inicial)
+        self.vistos.add(self.inicial.prop)
+        self.heuristica[self.inicial.prop] = 0
+        while len(self.open) != 0:
+            estado = self.sgte_estado()
+            self.explorados += 1
+            for operador in self.operadores:
+                if operador.es_aplicable(estado):
+                    hijo = estado.aplicar_operador(operador)
+                    hijo.largo = estado.largo + 1
+                    if hijo.prop not in self.vistos:
+                        self.open.append(hijo)
+                        self.vistos.add(hijo.prop)
+    """
+    
     def iniciar(self):
         self.heuristica[self.inicial.prop] = 0
         self.explorar()

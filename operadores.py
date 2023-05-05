@@ -1,13 +1,12 @@
 import random
 from copy import copy
 from planning_problem import Operador
-import numpy as np
-from parametros import min_prop, max_prop, min_operadores, max_operadores, rango, max_add
 import pickle
+# from parametros import can_prop, can_operadores, rango, max_add
 
-can_prop = random.randint(min_prop, max_prop)
-can_operadores = random.randint(min_operadores, max_operadores)
-prop_disponibles = list(np.linspace(1, can_prop, can_prop))
+# can_prop = random.randint(min_prop, max_prop)
+# can_operadores = random.randint(min_operadores, max_operadores)
+# prop_disponibles = list(np.linspace(1, can_prop, can_prop))
 OP_PREDEFINIDOS = False
 
 
@@ -41,11 +40,12 @@ def crear_del(can, proposiciones):
     return delet
 
 
-def crear_operadores(max_p, min_p, max_op, min_op, rango, max_add):
-    can_prop = random.randint(min_p, max_p)
+# def crear_operadores(max_p, min_p, max_op, min_op, rango, max_add):
+def crear_operadores(can_prop, can_operadores, rango, max_add):
+    # can_prop = random.randint(min_p, max_p)
     # prop_disponibles = list(np.linspace(1, can_prop, can_prop))
     prop_disponibles = [str(i) for i in range(1, can_prop + 1)]
-    can_operadores = random.randint(min_op, max_op)
+    # can_operadores = random.randint(min_op, max_op)
     operadores_disponibles = set()
     set_operadores = set()
     for i in range(0, can_operadores):
@@ -77,7 +77,7 @@ def crear_operadores(max_p, min_p, max_op, min_op, rango, max_add):
     datos = (prop_disponibles, can_prop, can_operadores)
     return operadores_disponibles, datos
 
-
+"""
 if OP_PREDEFINIDOS:
     file = open("op.json", "rb")
     operadores_disponibles = pickle.load(file)
@@ -117,3 +117,4 @@ else:
     file = open("op.json", "wb")
     pickle.dump(operadores_disponibles, file)
     file.close()
+"""

@@ -10,14 +10,11 @@ from focal_search import FocalSearch
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('--max_prop', type=int, default=100,
-                        help='cantidad máxima de proposiciones')
-    parser.add_argument('--min_prop', type=int, default=80,
-                        help='cantidad mínima de proposiciones')
-    parser.add_argument('--max_op', type=int, default=100,
-                        help='cantidad máxima de operadores')
-    parser.add_argument('--min_op', type=int, default=50,
-                        help='cantidad mínima de operadores')
+    parser.add_argument('--can_prop', type=int, default=100,
+                        help='cantidad de proposiciones')
+    # LA CANTIDAD DE OPERADORES SERÁ DOBLE YA QUE CADA OP TIENE SU INVERSO
+    parser.add_argument('--can_op', type=int, default=100,
+                        help='cantidad de operadores')
     parser.add_argument('--rango', type=int, default=3,
                         help='rango maximo de cantidad de precondiciones')
     parser.add_argument('--max_add', type=int, default=3,
@@ -26,8 +23,7 @@ if __name__ == "__main__":
                         help='cantidad mínima de operadores aplicables del estado inicial')
     args = parser.parse_args()
     estadisticas = vars(args)
-    op_disp, datos = crear_operadores(args.max_prop, args.min_prop, args.max_op,
-                                      args.min_prop, args.rango, args.max_add)
+    op_disp, datos = crear_operadores(args.can_prop, args.can_op, args.rango, args.max_add)
     prop_disp = datos[0]
 
     inicio = time.process_time()
