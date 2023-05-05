@@ -55,6 +55,7 @@ class Heuristica:
                 return False
         return True
 
+    # ignorar este bloque por ahora
     """
     def explorar(self):
         self.open.append(self.inicial)
@@ -71,7 +72,7 @@ class Heuristica:
                         self.open.append(hijo)
                         self.vistos.add(hijo.prop)
     """
-    
+
     def iniciar(self):
         self.heuristica[self.inicial.prop] = 0
         self.explorar()
