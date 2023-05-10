@@ -35,6 +35,11 @@ if __name__ == "__main__":
     print(f"CANTIDAD DE OPERADORES: {len(op_disp)}")
     print(f"CANTIDAD DE ESTADOS: {len(grafo.estados)}")
 
+    print("--------------")
+    for op in op_disp:
+        if len(op.prec) <= 10:
+            print(op)
+
     cmd_args = "".join(sys.argv[1:])
     file_name = f"grafos//grafo_{datetime.now()}_{cmd_args}.pickle"
     file_name = file_name.replace(":", ".")
@@ -72,19 +77,19 @@ if __name__ == "__main__":
     # fs = FocalSearch(grafo.estado_inicial, bus_heuristica.zero_heuristic, 2)
     fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
     result = fs.heuristic_search(2)
-    print(result)
+    # print(result)
     print("nodos expandidos focal:", fs.expansions)
     
     # FDS BEST
     print("Iniciando FDS BEST")
     fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
     result = fs.heuristic_discrepancy_search(2, "best")
-    print(result)
+    # print(result)
     print("nodos expandidos fds best:", fs.expansions)
 
     # FDS POSITION
     print("Iniciando FDS POSITION")
     fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
     result = fs.heuristic_discrepancy_search(2, "position")
-    print(result)
+    # print(result)
     print("nodos expandidos fds position:", fs.expansions)

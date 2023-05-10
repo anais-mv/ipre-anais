@@ -40,12 +40,19 @@ def crear_del(can, proposiciones):
     return delet
 
 
-# def crear_operadores(max_p, min_p, max_op, min_op, rango, max_add):
+def agregar_negativas(prec, add, delet):
+    for prop in add:
+        negativo = str(-int(prop))
+        prec.add(negativo)
+        delet.add(negativo)
+    for prop in delet:
+        negativo = str(-int(prop))
+        add.add(negativo)
+    return prec, add, delet
+
+
 def crear_operadores(can_prop, can_operadores, rango, max_add):
-    # can_prop = random.randint(min_p, max_p)
-    # prop_disponibles = list(np.linspace(1, can_prop, can_prop))
     prop_disponibles = [str(i) for i in range(1, can_prop + 1)]
-    # can_operadores = random.randint(min_op, max_op)
     operadores_disponibles = set()
     set_operadores = set()
     for i in range(0, can_operadores):
@@ -58,6 +65,7 @@ def crear_operadores(can_prop, can_operadores, rango, max_add):
         add = crear_add(can_add, prop_sin_prec)
         can_del = random.randint(0, can_prec)  # esto es porque del debe ser un subconjunto de prec
         delet = crear_del(can_del, list(prec))  # solo escogemos proposiciones que estén en prec
+        prec, add, delet = agregar_negativas(prec, add, delet) # agregamos las precondiciones negativas
         operador = Operador(i, prec, add, delet)
         operadores_disponibles.add(operador)
         set_operadores.add((operador.prec, operador.add, operador.delet))
@@ -74,6 +82,9 @@ def crear_operadores(can_prop, can_operadores, rango, max_add):
             nuevos_operadores.add(nuevo_op)
     for op in nuevos_operadores:
         operadores_disponibles.add(op)
+    for prop in prop_disponibles:
+        negativo = str(-int(prop))
+        prop_disponibles.append(negativo)
     datos = (prop_disponibles, can_prop, can_operadores)
     return operadores_disponibles, datos
 

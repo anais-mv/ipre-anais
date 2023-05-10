@@ -82,11 +82,6 @@ class Estado:
             if proposicion in proposiciones:
                 proposiciones.remove(proposicion)
         return proposiciones
-        # nuevas_proposiciones = set()
-        # for proposicion in copia:
-        #     if proposicion not in prop_del:
-        #         nuevas_proposiciones.add(proposicion)
-        # return nuevas_proposiciones
 
     def heuristic(self):
         return self.dict[self.prop]
@@ -96,7 +91,3 @@ class Estado:
 
     def __eq__(self, otro):
         return True if self.prop == otro.prop else False
-        # try:
-        #     return True if self.prop == otro.prop else False
-        # except AttributeError:
-        #     return True if self.prop == otro else False

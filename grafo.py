@@ -24,6 +24,11 @@ def crear_estado(prop, operadores):
         proposicion = str(random.choice(copia))
         copia.remove(proposicion)
         proposiciones.add(proposicion)
+    # se agregan las proposiciones negativas
+    for proposicion in prop:
+        if proposicion not in proposiciones:
+            negativo = str(-int(proposicion))
+            proposiciones.add(negativo)
     # se crea el estado
     estado = Estado(proposiciones, operadores)
     return estado
