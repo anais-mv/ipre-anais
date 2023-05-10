@@ -82,9 +82,8 @@ def crear_operadores(can_prop, can_operadores, rango, max_add):
             nuevos_operadores.add(nuevo_op)
     for op in nuevos_operadores:
         operadores_disponibles.add(op)
-    for prop in prop_disponibles:
-        negativo = str(-int(prop))
-        prop_disponibles.append(negativo)
+    for i in range(1, can_prop + 1):
+        prop_disponibles.append(str(-i))
     datos = (prop_disponibles, can_prop, can_operadores)
     return operadores_disponibles, datos
 
