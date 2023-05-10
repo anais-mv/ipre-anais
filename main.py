@@ -35,11 +35,6 @@ if __name__ == "__main__":
     print(f"CANTIDAD DE OPERADORES: {len(op_disp)}")
     print(f"CANTIDAD DE ESTADOS: {len(grafo.estados)}")
 
-    print("--------------")
-    for op in op_disp:
-        if len(op.prec) <= 10:
-            print(op)
-
     cmd_args = "".join(sys.argv[1:])
     file_name = f"grafos//grafo_{datetime.now()}_{cmd_args}.pickle"
     file_name = file_name.replace(":", ".")

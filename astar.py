@@ -30,7 +30,6 @@ class Astar(object):
             self.pyperplan_operators.append(op_pyperplan)
         self.pyperplan_task = Task("task", set(prop), self.inicial, self.final, self.pyperplan_operators)
         if h_type == "lmcut":
-            # self.h_lmcut = LmCutHeuristic(self.pyperplan_task)
             self.h_function = LmCutHeuristic(self.pyperplan_task)
         elif h_type == "h*":
             self.h_function = self.perfect_heuristic
