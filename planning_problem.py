@@ -38,6 +38,7 @@ class Estado:
         self.operadores = ops
         self.dict = dict
         self.goal = goal
+        self.lugar = None
 
     def __hash__(self):
         return hash(self.prop)

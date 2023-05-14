@@ -17,7 +17,6 @@ def prop_positivos(prop):
     for proposicion in prop:
         if int(proposicion) > 0:
             prop_final.append(proposicion)
-    print(prop_final)
     return prop_final
 
 
@@ -58,7 +57,6 @@ def crear_estado_inicial(prop, min_op_aplicables, operadores):
     # si la cantidad de operadores aplicables es mayor o igual a la cantidad mínima
     # lo devolvemos como estado inicial
     if op_aplicables >= min_op_aplicables:
-        print("ESTADO INICIAL:", estado)
         return estado
     # sino creamos otro
     else:
@@ -78,12 +76,15 @@ class Grafo():
         self.estado_inicial = crear_estado_inicial(self.prop_disp, self.min_ap, self.op_disp)
         self.estados = {self.estado_inicial}
         open_ = [self.estado_inicial]
+        self.contador = 0
         while len(open_) != 0:
             estado = open_.pop(0)
             for operador in self.op_disp:
                 if operador.es_aplicable(estado):
                     hijo = estado.aplicar_operador(operador)
                     if hijo not in self.estados:
+                        self.contador += 1
+                        hijo.lugar = self.contador
                         self.estados.add(hijo)
                         open_.append(hijo)
                         if len(self.estados) % 50000 == 0:
@@ -98,7 +99,10 @@ class Grafo():
 
     def obtener_estado_objetivo(self):
         lista_estados = list(self.estados)
-        estado_objetivo = random.choice(lista_estados)
+        for estado in lista_estados:
+            if estado.lugar == self.contador:
+                estado_objetivo = estado
+        # estado_objetivo = random.choice(lista_estados)
         return estado_objetivo
 
 
