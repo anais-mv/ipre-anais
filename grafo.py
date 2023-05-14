@@ -12,6 +12,15 @@ else:
     GRAFO_PREDEFINIDO = False
 
 
+def prop_positivos(prop):
+    prop_final = []
+    for proposicion in prop:
+        if int(proposicion) > 0:
+            prop_final.append(proposicion)
+    print(prop_final)
+    return prop_final
+
+
 def crear_estado(prop, operadores):
     # prop = las proposiciones que existen en el sistema
     # empezamos con un set vacío de proposiciones
@@ -25,10 +34,11 @@ def crear_estado(prop, operadores):
         copia.remove(proposicion)
         proposiciones.add(proposicion)
     # se agregan las proposiciones negativas
-    for proposicion in prop:
-        if proposicion not in proposiciones:
-            negativo = str(-int(proposicion))
-            proposiciones.add(negativo)
+    for i in range(1, len(prop) + 1):
+        num_str = str(i)
+        if num_str not in proposiciones:
+            negativo = -i
+            proposiciones.add(str(negativo))
     # se crea el estado
     estado = Estado(proposiciones, operadores)
     return estado
@@ -38,6 +48,7 @@ def crear_estado_inicial(prop, min_op_aplicables, operadores):
     # min_op_aplicables = la cantidad mínima de operadores aplicables en el estado para poder
     #                     usarlo como estado inicial
     # operadores = los operadores que existen en el sistema
+    prop = prop_positivos(prop)
     estado = crear_estado(prop, operadores)
     op_aplicables = 0
     # vemos cuantos operadores de los existentes se pueden aplicar en él
@@ -47,6 +58,7 @@ def crear_estado_inicial(prop, min_op_aplicables, operadores):
     # si la cantidad de operadores aplicables es mayor o igual a la cantidad mínima
     # lo devolvemos como estado inicial
     if op_aplicables >= min_op_aplicables:
+        print("ESTADO INICIAL:", estado)
         return estado
     # sino creamos otro
     else:

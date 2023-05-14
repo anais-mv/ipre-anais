@@ -59,16 +59,14 @@ class Astar(object):
         self.vistos[self.inicial] = nodo_inicial
         while not self.open.is_empty():
             n = self.open.extract()
-            # if n.state.is_goal():
-            # if n.state == self.final:
-            print(f"-----------expanded g:{n.g} h:{n.h}------------")
+            # print(f"-----------expanded g:{n.g} h:{n.h}------------")
             if self.is_goal(n.state):
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 # print("solución encontrada")
                 # self.recuperar_camino(n.state)
                 self.camino = list(reversed(self.camino))
                 print("g: " + str(n.g))
-                print("can vistos: " + str(len(self.vistos)))
+                # print("can vistos: " + str(len(self.vistos)))
                 return self.camino, self.expansions, self.tiempo_final
             if n.state not in self.closed:
                 self.expansions += 1
@@ -83,14 +81,12 @@ class Astar(object):
                     if is_new or costo_camino < child_node.g:
                         if is_new:
                             child_node = MultiNode(hijo, n)
-                            # child_node.h = self.heuristic(hijo)
-                            # child_node.h = self.h_lmcut(child_node.to_pyperplan_search_node())
                             child_node.h = self.h_function(child_node)
-                            print("generated heuristic:", child_node.h)
-                            if self.is_goal(child_node.state):
-                                print(True)
-                            else:
-                                print(False)
+                            # print("generated heuristic:", child_node.h)
+                            # if self.is_goal(child_node.state):
+                            #     print(True)
+                            # else:
+                            #     print(False)
                             self.vistos[hijo] = child_node
                         child_node.g = costo_camino
                         child_node_key = [10000*(child_node.g + child_node.h) - child_node.g]
