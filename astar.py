@@ -92,6 +92,8 @@ class Astar(object):
                         child_node_key = [10000*(child_node.g + child_node.h) - child_node.g]
                         child_node.key = child_node_key * MultiBinaryHeap.Max
                         self.open.insert(child_node)
+                # if self.expansions % 10 == 0:
+                #     print("expansiones actuales:", self.expansions)
         self.tiempo_final = time.process_time()
         return None
 

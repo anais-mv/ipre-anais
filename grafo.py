@@ -70,6 +70,7 @@ class Grafo():
         self.min_ap = minimo_aplicable
         self.op_disp = op_disponibles
         self.estadisticas = est
+        self.expansiones = 0
         self.crear_grafo()
 
     def crear_grafo(self):
@@ -79,16 +80,20 @@ class Grafo():
         self.contador = 0
         while len(open_) != 0:
             estado = open_.pop(0)
+            hijos_estado = 0
             for operador in self.op_disp:
                 if operador.es_aplicable(estado):
                     hijo = estado.aplicar_operador(operador)
                     if hijo not in self.estados:
+                        hijos_estado += 1
                         self.contador += 1
                         hijo.lugar = self.contador
                         self.estados.add(hijo)
                         open_.append(hijo)
                         if len(self.estados) % 50000 == 0:
                             print(len(self.estados))
+            if hijos_estado != 0:
+                self.expansiones += 1
         self.estadisticas["can_op"] = len(self.op_disp)
         self.estadisticas["can_prop"] = len(self.prop_disp)
 
@@ -98,9 +103,11 @@ class Grafo():
         file.close()
 
     def obtener_estado_objetivo(self):
+        print("expansiones creación grafo:", self.expansiones)
         lista_estados = list(self.estados)
         for estado in lista_estados:
             if estado.lugar == self.contador:
+                print(estado.lugar)
                 estado_objetivo = estado
         # estado_objetivo = random.choice(lista_estados)
         return estado_objetivo

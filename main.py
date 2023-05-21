@@ -7,6 +7,7 @@ import sys
 from datetime import datetime
 import time
 from focal_search import FocalSearch
+from generate_heuristics_puzzle import GenericSearch
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
@@ -88,3 +89,33 @@ if __name__ == "__main__":
     result = fs.heuristic_discrepancy_search(2, "position")
     # print(result)
     print("nodos expandidos fds position:", fs.expansions)
+
+    # ARRUINANDO HEURÍSTICA
+    print("Arruinando heurística")
+    mses = [0,5, 10, 20, 100, 200]
+    k = 4 # exponent for k multiplied to c
+
+    for mse in mses:
+        fpath = join('puzzle_', "heuristics", "h_star.txt")
+        if not exists(fpath):
+            sum_h = "unknown"
+        with open(fpath, 'r') as file:
+            file.readline()
+            lines = file.readlines()
+            sum_h = sum([((int(line.strip().split(' ')[-1])**k))**2 for line in lines])/len(lines)
+            # mse = c^2 + sum((h*)^2k)
+            c = (mse/sum_h)**(1/2)
+
+        init = Puzzle(abstract_init)
+        s = GenericSearch(init, 'bfs', f)
+        s.constant_c = c
+        s.constant_k = k
+        result = s.search()
+        print('Number of generated states=',len(s.generated))
+        print(f"c:= {c} ; k:= {k}")
+        print("Error cuadrático medio")
+        print("\t Real    :", s.mse)
+
+
+        print("\t Esperado:", mse)
+
