@@ -7,7 +7,7 @@ import sys
 from datetime import datetime
 import time
 from focal_search import FocalSearch
-from generate_heuristics_puzzle import GenericSearch
+from multi_node import MultiNode
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
@@ -68,6 +68,7 @@ if __name__ == "__main__":
     print(f"Tiempo en realizar búsqueda A*: {time.process_time() - inicio}")
     print("nodos expandidos: " + str(exp))
 
+    '''
     # FOCAL SEARCH
     print("Iniciando FS")
     # fs = FocalSearch(grafo.estado_inicial, bus_heuristica.zero_heuristic, 2)
@@ -89,28 +90,22 @@ if __name__ == "__main__":
     result = fs.heuristic_discrepancy_search(2, "position")
     # print(result)
     print("nodos expandidos fds position:", fs.expansions)
+    '''
 
-    # ARRUINANDO HEURÍSTICA
+    # FOCAL SEARCH
     print("Arruinando heurística")
     mses = [0,5, 10, 20, 100, 200]
     k = 4 # exponent for k multiplied to c
+    dic_h = bus_heuristica.heuristica
+    sum_h = sum([dic_h[estado]**(2*k) for estado in dic_h])/len(dic_h)
 
     for mse in mses:
-        fpath = join('puzzle_', "heuristics", "h_star.txt")
-        if not exists(fpath):
-            sum_h = "unknown"
-        with open(fpath, 'r') as file:
-            file.readline()
-            lines = file.readlines()
-            sum_h = sum([((int(line.strip().split(' ')[-1])**k))**2 for line in lines])/len(lines)
-            # mse = c^2 + sum((h*)^2k)
-            c = (mse/sum_h)**(1/2)
-
-        init = Puzzle(abstract_init)
-        s = GenericSearch(init, 'bfs', f)
+        c = (mse/sum_h)**(1/2)
+        # CAMBIO ORDEN PARÁMETRO WEIGHT
+        s = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
         s.constant_c = c
         s.constant_k = k
-        result = s.search()
+        result = s.heuristic_discrepancy_search()
         print('Number of generated states=',len(s.generated))
         print(f"c:= {c} ; k:= {k}")
         print("Error cuadrático medio")

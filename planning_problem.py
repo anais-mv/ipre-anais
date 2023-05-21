@@ -39,6 +39,7 @@ class Estado:
         self.dict = dict
         self.goal = goal
         self.lugar = None
+        self.h_nn = None
 
     def __hash__(self):
         return hash(self.prop)

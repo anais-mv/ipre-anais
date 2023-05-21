@@ -112,6 +112,7 @@ class GenericSearch:
 mses = [0,5, 10, 20, 100, 200]
 k = 4 # exponent for k multiplied to c
 
+
 for mse in mses:
     fpath = join('puzzle_', "heuristics", "h_star.txt")
     if not exists(fpath):
