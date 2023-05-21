@@ -98,14 +98,13 @@ if __name__ == "__main__":
     k = 4 # exponent for k multiplied to c
     dic_h = bus_heuristica.heuristica
     sum_h = sum([dic_h[estado]**(2*k) for estado in dic_h])/len(dic_h)
-    dic_depth = a_star.dic_depth
 
     for mse in mses:
         mse_ = 0
         new_heuristic = dict()
         c = (mse/sum_h)**(1/2)
-        for state in dic_depth:
-            depth = dic_depth[state]
+        for state in dic_h:
+            depth = dic_h[state]
             h_nn = depth + c * random.gauss(0, 1) * (depth**k)
             mse_ += (h_nn - depth)**2
             new_heuristic[state] = h_nn
@@ -113,5 +112,13 @@ if __name__ == "__main__":
         print("Error cuadrático medio")
         print("\t Real    :", mse_)
         print("\t Esperado:", mse)
+        print("\n")
+        print("A* mse:", mse_)
+        inicio = time.process_time()
+        a_star = Astar(grafo.estado_inicial, estado_objetivo, op_disp, new_heuristic, prop_disp, "h*")
+        sol, exp, tim = a_star.search()
+        print(f"Tiempo en realizar búsqueda A*: {time.process_time() - inicio}")
+        print("nodos expandidos: " + str(exp))
+
 
 
