@@ -108,6 +108,7 @@ if __name__ == "__main__":
             h_nn = depth + c * random.gauss(0, 1) * (depth**k)
             mse_ += (h_nn - depth)**2
             new_heuristic[state] = h_nn
+        mse_ = mse_/(len(dic_h))
         print(f"c:= {c} ; k:= {k}")
         print("Error cuadrático medio")
         print("\t Real    :", mse_)
