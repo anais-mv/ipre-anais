@@ -25,6 +25,7 @@ class Astar(object):
         self.open = MultiBinaryHeap()
         self.no_encontrado = 0
         self.pyperplan_operators = []
+        self.dic_depth = dict()
         for op in self.operadores:
             op_pyperplan = Operator("op"+str(op.id), op.prec, op.add, op.delet)
             self.pyperplan_operators.append(op_pyperplan)
@@ -55,6 +56,7 @@ class Astar(object):
         nodo_inicial.key = [nodo_inicial.g + nodo_inicial.h] * MultiBinaryHeap.Max  # asignamos f
         self.open.insert(nodo_inicial)  # agregamos el nodo a la open
         self.vistos[self.inicial] = nodo_inicial
+        self.dic_depth[self.inicial] = 0
         while not self.open.is_empty():
             n = self.open.extract()
             if self.is_goal(n.state):
@@ -75,6 +77,7 @@ class Astar(object):
                     if is_new or costo_camino < child_node.g:
                         if is_new:
                             child_node = MultiNode(hijo, n)
+                            self.dic_depth[hijo] = child_node.depth
                             child_node.h = self.h_function(child_node)
                             self.vistos[hijo] = child_node
                         child_node.g = costo_camino

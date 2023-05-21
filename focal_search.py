@@ -7,7 +7,6 @@ from heapq import heappush, heappop  # para beam_ahead
 from math import log2
 from collections import deque
 from planning_problem import Estado
-import random
 
 class FakeMultiBinHeap(MultiBinaryHeap):
     def __init__(self, original_bin_heap):
@@ -47,7 +46,6 @@ class FocalSearch:
         self.heuristic = heuristic
         self.goal = initial_state.goal.prop
         self.operadores = initial_state.operadores
-        self.mse = 0.0
 
     def is_goal(self, state):
         for prop in self.goal:
@@ -420,13 +418,11 @@ class FocalSearch:
         self.update_time = 0.0
 
         initial_node = MultiNode(self.initial_state)
-        depth = initial_node.depth
         initial_node.g = 0
-        initial_node.h[0] = depth + self.constant_c * random.gauss(0, 1) * (depth**self.constant_k)
-        initial_node.h[1] = self.heuristic(initial_node)
+        initial_node.h[0] = self.heuristic(initial_node)
+        initial_node.h[1] = initial_node.h[0]
         initial_node.key[0] = (0, initial_node.h[0])  # asignamos el valor f
         initial_node.key[1] = self.fvalue(initial_node.g,initial_node.h[1])
-        initial_node.h_nn = initial_node.h[1]
 
         self.open.insert(initial_node)
         self.preferred.insert(initial_node)
@@ -440,7 +436,6 @@ class FocalSearch:
             f_min = self.open.top().key[1]
             n = self.preferred.extract()
             m = self.open.extract(n.heap_index[1])   # extrae m de la open
-            self.mse += (n.h[0] - n.depth)**2
 
             
             if self.is_goal(n.state):
@@ -452,10 +447,8 @@ class FocalSearch:
             succ = estado_n.succ()
             succ_h_nn = []
             for sucesor in succ:
-                nodo_sucesor = MultiNode(sucesor)
-                depth = nodo_sucesor.depth
-                h_nn = depth + self.constant_c * random.gauss(0, 1) * (depth**self.constant_k)
-                succ_h_nn.append((sucesor, "action name", 1, h_nn))
+                h_sucesor = self.heuristic(MultiNode(sucesor))
+                succ_h_nn.append((sucesor, "action name", 1, h_sucesor))
 
             # quedarse con los beam mejores estados ordenados por trusts
             if discrepancy_mode == "best":
