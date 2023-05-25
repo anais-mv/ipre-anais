@@ -119,6 +119,16 @@ if __name__ == "__main__":
         sol, exp, tim = a_star.search()
         print(f"Tiempo en realizar búsqueda A*: {time.process_time() - inicio}")
         print("nodos expandidos: " + str(exp))
+        fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
+        result = fs.heuristic_search(2)
+        print("nodos expandidos focal", fs.expansions)
         print("\n")
+
+
+# 1. Producir un problema T y guardar el grafo
+# 2. Calcular h*(s) para todos los estados s \in S de la tarea T
+# 3. Guardar ese h*
+# 4. Incorporar ruido en la heuristica, de acuerdo al listado de MSE y guardar cada una de esas heuristicas. La llamaremos h_nn_20 para una heuristica con MSE 20.
+# 5. Cargar h_nn_20 y resolver con FDS y FS.
 
 
