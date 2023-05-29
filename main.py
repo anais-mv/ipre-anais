@@ -52,6 +52,7 @@ if __name__ == "__main__":
         e.goal = estado_objetivo
     inicio = time.process_time()
     bus_heuristica = Heuristica(op_disp, grafo.estados, estado_objetivo)
+    grafo.perfect_heuristic = bus_heuristica
     print(f"Tiempo en crear heurística: {time.process_time() - inicio}")
 
     # A*
@@ -98,6 +99,7 @@ if __name__ == "__main__":
     k = 4 # exponent for k multiplied to c
     dic_h = bus_heuristica.heuristica
     sum_h = sum([dic_h[estado]**(2*k) for estado in dic_h])/len(dic_h)
+    mse_heuristics = []
 
     for mse in mses:
         mse_ = 0
@@ -108,6 +110,7 @@ if __name__ == "__main__":
             h_nn = depth + c * random.gauss(0, 1) * (depth**k)
             mse_ += (h_nn - depth)**2
             new_heuristic[state] = h_nn
+        mse_heuristics.append(new_heuristic)
         mse_ = mse_/(len(dic_h))
         print(f"c:= {c} ; k:= {k}")
         print("Error cuadrático medio")
@@ -124,11 +127,14 @@ if __name__ == "__main__":
         print("nodos expandidos focal", fs.expansions)
         print("\n")
 
+    grafo.mse_heuristics = mse_heuristics
+    grafo.guardar_grafo(file_name)
+
 
 # 1. Producir un problema T y guardar el grafo
 # 2. Calcular h*(s) para todos los estados s \in S de la tarea T
 # 3. Guardar ese h*
 # 4. Incorporar ruido en la heuristica, de acuerdo al listado de MSE y guardar cada una de esas heuristicas. La llamaremos h_nn_20 para una heuristica con MSE 20.
 # 5. Cargar h_nn_20 y resolver con FDS y FS.
-
+# crear otro main para correr algoritmos
 
