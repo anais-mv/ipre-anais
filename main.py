@@ -124,7 +124,10 @@ if __name__ == "__main__":
         print("nodos expandidos: " + str(exp))
         fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
         result = fs.heuristic_search(2)
-        print("nodos expandidos focal", fs.expansions)
+        print("nodos expandidos focal:", fs.expansions)
+        fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
+        result = fs.heuristic_discrepancy_search(2, "best")
+        print("nodos expandidos focal discrepancy:", fs.expansions)
         print("\n")
 
     grafo.mse_heuristics = mse_heuristics
