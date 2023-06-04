@@ -42,12 +42,14 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
         valores_g.append(a_star.g_final)
         print(f"Tiempo en realizar búsqueda A*: {tiempo_astar}")
         print("nodos expandidos: " + str(exp))
+        inicio = time.process_time()
         fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
         result = fs.heuristic_search(2)
         tiempo_focal = time.process_time() - inicio
         tiempos_focal.append(tiempo_focal)
         nodos_focal.append(fs.expansions)
         print("nodos expandidos focal:", fs.expansions)
+        inicio = time.process_time()
         fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
         result = fs.heuristic_discrepancy_search(2, "best")
         tiempo_focal_discrepancy = time.process_time() - inicio
