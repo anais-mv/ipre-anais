@@ -60,6 +60,7 @@ class Astar(object):
             if self.is_goal(n.state):
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 self.camino = list(reversed(self.camino))
+                self.g_final = n.g
                 print("g: " + str(n.g))
                 return self.camino, self.expansions, self.tiempo_final
             if n.state not in self.closed:

@@ -9,6 +9,9 @@ import time
 from focal_search import FocalSearch
 from multi_node import MultiNode
 import random
+from creacion_problemas import correr_fs
+
+cantidad = 5
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
@@ -44,16 +47,23 @@ if __name__ == "__main__":
 
     inicio = time.process_time()
     estados_2 = cargar_grafo(file_name)
-    print(f"Tiempo en cargar grafo: {time.process_time() - inicio}")
+    # print(f"Tiempo en cargar grafo: {time.process_time() - inicio}")
 
     # BÚSQUEDA
     estado_objetivo = grafo.obtener_estado_objetivo()
     for e in estados:
         e.goal = estado_objetivo
+
     inicio = time.process_time()
     bus_heuristica = Heuristica(op_disp, grafo.estados, estado_objetivo)
     grafo.perfect_heuristic = bus_heuristica
     print(f"Tiempo en crear heurística: {time.process_time() - inicio}")
+
+    for i in range(0, cantidad):
+        h_perfect = bus_heuristica.heuristica
+        grafo.estado_inicial = grafo.obtener_aleatorio_inicial()
+        correr_fs(h_perfect, grafo, grafo.estado_inicial, estado_objetivo, op_disp, prop_disp, file_name, i)
+    '''
 
     # A*
     print("A* HLMCUT")
@@ -132,6 +142,9 @@ if __name__ == "__main__":
 
     grafo.mse_heuristics = mse_heuristics
     grafo.guardar_grafo(file_name)
+
+    '''
+
 
 
 # 1. Producir un problema T y guardar el grafo

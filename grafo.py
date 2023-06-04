@@ -103,7 +103,6 @@ class Grafo():
         file.close()
 
     def obtener_estado_objetivo(self):
-        print("expansiones creación grafo:", self.expansiones)
         lista_estados = list(self.estados)
         for estado in lista_estados:
             if estado.lugar == self.contador:
@@ -111,6 +110,11 @@ class Grafo():
                 estado_objetivo = estado
         # estado_objetivo = random.choice(lista_estados)
         return estado_objetivo
+    
+    def obtener_aleatorio_inicial(self):
+        lista_estados = list(self.estados)
+        inicial = random.choice(lista_estados)
+        return inicial
 
 
 def cargar_grafo(nombre):
