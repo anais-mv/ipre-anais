@@ -11,7 +11,7 @@ from multi_node import MultiNode
 import random
 from creacion_problemas import correr_fs
 
-cantidad = 5
+cantidad = 1
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')

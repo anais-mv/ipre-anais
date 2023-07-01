@@ -1,0 +1,7 @@
+Valores g: [6, 6, 6, 6, 6]
+Tiempo Astar: [0.265625, 0.234375, 0.265625, 0.25, 0.234375]
+Nodos Astar: [6, 6, 6, 6, 6]
+Tiempo Focal: [0.0625, 0.125, 0.140625, 0.140625, 0.125]
+Nodos Focal: [6, 6, 6, 6, 6]
+Tiempo Focal Discrepancy: [0.125, 0.125, 0.125, 0.140625, 0.140625]
+Nodos Focal Discrepancy: [6, 6, 6, 6, 6]

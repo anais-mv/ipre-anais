@@ -1,0 +1,7 @@
+Valores g: [34, 34, 34, 34, 34]
+Tiempo Astar: [0.1875, 1.125, 0.125, 0.171875, 0.15625]
+Nodos Astar: [34, 40, 38, 43, 51]
+Tiempo Focal: [1.0, 1.0, 1.015625, 0.96875, 0.984375]
+Nodos Focal: [374, 394, 398, 384, 400]
+Tiempo Focal Discrepancy: [1.3125, 0.9375, 0.9375, 0.9375, 1.03125]
+Nodos Focal Discrepancy: [381, 355, 319, 391, 361]

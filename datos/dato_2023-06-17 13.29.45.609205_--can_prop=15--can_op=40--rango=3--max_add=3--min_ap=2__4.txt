@@ -1,0 +1,7 @@
+Valores g: [15, 15, 15, 15, 15]
+Tiempo Astar: [0.1875, 0.25, 0.296875, 0.25, 0.703125]
+Nodos Astar: [15, 15, 15, 15, 15]
+Tiempo Focal: [0.234375, 0.28125, 0.265625, 0.28125, 0.328125]
+Nodos Focal: [56, 53, 53, 54, 56]
+Tiempo Focal Discrepancy: [0.234375, 0.234375, 0.203125, 0.265625, 0.25]
+Nodos Focal Discrepancy: [35, 30, 28, 37, 33]

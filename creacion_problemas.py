@@ -3,8 +3,10 @@ from focal_search import FocalSearch
 import time
 import random
 
+
 def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteracion):
-    mses = [0,5, 10, 20, 100, 200]
+    weight = 1000
+    mses = [0, 5, 10, 20, 100, 200] # AGREGAR 0
     k = 4 # exponent for k multiplied to c
     dic_h = heuristica
     sum_h = sum([dic_h[estado]**(2*k) for estado in dic_h])/len(dic_h)
@@ -35,6 +37,7 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
         print("A* mse:", mse_)
         inicio = time.process_time()
         a_star = Astar(inicial, objetivo, op, new_heuristic, prop, "h*")
+        lm_cut = Astar(inicial, objetivo, op, new_heuristic, prop, "lmcut").h_function
         sol, exp, tim = a_star.search()
         tiempo_astar = time.process_time() - inicio
         tiempos_astar.append(tiempo_astar)
@@ -43,15 +46,15 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
         print(f"Tiempo en realizar búsqueda A*: {tiempo_astar}")
         print("nodos expandidos: " + str(exp))
         inicio = time.process_time()
-        fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
-        result = fs.heuristic_search(2)
+        fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, lm_cut, 1000)
+        result = fs.heuristic_search(weight)
         tiempo_focal = time.process_time() - inicio
         tiempos_focal.append(tiempo_focal)
         nodos_focal.append(fs.expansions)
         print("nodos expandidos focal:", fs.expansions)
         inicio = time.process_time()
-        fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, 2)
-        result = fs.heuristic_discrepancy_search(2, "best")
+        fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, lm_cut, 1000)
+        result = fs.heuristic_discrepancy_search(weight, "position")
         tiempo_focal_discrepancy = time.process_time() - inicio
         tiempos_focal_discrepancy.append(tiempo_focal_discrepancy)
         nodos_focal_discrepancy.append(fs.expansions)

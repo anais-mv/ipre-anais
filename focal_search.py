@@ -38,7 +38,7 @@ class FakeMultiBinHeap(MultiBinaryHeap):
 
 
 class FocalSearch:
-    def __init__(self, initial_state, heuristic, weight=1):
+    def __init__(self, initial_state, heuristic, a_heuristic, weight=1):
         self.expansions = 0
         self.generated = 0
         self.initial_state = initial_state.prop
@@ -46,6 +46,7 @@ class FocalSearch:
         self.heuristic = heuristic
         self.goal = initial_state.goal.prop
         self.operadores = initial_state.operadores
+        self.a_heuristic = a_heuristic
 
     def is_goal(self, state):
         for prop in self.goal:
@@ -343,7 +344,11 @@ class FocalSearch:
             f_min = self.open.top().key[1]
             n = self.preferred.extract()
             m = self.open.extract(n.heap_index[1])   # extrae m de la open
-            assert (n==m)
+            # if self.expansions == 100:
+            #     print(self.preferred)
+            #     exit()
+            # print(n.key[0], n.h[0], n.h[1], f_min, self.preferred.size)
+            assert(n==m)
 
             if self.is_goal(n.state):
                 self.end_time = time.process_time()
@@ -358,7 +363,6 @@ class FocalSearch:
                 # print("? check", child_state.board)
                 child_node = self.generated.get(child_state)
                 cost = 1
-                # H ADMISIBLE -- CAMBIAR
                 h_nn = self.heuristic(MultiNode(child_state, n))
                 is_new = child_node is None  # es la primera vez que veo a child_state
                 path_cost = n.g + cost  # costo del camino encontrado hasta child_state
@@ -369,7 +373,7 @@ class FocalSearch:
                         child_node = MultiNode(child_state, n)
                         child_node.h[0] = h_nn # h focal
                         # child_node.h[1] = self.heuristic(child_state) # h admisible
-                        child_node.h[1] = self.heuristic(child_node)
+                        child_node.h[1] = self.a_heuristic(child_node)
                         self.generated[child_state] = child_node
                         # print("+ new")
                     # child_node.action = action
@@ -380,7 +384,9 @@ class FocalSearch:
 
                     self.open.insert(child_node)
                     # CAMBIO: n.key[1] -> child_node.key[1]
+                    # print(child_node.heap_index[0], focal_w*f_min, child_node.heap_index[0] or child_node.key[1] <= focal_w*f_min, child_node.key[1])
                     if child_node.heap_index[0] or child_node.key[1] <= focal_w*f_min: # estaba en focal o cumple con el rango
+                    # if True:
                         self.preferred.insert(child_node)
             # print(self.expansions, self.preferred.size, self.open.size, '\t', f_min, self.open.top().key[1])
             # print(*[(self.open.items[i+1].key[1], "Y" if self.open.items[i+1].heap_index[0] else " ") for i in range(self.open.size)])
@@ -447,7 +453,7 @@ class FocalSearch:
             succ = estado_n.succ()
             succ_h_nn = []
             for sucesor in succ:
-                h_sucesor = self.heuristic(MultiNode(sucesor))
+                h_sucesor = self.heuristic(MultiNode(sucesor)) # h_sucesor es heuristica arruinada
                 succ_h_nn.append((sucesor, "action name", 1, h_sucesor))
 
             # quedarse con los beam mejores estados ordenados por trusts
@@ -474,8 +480,8 @@ class FocalSearch:
                     # un mejor camino, entonces lo agregamos a open
                     if is_new:  # creamos el nodo de child_state
                         child_node = MultiNode(child_state, n)
-                        child_node.h[0] = h_nn
-                        child_node.h[1] = self.heuristic(child_node)
+                        child_node.h[0] = h_nn # H FOCAL
+                        child_node.h[1] = self.a_heuristic(child_node) # H ADMISIBLE ordena la open
                         self.generated[child_state] = child_node
                     child_node.action = action
                     child_node.parent = n
@@ -489,7 +495,7 @@ class FocalSearch:
                         node_discrepancy += most_trusted[child_state]
 
                     child_node.key[1] = self.fvalue(child_node.g, child_node.h[1]) # actualizamos el f de child_node
-                    child_node.key[0] = (node_discrepancy,  child_node.h[1])
+                    child_node.key[0] = (node_discrepancy,  child_node.h[0])
 
                     self.open.insert(child_node)
                     if child_node.heap_index[0] or child_node.key[1] <= focal_w*f_min:  # estaba en focal o cumple con el rango

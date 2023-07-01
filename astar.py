@@ -9,6 +9,7 @@ from planning_problem import Estado
 from pyperplan.heuristics.blind import BlindHeuristic
 from pyperplan.heuristics.lm_cut import LmCutHeuristic
 from pyperplan.search.searchspace import SearchNode
+from pyperplan.heuristics.relaxation import hFFHeuristic
 
 
 class Astar(object):
@@ -33,6 +34,8 @@ class Astar(object):
             self.h_function = LmCutHeuristic(self.pyperplan_task)
         elif h_type == "h*":
             self.h_function = self.perfect_heuristic
+        elif h_type == "hff":
+            self.h_function = hFFHeuristic(self.pyperplan_task)
 
     def perfect_heuristic(self, estado):
         return self.heuristica[estado.state]

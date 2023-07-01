@@ -84,3 +84,11 @@ class MultiBinaryHeap:
 
     def __iter__(self):
         return (self.items[i] for i in range(1, self.size))
+    
+    def __str__(self):
+        string = ""
+        for i in range(1, self.size):
+            a = self.items[i]
+            string += str(a.key[self.id]) + "\n"
+        string += f"en el heap hay {self.size} elementos"
+        return string
