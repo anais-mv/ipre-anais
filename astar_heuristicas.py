@@ -45,8 +45,9 @@ class Heuristica:
                     if hijo.prop not in self.vistos:
                         self.open.append(hijo)
                         self.vistos.add(hijo.prop)
-                        if hijo in self.estados:
-                            self.heuristica[hijo.prop] = hijo.largo
+                        self.heuristica[hijo.prop] = hijo.largo
+                        # if hijo in self.estados:
+                        #     self.heuristica[hijo.prop] = hijo.largo
             if len(self.open) == 0:
                 self.continuar = False
 
