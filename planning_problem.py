@@ -38,7 +38,7 @@ class Estado:
         self.operadores = ops
         self.dict = dict
         self.goal = goal
-        self.estados_posibles = posibles
+        self.posibles = posibles
         self.lugar = None
         self.h_nn = None
         self.busqueda_inversa = False
@@ -59,6 +59,16 @@ class Estado:
             if op.es_aplicable(self):
                 hijo = self.aplicar_operador(op)
                 sucesores.append(hijo.prop)
+        if self.posibles is not None:
+            return self.revisar_succ(sucesores)
+        else:
+            return sucesores
+    
+    def revisar_succ(self, succ):
+        sucesores = []
+        for sucesor in succ:
+            if sucesor in self.posibles:
+                sucesores.append(sucesor)
         return sucesores
 
     def aplicar_operador(self, op):

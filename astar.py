@@ -13,7 +13,7 @@ from pyperplan.heuristics.relaxation import hFFHeuristic
 
 
 class Astar(object):
-    def __init__(self, inicial, final, op, heuristica, prop, posibles, h_type="lmcut"):
+    def __init__(self, inicial, final, op, heuristica, prop, h_type="lmcut"):
         super(Astar, self).__init__()
         self.expansions = 0
         self.vistos = {}
@@ -23,7 +23,6 @@ class Astar(object):
         self.final = final.prop
         self.heuristica = heuristica
         self.operadores = op
-        self.posibles = posibles
         self.open = MultiBinaryHeap()
         self.no_encontrado = 0
         self.pyperplan_operators = []
@@ -44,13 +43,6 @@ class Astar(object):
     def pyperplan_lmcut_heuristic(self, estado):
         sn = estado.to_pyperplan_search_node()
         return self.h_lmcut(sn)
-    
-    def revisar_succ(self, sucesores):
-        final = []
-        for sucesor in sucesores:
-            if sucesor in self.posibles:
-                final.append(sucesor)
-        return final
 
     def is_goal(self, estado):
         for prop in self.final:
@@ -78,7 +70,7 @@ class Astar(object):
                 self.expansions += 1
                 self.closed.add(n.state)
                 estado_n = Estado(n.state, self.operadores)
-                sucesores = self.revisar_succ(estado_n.succ())
+                sucesores = estado_n.succ()
                 for hijo in sucesores:
                     child_node = self.vistos.get(hijo)
                     # vistos get retorna none si no está en vistos (si es nuevo)

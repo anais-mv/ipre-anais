@@ -51,8 +51,13 @@ if __name__ == "__main__":
 
     # BÚSQUEDA
     estado_objetivo = grafo.obtener_estado_objetivo()
+    posibles = []
+    for estado in grafo.estados:
+        posibles.append(estado.prop)
+    
     for e in estados:
         e.goal = estado_objetivo
+        e.posibles = posibles
 
     inicio = time.process_time()
     bus_heuristica = Heuristica(op_disp, grafo.estados, estado_objetivo)
