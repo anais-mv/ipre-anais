@@ -496,6 +496,7 @@ class FocalSearch:
 
                     child_node.key[1] = self.fvalue(child_node.g, child_node.h[1]) # actualizamos el f de child_node
                     child_node.key[0] = (node_discrepancy,  child_node.h[0])
+                    # child_node.key[0] = (node_discrepancy)
 
                     self.open.insert(child_node)
                     if child_node.heap_index[0] or child_node.key[1] <= focal_w*f_min:  # estaba en focal o cumple con el rango

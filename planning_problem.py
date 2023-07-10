@@ -27,7 +27,7 @@ class Operador:
 
 
 class Estado:
-    def __init__(self, proposiciones, ops, padre=None, op_anterior=None, dict=None, goal=None):
+    def __init__(self, proposiciones, ops, padre=None, op_anterior=None, dict=None, goal=None, posibles=None):
         self.prop = frozenset(proposiciones)
         self.padre = padre
         self.op_anterior = op_anterior
@@ -38,8 +38,10 @@ class Estado:
         self.operadores = ops
         self.dict = dict
         self.goal = goal
+        self.estados_posibles = posibles
         self.lugar = None
         self.h_nn = None
+        self.busqueda_inversa = False
 
     def __hash__(self):
         return hash(self.prop)

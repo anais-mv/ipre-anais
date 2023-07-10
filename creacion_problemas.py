@@ -5,6 +5,9 @@ import random
 
 
 def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteracion):
+    posibles = []
+    for estado in grafo.estados:
+        posibles.append(estado.prop)
     weight = 1000
     mses = [0, 5, 10, 20, 100, 200] # AGREGAR 0
     k = 4 # exponent for k multiplied to c
@@ -36,8 +39,8 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
         print("\t Esperado:", mse)
         print("A* mse:", mse_)
         inicio = time.process_time()
-        a_star = Astar(inicial, objetivo, op, new_heuristic, prop, "h*")
-        lm_cut = Astar(inicial, objetivo, op, new_heuristic, prop, "lmcut").h_function
+        a_star = Astar(inicial, objetivo, op, new_heuristic, prop, posibles, "h*")
+        lm_cut = Astar(inicial, objetivo, op, new_heuristic, prop, posibles, "lmcut").h_function
         sol, exp, tim = a_star.search()
         tiempo_astar = time.process_time() - inicio
         tiempos_astar.append(tiempo_astar)

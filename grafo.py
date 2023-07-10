@@ -64,13 +64,14 @@ def crear_estado_inicial(prop, min_op_aplicables, operadores):
 
 
 class Grafo():
-    def __init__(self, proposiciones_disp, minimo_aplicable, op_disponibles, est):
+    def __init__(self, proposiciones_disp, minimo_aplicable, op_disponibles, est, max_succ):
         self.estadisticas = None
         self.prop_disp = proposiciones_disp
         self.min_ap = minimo_aplicable
         self.op_disp = op_disponibles
         self.estadisticas = est
         self.expansiones = 0
+        self.max = max_succ
         self.crear_grafo()
 
     def crear_grafo(self):
@@ -82,7 +83,7 @@ class Grafo():
             estado = open_.pop(0)
             hijos_estado = 0
             for operador in self.op_disp:
-                if operador.es_aplicable(estado):
+                if operador.es_aplicable(estado) and hijos_estado < self.max:
                     hijo = estado.aplicar_operador(operador)
                     if hijo not in self.estados:
                         hijos_estado += 1

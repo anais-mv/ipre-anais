@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     inicio = time.process_time()
 
-    grafo = Grafo(prop_disp, args.min_ap, op_disp, estadisticas)
+    grafo = Grafo(prop_disp, args.min_ap, op_disp, estadisticas, 3)
     estados = grafo.estados
     time_crear_grafo = time.process_time() - inicio
     print(f"Tiempo en crear grafo: {time_crear_grafo}")
