@@ -16,17 +16,17 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
     nodos_focal = []
     tiempos_focal_discrepancy = []
     nodos_focal_discrepancy = []
-    a_star = Astar(inicial, objetivo, op, heuristica, prop, "lmcut")
-    inicio = time.process_time()
-    sol, exp, tim = a_star.search()
-    tiempo_astar = time.process_time() - inicio
-    tiempos_astar = [tiempo_astar] * 6
-    nodos_astar = [exp] * 6
-    valores_g = [a_star.g_final] * 6
-    print(f"Tiempo en realizar búsqueda A*: {tiempo_astar}")
-    print("nodos expandidos A*: " + str(exp))
     for weight in weights:
         print(f"-------------------W: {weight}-------------------")
+        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "lmcut")
+        inicio = time.process_time()
+        sol, exp, tim = a_star.search()
+        tiempo_astar = time.process_time() - inicio
+        tiempos_astar = [tiempo_astar] * 6
+        nodos_astar = [exp] * 6
+        valores_g = [a_star.g_final] * 6
+        print(f"Tiempo en realizar búsqueda A*: {tiempo_astar}")
+        print("nodos expandidos A*: " + str(exp))
         for mse in mses:
             mse_ = 0
             new_heuristic = dict()

@@ -13,7 +13,7 @@ from pyperplan.heuristics.relaxation import hFFHeuristic
 
 
 class Astar(object):
-    def __init__(self, inicial, final, op, heuristica, prop, h_type="lmcut"):
+    def __init__(self, inicial, final, op, heuristica, prop, weight, h_type="lmcut"):
         super(Astar, self).__init__()
         self.expansions = 0
         self.vistos = {}
@@ -26,6 +26,7 @@ class Astar(object):
         self.open = MultiBinaryHeap()
         self.no_encontrado = 0
         self.pyperplan_operators = []
+        self.weight = weight
         for op in self.operadores:
             op_pyperplan = Operator("op"+str(op.id), op.prec, op.add, op.delet)
             self.pyperplan_operators.append(op_pyperplan)
@@ -82,7 +83,7 @@ class Astar(object):
                             child_node.h = self.h_function(child_node)
                             self.vistos[hijo] = child_node
                         child_node.g = costo_camino
-                        child_node_key = [10000*(child_node.g + child_node.h) - child_node.g]
+                        child_node_key = [self.weight*(child_node.g + child_node.h) - child_node.g]
                         child_node.key = child_node_key * MultiBinaryHeap.Max
                         self.open.insert(child_node)
         self.tiempo_final = time.process_time()
