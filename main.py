@@ -11,7 +11,7 @@ from multi_node import MultiNode
 import random
 from creacion_problemas import correr_fs
 
-cantidad = 1
+cantidad = 30
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
@@ -26,6 +26,8 @@ if __name__ == "__main__":
                         help='cantidad máxima de proposiciones en add por c/operador')
     parser.add_argument('--min_ap', type=int, default=3,
                         help='cantidad mínima de operadores aplicables del estado inicial')
+    parser.add_argument('--f_exp', type=int, default=3,
+                        help='cantidad máxima de sucesores que puede tener un estado')
     args = parser.parse_args()
     estadisticas = vars(args)
     op_disp, datos = crear_operadores(args.can_prop, args.can_op, args.rango, args.max_add)
@@ -33,7 +35,8 @@ if __name__ == "__main__":
 
     inicio = time.process_time()
 
-    grafo = Grafo(prop_disp, args.min_ap, op_disp, estadisticas, 3)
+    max_sucesores = int(args.f_exp)
+    grafo = Grafo(prop_disp, args.min_ap, op_disp, estadisticas, max_sucesores)
     estados = grafo.estados
     time_crear_grafo = time.process_time() - inicio
     print(f"Tiempo en crear grafo: {time_crear_grafo}")
