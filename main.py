@@ -68,6 +68,7 @@ if __name__ == "__main__":
     print(f"Tiempo en crear heurística: {time.process_time() - inicio}")
 
     for i in range(0, cantidad):
+        print(f"PROBLEMA NUM {i + 1}")
         h_perfect = bus_heuristica.heuristica
         grafo.estado_inicial = grafo.obtener_aleatorio_inicial()
         correr_fs(h_perfect, grafo, grafo.estado_inicial, estado_objetivo, op_disp, prop_disp, file_name, i)
