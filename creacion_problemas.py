@@ -6,17 +6,16 @@ import random
 
 def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteracion):
     weights = [1, 2, 4]
-    mses = [0, 5, 10, 20, 100, 200] # AGREGAR 0
+    mses = [0, 5, 10, 20, 100, 200]
     k = 4 # exponent for k multiplied to c
     dic_h = heuristica
     sum_h = sum([dic_h[estado]**(2*k) for estado in dic_h])/len(dic_h)
-    valores_g = []
     mse_heuristics = []
-    tiempos_focal = []
-    nodos_focal = []
-    tiempos_focal_discrepancy = []
-    nodos_focal_discrepancy = []
     for weight in weights:
+        tiempos_focal = []
+        nodos_focal = []
+        tiempos_focal_discrepancy = []
+        nodos_focal_discrepancy = []
         print(f"-------------------W: {weight}-------------------")
         a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "lmcut")
         inicio = time.process_time()
@@ -43,7 +42,6 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
             print("\t Real    :", mse_)
             print("\t Esperado:", mse)
             # print("A* mse:", mse_)
-
             a_star = Astar(inicial, objetivo, op, new_heuristic, prop, "h*")
             lm_cut = Astar(inicial, objetivo, op, new_heuristic, prop, "lmcut").h_function
             inicio = time.process_time()
