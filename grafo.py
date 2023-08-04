@@ -4,6 +4,7 @@ from copy import copy
 from operadores import OP_PREDEFINIDOS
 import random
 import pickle
+import numpy as np
 
 
 if OP_PREDEFINIDOS:
@@ -64,14 +65,14 @@ def crear_estado_inicial(prop, min_op_aplicables, operadores):
 
 
 class Grafo():
-    def __init__(self, proposiciones_disp, minimo_aplicable, op_disponibles, est, max_succ):
+    def __init__(self, proposiciones_disp, minimo_aplicable, op_disponibles, est):
         self.estadisticas = None
         self.prop_disp = proposiciones_disp
         self.min_ap = minimo_aplicable
         self.op_disp = op_disponibles
         self.estadisticas = est
         self.expansiones = 0
-        self.max = max_succ
+        # self.max = max_succ
         self.crear_grafo()
 
     def crear_grafo(self):
@@ -79,13 +80,17 @@ class Grafo():
         self.estados = {self.estado_inicial}
         open_ = [self.estado_inicial]
         self.contador = 0
+        aplicados_lista = []
         while len(open_) != 0:
             estado = open_.pop(0)
             hijos_estado = 0
+            aplicados = 0
             for operador in self.op_disp:
-                if operador.es_aplicable(estado) and hijos_estado < self.max:
+                if operador.es_aplicable(estado):
+                # if operador.es_aplicable(estado) and hijos_estado < self.max:
                     hijo = estado.aplicar_operador(operador)
                     if hijo not in self.estados:
+                        aplicados += 1
                         hijos_estado += 1
                         self.contador += 1
                         hijo.lugar = self.contador
@@ -95,8 +100,10 @@ class Grafo():
                             print(len(self.estados))
             if hijos_estado != 0:
                 self.expansiones += 1
+                aplicados_lista.append(aplicados)
         self.estadisticas["can_op"] = len(self.op_disp)
         self.estadisticas["can_prop"] = len(self.prop_disp)
+        self.promedio_exp = np.mean(aplicados_lista)
 
     def guardar_grafo(self, nombre):
         file = open(nombre, "wb")
@@ -107,7 +114,7 @@ class Grafo():
         lista_estados = list(self.estados)
         for estado in lista_estados:
             if estado.lugar == self.contador:
-                print(estado.lugar)
+                # print(estado.lugar)
                 estado_objetivo = estado
         # estado_objetivo = random.choice(lista_estados)
         return estado_objetivo

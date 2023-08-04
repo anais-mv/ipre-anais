@@ -1,5 +1,7 @@
 # from binary_heap import BinaryHeap
 import time
+from binary_heap import BinaryHeap
+from node import Node
 from multi_node import MultiNode
 from multi_binary_heap import MultiBinaryHeap
 from pyperplan.pddl.pddl import Domain 
@@ -23,7 +25,7 @@ class Astar(object):
         self.final = final.prop
         self.heuristica = heuristica
         self.operadores = op
-        self.open = MultiBinaryHeap()
+        # self.open = BinaryHeap()
         self.no_encontrado = 0
         self.pyperplan_operators = []
         self.weight = weight
@@ -52,11 +54,12 @@ class Astar(object):
         return True
 
     def search(self):
+        self.open = BinaryHeap()
         self.tiempo_inicio = time.process_time()
-        nodo_inicial = MultiNode(self.inicial)
+        nodo_inicial = Node(self.inicial)
         nodo_inicial.g = 0  # asignamos g
         nodo_inicial.h = self.h_function(nodo_inicial)
-        nodo_inicial.key = [nodo_inicial.g + nodo_inicial.h] * MultiBinaryHeap.Max  # asignamos f
+        nodo_inicial.key = nodo_inicial.g + nodo_inicial.h  # asignamos f
         self.open.insert(nodo_inicial)  # agregamos el nodo a la open
         self.vistos[self.inicial] = nodo_inicial
         while not self.open.is_empty():
@@ -79,12 +82,13 @@ class Astar(object):
                     costo_camino = n.g + 1
                     if is_new or costo_camino < child_node.g:
                         if is_new:
-                            child_node = MultiNode(hijo, n)
+                            child_node = Node(hijo, n)
                             child_node.h = self.h_function(child_node)
                             self.vistos[hijo] = child_node
                         child_node.g = costo_camino
-                        child_node_key = [self.weight*(child_node.g + child_node.h) - child_node.g]
-                        child_node.key = child_node_key * MultiBinaryHeap.Max
+                        # child_node_key = [self.weight*(child_node.g + child_node.h) - child_node.g]
+                        child_node.key = 10000*(child_node.g + self.weight*child_node.h) - child_node.g
+                        # child_node.key = child_node_key * MultiBinaryHeap.Max
                         self.open.insert(child_node)
         self.tiempo_final = time.process_time()
         return None

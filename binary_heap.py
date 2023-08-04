@@ -1,71 +1,84 @@
 # Implementacion de un Heap binario en donde cada elemento del heap
 # tiene la propiedad heap_index que corresponde a su posicion en el heap
 
+import sys
+
 
 class BinaryHeap:
-    '''Estructura de un Heap Binario. No tocar'''
     def __init__(self, max_size=10000000):
-        self.array = [None]*(max_size+1)
+        self.items = [None]*(max_size+1)
         self.size = 0
+        self.max_size = max_size
 
     def clear(self):  # clears the content of the heap
         self.size = 0
 
-    def percolatedown(self, hole, element):
+    def percolatedown(self, position, element):
         if self.size == 0:
             return
-        while 2*hole <= self.size:
-            child = 2*hole
-            if child != self.size and self.array[child+1].key < self.array[child].key:
+        while 2*position <= self.size:
+            child = 2*position
+            if child != self.size and self.items[child+1].key < self.items[child].key:
                 child += 1
-            if self.array[child].key < element.key:
-                self.array[hole] = self.array[child]
-                self.array[hole].heap_index = hole
+            if self.items[child].key < element.key:
+                self.items[position] = self.items[child]
+                self.items[position].heap_index = position
             else:
                 break
-            hole = child
-        self.array[hole] = element
-        element.heap_index = hole
+            position = child
+        self.items[position] = element
+        element.heap_index = position
 
-    def percolateup(self, hole, element):
+    def percolateup(self, position, element):
         if self.size == 0:
             return
-        while hole > 1 and element.key < self.array[hole//2].key:
-            self.array[hole] = self.array[hole//2]
-            self.array[hole].heap_index = hole
-            hole //= 2
-        self.array[hole] = element
-        element.heap_index = hole
+        while position > 1 and element.key < self.items[position//2].key:
+            self.items[position] = self.items[position//2]
+            self.items[position].heap_index = position
+            position //= 2
+        self.items[position] = element
+        element.heap_index = position
 
-    def percolateupordown(self, hole, element):
+    def percolateupordown(self, position, element):
         if self.size == 0:
             return
-        if hole > 1 and element.key < self.array[hole//2].key:
-            self.percolateup(hole, element)
+        if position > 1 and element.key < self.items[position//2].key:
+            self.percolateup(position, element)
         else:
-            self.percolatedown(hole, element)
+            self.percolatedown(position, element)
 
     def top(self):
         if self.size == 0:
             return None
         else:
-            return self.array[1]
+            return self.items[1]
 
-    def extract(self):
+    def extract(self, hole=1):
         if self.size == 0:
             return None
-        element = self.array[1]
+        element = self.items[hole]
         element.heap_index = 0
-        self.percolatedown(1, self.array[self.size])
+        if hole != self.size:
+            self.percolatedown(hole, self.items[self.size])
         self.size -= 1
         return element
 
     def insert(self, element):
-        if element.heap_index == [0, 0]:  # element no está en el heap
+        if element.heap_index == 0:  # element no esta en el heap
             self.size += 1
+            if self.size == self.max_size - 1:
+                self.items.extend([None]*10000)
+                self.max_size += 10000
             self.percolateup(self.size, element)
-        else:  # element está en el heap; suponemos que su key ha cambiado
+        else:  # element esta en el heap; suponemos que su key ha cambiado
             self.percolateupordown(element.heap_index, element)
 
     def is_empty(self):
         return self.size == 0
+
+    def __iter__(self):
+        return (self.items[i] for i in range(1, self.size))
+
+    def reorder(self):
+        for i in range(2, self.size+1):
+            self.percolateup(i, self.items[i])

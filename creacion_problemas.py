@@ -5,7 +5,7 @@ import random
 
 
 def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteracion):
-    weights = [1, 2, 4]
+    weights = [1.5, 2, 4]
     mses = [0, 5, 10, 20, 100, 200]
     k = 4 # exponent for k multiplied to c
     dic_h = heuristica

@@ -26,22 +26,19 @@ if __name__ == "__main__":
                         help='cantidad máxima de proposiciones en add por c/operador')
     parser.add_argument('--min_ap', type=int, default=3,
                         help='cantidad mínima de operadores aplicables del estado inicial')
-    parser.add_argument('--f_exp', type=int, default=3,
-                        help='cantidad máxima de sucesores que puede tener un estado')
     args = parser.parse_args()
     estadisticas = vars(args)
     op_disp, datos = crear_operadores(args.can_prop, args.can_op, args.rango, args.max_add)
     prop_disp = datos[0]
 
     inicio = time.process_time()
-
-    max_sucesores = int(args.f_exp)
-    grafo = Grafo(prop_disp, args.min_ap, op_disp, estadisticas, max_sucesores)
+    grafo = Grafo(prop_disp, args.min_ap, op_disp, estadisticas)
     estados = grafo.estados
     time_crear_grafo = time.process_time() - inicio
     print(f"Tiempo en crear grafo: {time_crear_grafo}")
     print(f"CANTIDAD DE OPERADORES: {len(op_disp)}")
     print(f"CANTIDAD DE ESTADOS: {len(grafo.estados)}")
+    print(f"PROMEDIO EXPANSIONES: {grafo.promedio_exp}")
 
     cmd_args = "".join(sys.argv[1:])
     file_name = f"grafos//grafo_{datetime.now()}_{cmd_args}.pickle"
