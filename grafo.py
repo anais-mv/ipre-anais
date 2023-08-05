@@ -112,11 +112,7 @@ class Grafo():
 
     def obtener_estado_objetivo(self):
         lista_estados = list(self.estados)
-        for estado in lista_estados:
-            if estado.lugar == self.contador:
-                # print(estado.lugar)
-                estado_objetivo = estado
-        # estado_objetivo = random.choice(lista_estados)
+        estado_objetivo = random.choice(lista_estados)
         return estado_objetivo
     
     def obtener_aleatorio_inicial(self):

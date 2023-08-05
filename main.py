@@ -38,7 +38,7 @@ if __name__ == "__main__":
     print(f"Tiempo en crear grafo: {time_crear_grafo}")
     print(f"CANTIDAD DE OPERADORES: {len(op_disp)}")
     print(f"CANTIDAD DE ESTADOS: {len(grafo.estados)}")
-    print(f"PROMEDIO EXPANSIONES: {grafo.promedio_exp}")
+    print(f"PROMEDIO FACTOR RAMIFICACIÓN: {grafo.promedio_exp}")
 
     cmd_args = "".join(sys.argv[1:])
     file_name = f"grafos//grafo_{datetime.now()}_{cmd_args}.pickle"
@@ -68,4 +68,4 @@ if __name__ == "__main__":
         print(f"PROBLEMA NUM {i + 1}")
         h_perfect = bus_heuristica.heuristica
         grafo.estado_inicial = grafo.obtener_aleatorio_inicial()
-        correr_fs(h_perfect, grafo, grafo.estado_inicial, estado_objetivo, op_disp, prop_disp, file_name, i)
+        correr_fs(h_perfect, grafo, grafo.estado_inicial, estado_objetivo, op_disp, prop_disp, file_name, i, grafo.promedio_exp)
