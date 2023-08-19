@@ -7,19 +7,22 @@ import random
 def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteracion, prom):
     weights = [1.5, 2, 4]
     mses = [0, 5, 10, 20, 100, 200]
-    k = 4 # exponent for k multiplied to c
+    k = 2 # exponent for k multiplied to c
     dic_h = heuristica
     sum_h = sum([dic_h[estado]**(2*k) for estado in dic_h])/len(dic_h)
     mse_heuristics = []
     for weight in weights:
         tiempos_focal = []
-        nodos_focal = []
         tiempos_focal_discrepancy_pos = []
         tiempos_focal_discrepancy_best = []
+        nodos_focal = []
         nodos_focal_discrepancy_pos = []
         nodos_focal_discrepancy_best = []
+        g_focal = []
+        g_focal_discrepancy_pos = []
+        g_focal_discrepancy_best = []
         print(f"-------------------W: {weight}-------------------")
-        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "lmcut")
+        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "zero")
         inicio = time.process_time()
         sol, exp, tim = a_star.search()
         tiempo_astar = time.process_time() - inicio
@@ -34,7 +37,14 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
             c = (mse/sum_h)**(1/2)
             for state in dic_h:
                 depth = dic_h[state]
-                h_nn = depth + c * random.gauss(0, 1) * (depth**k)
+                if depth == 0:
+                    h_nn = 0
+                else:
+                    error = c * random.gauss(0, 1) * (depth**k) 
+                    h_nn = depth + error # * random.choice([-1, 1])
+                    if h_nn < 0:
+                        # h_nn = 1
+                        h_nn = depth - error
                 mse_ += (h_nn - depth)**2
                 new_heuristic[state] = h_nn
             mse_heuristics.append(new_heuristic)
@@ -44,29 +54,35 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
             print("\t Real    :", mse_)
             print("\t Esperado:", mse)
             # print("A* mse:", mse_)
-            a_star = Astar(inicial, objetivo, op, new_heuristic, prop, "h*")
-            lm_cut = Astar(inicial, objetivo, op, new_heuristic, prop, "lmcut").h_function
+            a_star = Astar(inicial, objetivo, op, new_heuristic, prop, 1, "h*")
+            sol, exp, tim = a_star.search()
+            print("NODOS EXPANDIDOS A* H ARRUINADA:", exp)
+            lm_cut = Astar(inicial, objetivo, op, new_heuristic, prop, 1, "lmcut").h_function
+            # lm_cut = Astar(inicial, objetivo, op, new_heuristic, prop, 1, "zero").h_function # H ZERO
             inicio = time.process_time()
             fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, lm_cut, 1000)
             result = fs.heuristic_search(weight)
+            g_focal.append(result.g)
             tiempo_focal = time.process_time() - inicio
             tiempos_focal.append(tiempo_focal)
             nodos_focal.append(fs.expansions)
-            print("nodos expandidos focal:", fs.expansions)
+            print("nodos expandidos focal:", fs.expansions, "- g:", result.g)
             inicio = time.process_time()
             fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, lm_cut, 1000)
             result = fs.heuristic_discrepancy_search(weight, "position")
+            g_focal_discrepancy_pos.append(result.g)
             tiempo_focal_discrepancy = time.process_time() - inicio
             tiempos_focal_discrepancy_pos.append(tiempo_focal_discrepancy)
             nodos_focal_discrepancy_pos.append(fs.expansions)
-            print("nodos expandidos focal discrepancy position:", fs.expansions)
+            print("nodos expandidos focal discrepancy position:", fs.expansions, "- g:", result.g)
             inicio = time.process_time()
             fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, lm_cut, 1000)
             result = fs.heuristic_discrepancy_search(weight, "best")
+            g_focal_discrepancy_best.append(result.g)
             tiempo_focal_discrepancy = time.process_time() - inicio
             tiempos_focal_discrepancy_best.append(tiempo_focal_discrepancy)
             nodos_focal_discrepancy_best.append(fs.expansions)
-            print("nodos expandidos focal discrepancy best:", fs.expansions)
+            print("nodos expandidos focal discrepancy best:", fs.expansions, "- g:", result.g)
             print("\n")
 
         grafo.mse_heuristics = mse_heuristics
@@ -81,10 +97,13 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
         archivo.write("Nodos Astar: " + str(nodos_astar) + "\n")
         archivo.write("Tiempo Focal: " + str(tiempos_focal) + "\n")
         archivo.write("Nodos Focal: " + str(nodos_focal) + "\n")
+        archivo.write(f"G Focal: {g_focal}" + "\n")
         archivo.write("Tiempo Focal Discrepancy Position: " + str(tiempos_focal_discrepancy_pos) + "\n")
         archivo.write("Nodos Focal Discrepancy Position: " + str(nodos_focal_discrepancy_pos) + "\n")
+        archivo.write(f"G Focal Discrepancy Position: {g_focal_discrepancy_pos}" + "\n")
         archivo.write("Tiempo Focal Discrepancy Best: " + str(tiempos_focal_discrepancy_best) + "\n")
         archivo.write("Nodos Focal Discrepancy Best: " + str(nodos_focal_discrepancy_best) + "\n")
+        archivo.write(f"G Focal Discrepancy Best: {g_focal_discrepancy_best}" + "\n")
         archivo.write("Factor de expansión promedio: " + str(prom))
         archivo.close()
 

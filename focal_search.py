@@ -43,10 +43,10 @@ class FocalSearch:
         self.generated = 0
         self.initial_state = initial_state.prop
         self.weight = weight
-        self.heuristic = heuristic
+        self.heuristic = heuristic # H FOCAL
         self.goal = initial_state.goal.prop
         self.operadores = initial_state.operadores
-        self.a_heuristic = a_heuristic
+        self.a_heuristic = a_heuristic # H ADMISIBLE
 
     def is_goal(self, state):
         for prop in self.goal:

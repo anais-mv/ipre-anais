@@ -39,6 +39,10 @@ class Astar(object):
             self.h_function = self.perfect_heuristic
         elif h_type == "hff":
             self.h_function = hFFHeuristic(self.pyperplan_task)
+        elif h_type == "zero":
+            def zero(state):
+                return 0
+            self.h_function = zero 
 
     def perfect_heuristic(self, estado):
         return self.heuristica[estado.state]

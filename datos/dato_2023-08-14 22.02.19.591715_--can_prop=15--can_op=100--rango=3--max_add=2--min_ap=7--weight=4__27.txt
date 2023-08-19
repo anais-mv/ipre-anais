@@ -1,0 +1,13 @@
+Valores g: [8, 8, 8, 8, 8, 8]
+Tiempo Astar: [2.125, 2.125, 2.125, 2.125, 2.125, 2.125]
+Nodos Astar: [15323, 15323, 15323, 15323, 15323, 15323]
+Tiempo Focal: [0.234375, 0.296875, 2.671875, 0.1875, 6.65625, 8.015625]
+Nodos Focal: [8, 10, 133, 8, 395, 535]
+G Focal: [8, 8, 8, 8, 12, 12]
+Tiempo Focal Discrepancy Position: [0.296875, 0.515625, 0.390625, 0.21875, 17.15625, 17.828125]
+Nodos Focal Discrepancy Position: [8, 25, 22, 8, 1275, 1507]
+G Focal Discrepancy Position: [8, 8, 8, 8, 8, 10]
+Tiempo Focal Discrepancy Best: [0.25, 0.703125, 0.5, 0.234375, 8.984375, 18.890625]
+Nodos Focal Discrepancy Best: [8, 40, 34, 8, 663, 1615]
+G Focal Discrepancy Best: [8, 8, 8, 8, 10, 12]
+Factor de expansión promedio: 2.0187106335679883
