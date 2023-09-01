@@ -24,6 +24,9 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
             g_focal = []
             g_focal_discrepancy_pos = []
             g_focal_discrepancy_best = []
+            per_fs = []
+            per_fdpos = []
+            per_fdbest = []
             # a_star_ph = Astar(inicial, objetivo, op, dic_h, prop, weight, "h*").perfect_heuristic
             print(f"-------------------W: {weight}-------------------")
             a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "lmcut")
@@ -70,8 +73,9 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
                 tiempo_focal = time.process_time() - inicio
                 tiempos_focal.append(tiempo_focal)
                 nodos_focal.append(fs.expansions)
-                per_fs = str(round(fs.percentage*100, 4)) + "%"
-                print("nodos expandidos focal:", fs.expansions, "- g:", result.g, "-", per_fs)
+                per_fs_d = round(fs.percentage*100, 4)
+                per_fs.append(per_fs_d)
+                print("nodos expandidos focal:", fs.expansions, "- g:", result.g, "-", per_fs_d, "%")
                 inicio = time.process_time()
                 fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, lm_cut, dic_h, 1000)
                 result = fs.heuristic_discrepancy_search(weight, "position")
@@ -79,8 +83,9 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
                 tiempo_focal_discrepancy = time.process_time() - inicio
                 tiempos_focal_discrepancy_pos.append(tiempo_focal_discrepancy)
                 nodos_focal_discrepancy_pos.append(fs.expansions)
-                per_fdpos = str(round(fs.percentage*100, 4)) + "%"
-                print("nodos expandidos focal discrepancy position:", fs.expansions, "- g:", result.g, "-", per_fdpos)
+                per_fdpos_d = round(fs.percentage*100, 4)
+                per_fdpos.append(per_fdpos_d)
+                print("nodos expandidos focal discrepancy position:", fs.expansions, "- g:", result.g, "-", per_fdpos_d, "%")
                 inicio = time.process_time()
                 fs = FocalSearch(grafo.estado_inicial, a_star.perfect_heuristic, lm_cut, dic_h, 1000)
                 result = fs.heuristic_discrepancy_search(weight, "best")
@@ -88,8 +93,9 @@ def correr_fs(heuristica, grafo, inicial, objetivo, op, prop, file_name, iteraci
                 tiempo_focal_discrepancy = time.process_time() - inicio
                 tiempos_focal_discrepancy_best.append(tiempo_focal_discrepancy)
                 nodos_focal_discrepancy_best.append(fs.expansions)
-                per_fdbest = str(round(fs.percentage*100, 4)) + "%"
-                print("nodos expandidos focal discrepancy best:", fs.expansions, "- g:", result.g, "-", per_fdbest)
+                per_fdbest_d = round(fs.percentage*100, 4)
+                per_fdbest.append(per_fdbest_d)
+                print("nodos expandidos focal discrepancy best:", fs.expansions, "- g:", result.g, "-", per_fdbest_d, "%")
                 print("\n")
 
             grafo.mse_heuristics = mse_heuristics
