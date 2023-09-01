@@ -38,7 +38,7 @@ class FakeMultiBinHeap(MultiBinaryHeap):
 
 
 class FocalSearch:
-    def __init__(self, initial_state, heuristic, a_heuristic, weight=1):
+    def __init__(self, initial_state, heuristic, a_heuristic, h_original, weight=1):
         self.expansions = 0
         self.generated = 0
         self.initial_state = initial_state.prop
@@ -47,6 +47,7 @@ class FocalSearch:
         self.goal = initial_state.goal.prop
         self.operadores = initial_state.operadores
         self.a_heuristic = a_heuristic # H ADMISIBLE
+        self.h_original = h_original
 
     def is_goal(self, state):
         for prop in self.goal:
@@ -76,6 +77,9 @@ class FocalSearch:
         # el negativo es para ordenarlo en el sentido contrario
         # return (10000*(g + self.weight*h) - g)/trust
         return (g+h)/trust # (-trust, g+h) # 
+    
+    def h_menor(self, lista):
+        return lista[1]
 
     def h_focales(self, g,h,trust_nodo, trust_anterior, mode=-1):
         # H_focal1 = Probabilidad acumulada
@@ -332,6 +336,8 @@ class FocalSearch:
         initial_node.key[0] = initial_node.h[0]  # asignamos el valor f
         initial_node.key[1] = self.fvalue(initial_node.g,initial_node.h[1])
 
+        best_prop = initial_node.state
+
         self.open.insert(initial_node)
         self.preferred.insert(initial_node)
         # para cada estado alguna vez generado, generated almacena
@@ -339,6 +345,7 @@ class FocalSearch:
         self.generated = {}
         self.generated[self.initial_state] = initial_node
         self.non_pref = 0
+        best_first = 0
         while not self.preferred.is_empty():
             # print('A', [int(x.key[0]) if x is not None else None for x in self.preferred.items[:15] ])
             f_min = self.open.top().key[1]
@@ -353,12 +360,22 @@ class FocalSearch:
             if self.is_goal(n.state):
                 self.end_time = time.process_time()
                 self.solution = n
+                self.percentage = best_first/self.expansions
                 return n
 
             estado_n = Estado(n.state, self.operadores)
             succ = estado_n.succ()
+            succ_ph = []
             self.expansions += 1
             # for child_state, action, cost, h_nn in succ:
+            # PORCENTAJE MEJOR PRIMERO
+            if estado_n.prop == best_prop:
+                best_first += 1
+            for sucesor in succ:
+                perfect_h = self.h_original[sucesor]
+                succ_ph.append((sucesor, perfect_h))
+            succ_ph.sort(key=self.h_menor)
+            best_prop = succ_ph[0][0]
             for child_state in succ:
                 # print("? check", child_state.board)
                 child_node = self.generated.get(child_state)
@@ -422,6 +439,7 @@ class FocalSearch:
         self.expansions = 0
         self.f_updates = 0
         self.update_time = 0.0
+        best_first = 0
 
         initial_node = MultiNode(self.initial_state)
         initial_node.g = 0
@@ -429,6 +447,8 @@ class FocalSearch:
         initial_node.h[1] = initial_node.h[0]
         initial_node.key[0] = (0, initial_node.h[0])  # asignamos el valor f
         initial_node.key[1] = self.fvalue(initial_node.g,initial_node.h[1])
+
+        best_prop = initial_node.state
 
         self.open.insert(initial_node)
         self.preferred.insert(initial_node)
@@ -447,14 +467,22 @@ class FocalSearch:
             if self.is_goal(n.state):
                 self.end_time = time.process_time()
                 self.solution = n
+                self.percentage = best_first/self.expansions
                 return n
 
             estado_n = Estado(n.state, self.operadores)
+            if estado_n.prop == best_prop:
+                best_first += 1
             succ = estado_n.succ()
             succ_h_nn = []
+            succ_ph = []
             for sucesor in succ:
                 h_sucesor = self.heuristic(MultiNode(sucesor)) # h_sucesor es heuristica arruinada
                 succ_h_nn.append((sucesor, "action name", 1, h_sucesor))
+                perfect_h = self.h_original[sucesor]
+                succ_ph.append((sucesor, perfect_h))
+            succ_ph.sort(key=self.h_menor)
+            best_prop = succ_ph[0][0]
 
             # quedarse con los beam mejores estados ordenados por trusts
             if discrepancy_mode == "best":

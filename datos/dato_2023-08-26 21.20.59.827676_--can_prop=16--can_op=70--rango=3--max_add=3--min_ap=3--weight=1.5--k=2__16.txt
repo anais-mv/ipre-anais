@@ -1,0 +1,13 @@
+Valores g: [10, 10, 10, 10, 10, 10]
+Tiempo Astar: [0.28125, 0.28125, 0.28125, 0.28125, 0.28125, 0.28125]
+Nodos Astar: [2023, 2023, 2023, 2023, 2023, 2023]
+Tiempo Focal: [1.328125, 0.75, 2.078125, 2.15625, 2.1875, 2.015625]
+Nodos Focal: [184, 94, 263, 290, 309, 287]
+G Focal: [10, 10, 10, 10, 10, 10]
+Tiempo Focal Discrepancy Position: [1.09375, 1.203125, 1.0, 1.125, 1.5625, 1.390625]
+Nodos Focal Discrepancy Position: [148, 165, 135, 153, 208, 204]
+G Focal Discrepancy Position: [10, 10, 10, 10, 10, 10]
+Tiempo Focal Discrepancy Best: [0.875, 1.25, 1.0625, 1.140625, 1.171875, 1.078125]
+Nodos Focal Discrepancy Best: [121, 165, 133, 162, 158, 152]
+G Focal Discrepancy Best: [10, 10, 10, 10, 10, 10]
+Factor de expansión promedio: 1.631771992063015
