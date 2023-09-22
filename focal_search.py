@@ -7,6 +7,7 @@ from heapq import heappush, heappop  # para beam_ahead
 from math import log2
 from collections import deque
 from planning_problem import Estado
+import numpy as np
 
 class FakeMultiBinHeap(MultiBinaryHeap):
     def __init__(self, original_bin_heap):
@@ -336,7 +337,7 @@ class FocalSearch:
         initial_node.key[0] = initial_node.h[0]  # asignamos el valor f
         initial_node.key[1] = self.fvalue(initial_node.g,initial_node.h[1])
 
-        best_prop = initial_node.state
+        best_prop = initial_node.state 
 
         self.open.insert(initial_node)
         self.preferred.insert(initial_node)
@@ -346,6 +347,7 @@ class FocalSearch:
         self.generated[self.initial_state] = initial_node
         self.non_pref = 0
         best_first = 0
+        coincidentes = 0 # coincidentes es un contador que cuenta la cantidad de veces que la discrepancia 0 corresponde realmente al mejor h*
         while not self.preferred.is_empty():
             # print('A', [int(x.key[0]) if x is not None else None for x in self.preferred.items[:15] ])
             f_min = self.open.top().key[1]
@@ -360,7 +362,8 @@ class FocalSearch:
             if self.is_goal(n.state):
                 self.end_time = time.process_time()
                 self.solution = n
-                self.percentage = best_first/self.expansions
+                self.per_best = best_first/self.expansions
+                self.percentage = coincidentes/self.expansions
                 return n
 
             estado_n = Estado(n.state, self.operadores)
@@ -370,17 +373,19 @@ class FocalSearch:
             # for child_state, action, cost, h_nn in succ:
             # PORCENTAJE MEJOR PRIMERO
             if estado_n.prop == best_prop:
-                best_first += 1
+                best_first += 1 # best_first corresponde a la cantidad de veces que el último mejor sucesor es elegido como el sgt nodo en expansión
             for sucesor in succ:
                 perfect_h = self.h_original[sucesor]
                 succ_ph.append((sucesor, perfect_h))
             succ_ph.sort(key=self.h_menor)
             best_prop = succ_ph[0][0]
+            succ_best = (np.inf, None)
             for child_state in succ:
                 # print("? check", child_state.board)
                 child_node = self.generated.get(child_state)
                 cost = 1
                 h_nn = self.heuristic(MultiNode(child_state, n))
+                succ_best = (h_nn, child_state) if succ_best[0] > h_nn else succ_best
                 is_new = child_node is None  # es la primera vez que veo a child_state
                 path_cost = n.g + cost  # costo del camino encontrado hasta child_state
                 if is_new or path_cost < child_node.g:
@@ -409,6 +414,10 @@ class FocalSearch:
             # print(*[(self.open.items[i+1].key[1], "Y" if self.open.items[i+1].heap_index[0] else " ") for i in range(self.open.size)])
             # if f_min > self.open.top().key[1]:
             #     print(f_min, "!<=", self.open.top().key[1])
+
+            if best_prop == succ_best[1]:
+                coincidentes += 1
+
             if self.open.size and f_min < self.open.top().key[1]:
                 self.f_updates += 1
                 # t_time = time.process_time()
@@ -458,6 +467,7 @@ class FocalSearch:
         self.generated[self.initial_state] = initial_node
         self.non_pref = 0
         current = 1
+        coincidentes = 0 # coincidentes es un contador que cuenta la cantidad de veces que la discrepancia 0 corresponde realmente al mejor h*
         while not self.preferred.is_empty():
             f_min = self.open.top().key[1]
             n = self.preferred.extract()
@@ -467,7 +477,8 @@ class FocalSearch:
             if self.is_goal(n.state):
                 self.end_time = time.process_time()
                 self.solution = n
-                self.percentage = best_first/self.expansions
+                self.per_best = best_first/self.expansions
+                self.percentage = coincidentes/self.expansions
                 return n
 
             estado_n = Estado(n.state, self.operadores)
@@ -483,6 +494,7 @@ class FocalSearch:
                 succ_ph.append((sucesor, perfect_h))
             succ_ph.sort(key=self.h_menor)
             best_prop = succ_ph[0][0]
+            succ_best = (np.inf, None)
 
             # quedarse con los beam mejores estados ordenados por trusts
             if discrepancy_mode == "best":
@@ -499,6 +511,7 @@ class FocalSearch:
 
             self.expansions += 1
             for child_state, action, cost, h_nn in succ_h_nn:
+                succ_best = (h_nn, child_state) if succ_best[0] > h_nn else succ_best
                 # print("? check", child_state.board)
                 child_node = self.generated.get(child_state)
                 is_new = child_node is None  # es la primera vez que veo a child_state
@@ -542,6 +555,10 @@ class FocalSearch:
                 #         self.preferred.insert(child_node)
 
             # assert f_min <= self.open.top().key[1]
+
+            if succ_best[1] == best_prop:
+                coincidentes += 1
+
             if self.open.size and f_min < self.open.top().key[1]:
                 self.f_updates += 1
                 # t_time = time.process_time()

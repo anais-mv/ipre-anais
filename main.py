@@ -40,17 +40,13 @@ if __name__ == "__main__":
     print(f"CANTIDAD DE ESTADOS: {len(grafo.estados)}")
     print(f"PROMEDIO FACTOR RAMIFICACIÓN: {grafo.promedio_exp}")
 
-    cmd_args = "".join(sys.argv[1:])
-    file_name = f"grafos//grafo_{datetime.now()}_{cmd_args}.pickle"
-    file_name = file_name.replace(":", ".")
-    grafo.guardar_grafo(file_name)
-
     inicio = time.process_time()
-    estados_2 = cargar_grafo(file_name)
+    # estados_2 = cargar_grafo(file_name)
     # print(f"Tiempo en cargar grafo: {time.process_time() - inicio}")
 
     # BÚSQUEDA
     estado_objetivo = grafo.obtener_estado_objetivo()
+    grafo.objetivo = estado_objetivo
     posibles = []
     for estado in grafo.estados:
         posibles.append(estado.prop)
@@ -64,8 +60,52 @@ if __name__ == "__main__":
     grafo.perfect_heuristic = bus_heuristica
     print(f"Tiempo en crear heurística: {time.process_time() - inicio}")
 
+    iniciales = []
+
     for i in range(0, cantidad):
-        print(f"PROBLEMA NUM {i + 1}")
-        h_perfect = bus_heuristica.heuristica
-        grafo.estado_inicial = grafo.obtener_aleatorio_inicial()
-        correr_fs(h_perfect, grafo, grafo.estado_inicial, estado_objetivo, op_disp, prop_disp, file_name, i, grafo.promedio_exp)
+        iniciales.append(grafo.obtener_aleatorio_inicial())
+
+    grafo.iniciales = iniciales
+    cmd_args = "".join(sys.argv[1:])
+    file_name = f"grafos//grafo_{datetime.now()}_{cmd_args}.pickle"
+    file_name = file_name.replace(":", ".")
+    dic_h = bus_heuristica.heuristica
+    # grafo.guardar_grafo(file_name)
+
+    # weights = [1.5, 2, 4]
+    mses = [0, 5, 10, 20, 100, 200]
+    valores_k = [2, 4]
+    # k = 2 # exponent for k multiplied to c
+    for k in valores_k:
+        print(f"-------------------k: {k}------------------- \n")
+        sum_h = sum([dic_h[estado]**(2*k) for estado in dic_h])/len(dic_h)
+        mse_heuristics = []
+        for mse in mses:
+            mse_ = 0
+            new_heuristic = dict()
+            c = (mse/sum_h)**(1/2)
+            for state in dic_h:
+                depth = dic_h[state]
+                if depth == 0:
+                    h_nn = 0
+                else:
+                    error = c * random.gauss(0, 1) * (depth**k) 
+                    h_nn = depth + error # * random.choice([-1, 1])
+                    if h_nn < 0:
+                        # h_nn = 1
+                        h_nn = depth - error
+                mse_ += (h_nn - depth)**2
+                new_heuristic[state] = h_nn
+            mse_heuristics.append(new_heuristic)
+        if k == 2:
+            grafo.heuristics_k2 = mse_heuristics
+        else:
+            grafo.heuristics_k4 = mse_heuristics
+
+    grafo.guardar_grafo(file_name)
+            # mse_ = mse_/(len(dic_h))
+    # for i in range(0, cantidad):
+    #     print(f"PROBLEMA NUM {i + 1}")
+    #     h_perfect = bus_heuristica.heuristica
+    #     grafo.estado_inicial = grafo.obtener_aleatorio_inicial()
+    #     correr_fs(h_perfect, grafo, grafo.estado_inicial, estado_objetivo, op_disp, prop_disp, file_name, i, grafo.promedio_exp)
