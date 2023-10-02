@@ -2,7 +2,7 @@ from astar import Astar
 import time
 from grafo import cargar_grafo
 from main import cantidad
-from clase_datos import Resultados, Datos
+from clase_datos import Resultados, Datos, escribir_archivo
 import pickle
 from focal_search import FocalSearch
 
@@ -14,8 +14,12 @@ op = grafo.op_disp
 prop = grafo.prop_disp
 valores_k = [2, 4]
 mses = [0, 5, 10, 20, 100, 200]
+archivo = "archivos terminal//terminal fds best -- " + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+open_archivo = open(archivo, "w")
+open_archivo.close()
 for k in valores_k:
     print(f"-------------------k: {k}-------------------")
+    escribir_archivo(archivo, f"-------------------k: {k}-------------------")
     weight_15 = []
     weight_2 = []
     weight_4 = []
@@ -25,14 +29,17 @@ for k in valores_k:
         heuristica = grafo.heuristics_k4
     for i in range(0, cantidad):
         print(f"PROBLEMA NUM {i + 1} - k: {k}")
+        escribir_archivo(archivo, f"PROBLEMA NUM {i + 1} - k: {k}")
         inicial = grafo.iniciales[i]
         for weight in weights:
             print(f"-------------------W: {weight}-------------------")
+            escribir_archivo(archivo, f"-------------------W: {weight}-------------------")
             tiempos = []
             nodos = []
             porcentajes = []
             for mse in range(0, len(mses)):
                 print("\n" + f"MSE: {mses[mse]}")
+                escribir_archivo(archivo, "\n" + f"MSE: {mses[mse]}")
                 perfect_heuristic = Astar(inicial, objetivo, op, heuristica[mse], prop, 1, "h*").h_function
                 lm_cut = Astar(inicial, objetivo, op, heuristica[mse], prop, 1, "lmcut").h_function
                 inicio = time.process_time()
@@ -43,7 +50,9 @@ for k in valores_k:
                 nodos.append(fs.expansions)
                 porcentajes.append(fs.percentage)
                 print(f"nodos expandidos focal discrepancy best: {fs.expansions}")
+                escribir_archivo(archivo, f"nodos expandidos focal discrepancy best: {fs.expansions}")
                 print(f"tiempo focal discrepancy best: {tiempo}")
+                escribir_archivo(archivo, f"tiempo focal discrepancy best: {tiempo}")
             resultado = Resultados(tiempos, nodos, porcentajes)
             if weight == 1.5:
                 weight_15.append(resultado)

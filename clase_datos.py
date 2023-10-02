@@ -46,4 +46,9 @@ class Datos:
         tiempos = [np.mean(lista) for lista in lista_tiempos]
         nodos = [np.mean(lista) for lista in lista_nodos]
         return tiempos, nodos
+    
+def escribir_archivo(nombre, escribir):
+    file = open(nombre, "a")
+    file.write(escribir + "\n")
+    file.close()
 
