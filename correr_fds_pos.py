@@ -6,7 +6,9 @@ from clase_datos import Resultados, Datos, escribir_archivo
 import pickle
 from focal_search import FocalSearch
 
-file_name = "grafos//grafo_2023-09-13 14.25.29.283928_--can_prop=21--can_op=200--rango=3--max_add=4--min_ap=2.pickle"
+#file_name = "grafos//grafo_2023-09-13 14.25.29.283928_--can_prop=21--can_op=200--rango=3--max_add=4--min_ap=2.pickle"
+file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
+
 grafo = cargar_grafo(file_name)
 weights = [1.5, 2, 4]
 objetivo = grafo.objetivo
@@ -14,7 +16,9 @@ op = grafo.op_disp
 prop = grafo.prop_disp
 valores_k = [2, 4]
 mses = [0, 5, 10, 20, 100, 200]
-archivo = "archivos terminal//terminal fds pos -- " + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+#archivo = "archivos terminal//terminal fds pos -- " + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+archivo = "logs_ejecuciones/exec_fdspos--" + file_name.replace("../storage/grafo_", "")[:-7] + ".txt"
+
 open_archivo = open(archivo, "w")
 open_archivo.close()
 for k in valores_k:
