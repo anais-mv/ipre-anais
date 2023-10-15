@@ -104,6 +104,8 @@ class Grafo():
         self.estadisticas["can_op"] = len(self.op_disp)
         self.estadisticas["can_prop"] = len(self.prop_disp)
         self.promedio_exp = np.mean(aplicados_lista)
+        self.maximo_exp = max(aplicados_lista)
+        self.mediana_exp = np.median(aplicados_lista)
 
     def guardar_grafo(self, nombre):
         file = open(nombre, "wb")

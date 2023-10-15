@@ -39,6 +39,8 @@ if __name__ == "__main__":
     print(f"CANTIDAD DE OPERADORES: {len(op_disp)}")
     print(f"CANTIDAD DE ESTADOS: {len(grafo.estados)}")
     print(f"PROMEDIO FACTOR RAMIFICACIÓN: {grafo.promedio_exp}")
+    print(f"MÁXIMA RAMIFICACIÓN: {grafo.maximo_exp}")
+    print(f"MEDIANA FACTOR RAMIFICACIÓN: {grafo.mediana_exp}")
 
     inicio = time.process_time()
     # estados_2 = cargar_grafo(file_name)

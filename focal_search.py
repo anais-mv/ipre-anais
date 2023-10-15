@@ -7,6 +7,7 @@ from heapq import heappush, heappop  # para beam_ahead
 from math import log2
 from collections import deque
 from planning_problem import Estado
+from random import randint
 import numpy as np
 
 class FakeMultiBinHeap(MultiBinaryHeap):
@@ -431,6 +432,136 @@ class FocalSearch:
         # print("none found")
         return None
 
+    def heuristic_discrepancy_search_random(self, focal_w=1.5, discrepancy_mode="best"):
+        self.start_time = time.process_time()
+        self.preferred = MultiBinaryHeap(0)
+        self.open = MultiBinaryHeap(1)
+        self.expansions = 0
+        self.f_updates = 0
+        self.update_time = 0.0
+        best_first = 0
+
+        initial_node = MultiNode(self.initial_state)
+        initial_node.g = 0
+        initial_node.h[0] = self.heuristic(initial_node)
+        initial_node.h[1] = initial_node.h[0]
+        initial_node.key[0] = (0, initial_node.h[0])  # asignamos el valor f
+        initial_node.key[1] = self.fvalue(initial_node.g,initial_node.h[1])
+
+        best_prop = initial_node.state
+
+        self.open.insert(initial_node)
+        self.preferred.insert(initial_node)
+        # para cada estado alguna vez generado, generated almacena
+        # el Node que le corresponde
+        self.generated = {}
+        self.generated[self.initial_state] = initial_node
+        self.non_pref = 0
+        current = 1
+        coincidentes = 0 # coincidentes es un contador que cuenta la cantidad de veces que la discrepancia 0 corresponde realmente al mejor h*
+        while not self.preferred.is_empty():
+            f_min = self.open.top().key[1]
+            n = self.preferred.extract()
+            m = self.open.extract(n.heap_index[1])   # extrae m de la open
+
+            
+            if self.is_goal(n.state):
+                self.end_time = time.process_time()
+                self.solution = n
+                self.per_best = best_first/self.expansions
+                self.percentage = coincidentes/self.expansions
+                return n
+
+            estado_n = Estado(n.state, self.operadores)
+            if estado_n.prop == best_prop:
+                best_first += 1
+            succ = estado_n.succ()
+            succ_h_nn = []
+            succ_ph = []
+            for sucesor in succ:
+                # h_sucesor = self.heuristic(MultiNode(sucesor)) # h_sucesor es heuristica arruinada
+                h_sucesor = randint(0, 100)
+                succ_h_nn.append((sucesor, "action name", 1, h_sucesor))
+                perfect_h = self.h_original[sucesor]
+                succ_ph.append((sucesor, perfect_h))
+            succ_ph.sort(key=self.h_menor)
+            best_prop = succ_ph[0][0]
+            succ_best = (np.inf, None)
+
+            # quedarse con los beam mejores estados ordenados por trusts
+            if discrepancy_mode == "best":
+                # obtener el estado de menor h
+                best_state = min(succ_h_nn, key=lambda x: x[3])[0]
+            elif discrepancy_mode == "position":
+                # crear diccionsrio del estado a su discrepancia
+                most_trusted = {state[0] : i for
+                                    i, state in enumerate(
+                                        sorted(succ_h_nn, key=lambda x: x[3])
+                                    )
+                                }
+                # assert [s[3] for s in succ].count(max(s[3] for s in succ)) == 1
+
+            self.expansions += 1
+            for child_state, action, cost, h_nn in succ_h_nn:
+                succ_best = (h_nn, child_state) if succ_best[0] > h_nn else succ_best
+                # print("? check", child_state.board)
+                child_node = self.generated.get(child_state)
+                is_new = child_node is None  # es la primera vez que veo a child_state
+                path_cost = n.g + cost  # costo del camino encontrado hasta child_state
+                if is_new or path_cost < child_node.g:
+                    # si vemos el estado child_state por primera vez o lo vemos por
+                    # un mejor camino, entonces lo agregamos a open
+                    if is_new:  # creamos el nodo de child_state
+                        child_node = MultiNode(child_state, n)
+                        child_node.h[0] = h_nn # H FOCAL
+                        child_node.h[1] = self.a_heuristic(child_node) # H ADMISIBLE ordena la open
+                        self.generated[child_state] = child_node
+                    child_node.action = action
+                    child_node.parent = n
+                    child_node.g = path_cost
+                    # child_node.trust = h_nn
+                    node_discrepancy = n.key[0][0]
+                    if discrepancy_mode == "best":
+                        if child_state != best_state:
+                            node_discrepancy += 1
+                    elif discrepancy_mode == "position":
+                        node_discrepancy += most_trusted[child_state]
+
+                    child_node.key[1] = self.fvalue(child_node.g, child_node.h[1]) # actualizamos el f de child_node
+                    child_node.key[0] = (node_discrepancy,  child_node.h[0])
+                    # child_node.key[0] = (node_discrepancy)
+
+                    self.open.insert(child_node)
+                    if child_node.heap_index[0] or child_node.key[1] <= focal_w*f_min:  # estaba en focal o cumple con el rango
+                        self.preferred.insert(child_node)
+                # elif path_cost == child_node.g:
+                #     node_discrepancy = n.key[0][0]
+                #     if discrepancy_mode == "best":
+                #         if child_state != best_state:
+                #             node_discrepancy += 1
+                #     elif discrepancy_mode == "position":
+                #         node_discrepancy += most_trusted[child_state]
+
+                #     child_node.key[0] = (min(child_node.key[0][0], node_discrepancy), child_node.key[0][1])
+                #     if child_node.heap_index[0]:
+                #         self.preferred.insert(child_node)
+
+            # assert f_min <= self.open.top().key[1]
+
+            if succ_best[1] == best_prop:
+                coincidentes += 1
+
+            if self.open.size and f_min < self.open.top().key[1]:
+                self.f_updates += 1
+                # t_time = time.process_time()
+                for i in range(1, self.open.size+1):
+                    if focal_w*self.open.top().key[1] >= self.open.items[i].key[1] > focal_w*f_min:
+                        self.preferred.insert(self.open.items[i])
+                # self.update_time += time.process_time() - t_time
+
+        self.end_time = time.process_time()      # en caso contrario, modifica la posicion de child_node en open
+        return None
+    
     def heuristic_discrepancy_search(self, focal_w=1.5, discrepancy_mode="best"):  #  focal_w ajusta el rango del focal_search
         """
         USA EL original_search de esqueleto
