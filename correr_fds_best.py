@@ -43,9 +43,10 @@ for k in valores_k:
                 print("\n" + f"MSE: {mses[mse]}")
                 escribir_archivo(archivo, "\n" + f"MSE: {mses[mse]}")
                 perfect_heuristic = Astar(inicial, objetivo, op, heuristica[mse], prop, 1, "h*").h_function
-                lm_cut = Astar(inicial, objetivo, op, heuristica[mse], prop, 1, "lmcut").h_function
+                # lm_cut = Astar(inicial, objetivo, op, heuristica[mse], prop, 1, "lmcut").h_function
+                perfect_heuristic_div_2 = Astar(inicial, objetivo, op, heuristica[0], prop, 1, "ph_2").h_function
                 inicio = time.process_time()
-                fs = FocalSearch(grafo.estado_inicial, perfect_heuristic, lm_cut, heuristica[0], 1000)
+                fs = FocalSearch(grafo.estado_inicial, perfect_heuristic, perfect_heuristic_div_2, heuristica[0], 1000)
                 result = fs.heuristic_discrepancy_search(weight, "best")
                 tiempo = time.process_time() - inicio
                 tiempos.append(tiempo)

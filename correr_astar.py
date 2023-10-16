@@ -5,7 +5,7 @@ from main import cantidad
 from clase_datos import Resultados, Datos, escribir_archivo
 import pickle
 
-#file_name = "grafos//grafo_2023-09-13 14.25.29.283928_--can_prop=21--can_op=200--rango=3--max_add=4--min_ap=2.pickle"
+# file_name = "grafos//grafo_2023-10-14 12.48.22.125997_--can_prop=20--can_op=1500--rango=5--max_add=2--min_ap=10.pickle"
 file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
 
 grafo = cargar_grafo(file_name)
@@ -17,7 +17,7 @@ objetivo = grafo.objetivo
 op = grafo.op_disp
 heuristica = grafo.heuristics_k2[0]
 prop = grafo.prop_disp
-#archivo = "archivos terminal//terminal astar -- " + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+# archivo = "archivos terminal//terminal astar -- " + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
 archivo = "logs_ejecuciones/exec_astar--" + file_name.replace("../storage/grafo_", "")[:-7] + ".txt"
 
 open_archivo = open(archivo, "w")

@@ -39,6 +39,8 @@ class Astar(object):
             self.h_function = self.perfect_heuristic
         elif h_type == "hff":
             self.h_function = hFFHeuristic(self.pyperplan_task)
+        elif h_type == "ph_2":
+            self.h_function = self.perfect_heuristic_div2
         elif h_type == "zero":
             def zero(state):
                 return 0
@@ -46,6 +48,9 @@ class Astar(object):
 
     def perfect_heuristic(self, estado):
         return self.heuristica[estado.state]
+    
+    def perfect_heuristic_div2(self, estado):
+        return self.heuristica[estado.state]/2
     
     def pyperplan_lmcut_heuristic(self, estado):
         sn = estado.to_pyperplan_search_node()
