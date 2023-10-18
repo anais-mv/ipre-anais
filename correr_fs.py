@@ -57,7 +57,7 @@ for k in valores_k:
                 print(f"nodos expandidos focal: {fs.expansions}")
                 escribir_archivo(archivo, f"nodos expandidos focal: {fs.expansions}")
                 print(f"tiempo focal: {tiempo}")
-                escribir_archivo(archivo, print(f"tiempo focal: {tiempo}"))
+                escribir_archivo(archivo, f"tiempo focal: {tiempo}")
             resultado = Resultados(tiempos, nodos, porcentajes)
             if weight == 1.5:
                 weight_15.append(resultado)
