@@ -29,7 +29,7 @@ for i in range(0, cantidad):
     for weight in weights:
         print(f"-------------------W: {weight}-------------------")
         escribir_archivo(archivo, f"-------------------W: {weight}-------------------")
-        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "lmcut")
+        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "ph_2")
         inicio = time.process_time()
         sol, exp, tim = a_star.search()
         tiempo = time.process_time() - inicio
