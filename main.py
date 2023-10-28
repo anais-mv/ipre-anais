@@ -1,6 +1,6 @@
 import argparse
 from operadores import crear_operadores
-from grafo import Grafo, cargar_grafo
+from grafo import Grafo, cargar_grafo, h_menor
 from astar_heuristicas import Heuristica
 from astar import Astar
 import sys
@@ -10,6 +10,7 @@ from focal_search import FocalSearch
 from multi_node import MultiNode
 import random
 from creacion_problemas import correr_fs
+from planning_problem import Estado
 
 cantidad = 30
 
@@ -103,11 +104,51 @@ if __name__ == "__main__":
             grafo.heuristics_k2 = mse_heuristics
         else:
             grafo.heuristics_k4 = mse_heuristics
+    
+    # calculando porcentaje de coincidencias
+    perfect_heuristic_k2 = grafo.heuristics_k2[0]
+    perfect_heuristic_k4 = grafo.heuristics_k4[0]
+    percentages_k2, percentages_k4 = [], []
+
+    for i in range(0, 6):
+        heuristic_k2 = grafo.heuristics_k2[i]
+        heuristic_k4 = grafo.heuristics_k4[i]
+        coincidentes_k2, coincidentes_k4 = 0, 0
+        for info in heuristic_k2:
+            succ_mse = []
+            succ_perfect = []
+            estado = Estado(info, op_disp)
+            succ = estado.succ()
+            for sucesor in succ:
+                h_mse = heuristic_k2[sucesor]
+                h_perfect = perfect_heuristic_k2[sucesor]
+                succ_mse.append((sucesor, h_mse))
+                succ_perfect.append((sucesor, h_perfect))
+            succ_mse.sort(key=h_menor)
+            succ_perfect.sort(key=h_menor)
+            if succ_mse[0][0] == succ_perfect[0][0]:
+                coincidentes_k2 += 1
+        for info in heuristic_k4:
+            succ_mse = []
+            succ_perfect = []
+            estado = Estado(info, op_disp)
+            succ = estado.succ()
+            for sucesor in succ:
+                h_mse = heuristic_k4[sucesor]
+                h_perfect = perfect_heuristic_k4[sucesor]
+                succ_mse.append((sucesor, h_mse))
+                succ_perfect.append((sucesor, h_perfect))
+            succ_mse.sort(key=h_menor)
+            succ_perfect.sort(key=h_menor)
+            if succ_mse[0][0] == succ_perfect[0][0]:
+                coincidentes_k4 += 1
+        percentage_k2 = coincidentes_k2/len(heuristic_k2)*100
+        percentage_k4 = coincidentes_k4/len(heuristic_k4)*100
+        percentages_k2.append(percentage_k2)
+        percentages_k4.append(percentage_k4)
+        print("porcentaje coincidentes k2:", percentage_k2)
+        print("porcentaje coincidentes k4:", percentage_k4)
+    grafo.percentages_k2 = percentages_k2
+    grafo.percentages_k4 = percentages_k4
 
     grafo.guardar_grafo(file_name)
-            # mse_ = mse_/(len(dic_h))
-    # for i in range(0, cantidad):
-    #     print(f"PROBLEMA NUM {i + 1}")
-    #     h_perfect = bus_heuristica.heuristica
-    #     grafo.estado_inicial = grafo.obtener_aleatorio_inicial()
-    #     correr_fs(h_perfect, grafo, grafo.estado_inicial, estado_objetivo, op_disp, prop_disp, file_name, i, grafo.promedio_exp)

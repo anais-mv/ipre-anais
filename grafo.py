@@ -128,3 +128,6 @@ def cargar_grafo(nombre):
     estados = pickle.load(file)
     file.close()
     return estados
+
+def h_menor(lista):
+    return lista[1]
