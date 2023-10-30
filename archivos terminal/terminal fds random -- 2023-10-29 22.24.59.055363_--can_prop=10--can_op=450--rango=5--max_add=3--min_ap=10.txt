@@ -1,0 +1,25 @@
+-------------------k: 2-------------------
+PROBLEMA NUM 1 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy random: 99
+tiempo focal discrepancy random: 0.21875
+
+MSE: 5
+nodos expandidos focal discrepancy random: 19
+tiempo focal discrepancy random: 0.1875
+
+MSE: 10
+nodos expandidos focal discrepancy random: 91
+tiempo focal discrepancy random: 0.234375
+
+MSE: 20
+nodos expandidos focal discrepancy random: 76
+tiempo focal discrepancy random: 0.234375
+
+MSE: 100
+nodos expandidos focal discrepancy random: 108
+tiempo focal discrepancy random: 0.328125
+
+MSE: 200

@@ -5,7 +5,7 @@ from main import cantidad
 from clase_datos import Resultados, Datos, escribir_archivo
 import pickle
 
-# file_name = "grafos//grafo_2023-10-14 12.48.22.125997_--can_prop=20--can_op=1500--rango=5--max_add=2--min_ap=10.pickle"
+# file_name = "grafos//grafo_2023-10-29 22.24.59.055363_--can_prop=10--can_op=450--rango=5--max_add=3--min_ap=10.pickle"
 file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
 
 grafo = cargar_grafo(file_name)
@@ -29,7 +29,7 @@ for i in range(0, cantidad):
     for weight in weights:
         print(f"-------------------W: {weight}-------------------")
         escribir_archivo(archivo, f"-------------------W: {weight}-------------------")
-        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "ph_2")
+        a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "ph_2")
         inicio = time.process_time()
         sol, exp, tim = a_star.search()
         tiempo = time.process_time() - inicio

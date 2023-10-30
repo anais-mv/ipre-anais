@@ -6,7 +6,7 @@ from clase_datos import Resultados, Datos, escribir_archivo
 import pickle
 from focal_search import FocalSearch
 
-#file_name = "grafos//grafo_2023-09-13 14.25.29.283928_--can_prop=21--can_op=200--rango=3--max_add=4--min_ap=2.pickle"
+# file_name = "grafos//grafo_2023-10-29 22.24.59.055363_--can_prop=10--can_op=450--rango=5--max_add=3--min_ap=10.pickle"
 file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
 
 grafo = cargar_grafo(file_name)
@@ -17,6 +17,7 @@ prop = grafo.prop_disp
 valores_k = [2, 4]
 mses = [0, 5, 10, 20, 100, 200]
 archivo = "logs_ejecuciones/exec_fdsbest--" + file_name.replace("../storage/grafo_", "")[:-7] + ".txt"
+# archivo = "archivos terminal//terminal fds best -- " + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
 open_archivo = open(archivo, "w")
 open_archivo.close()
 for k in valores_k:
@@ -44,9 +45,9 @@ for k in valores_k:
                 escribir_archivo(archivo, "\n" + f"MSE: {mses[mse]}")
                 perfect_heuristic = Astar(inicial, objetivo, op, heuristica[mse], prop, 1, "h*").h_function
                 # lm_cut = Astar(inicial, objetivo, op, heuristica[mse], prop, 1, "lmcut").h_function
-                perfect_heuristic_div_2 = Astar(inicial, objetivo, op, heuristica[0], prop, 1, "ph_2").h_function
+                h_aristas = Astar(inicial, objetivo, op, grafo.h_aristas, prop, 1, "h*").h_function
                 inicio = time.process_time()
-                fs = FocalSearch(grafo.estado_inicial, perfect_heuristic, perfect_heuristic_div_2, heuristica[0], 1000)
+                fs = FocalSearch(grafo.estado_inicial, perfect_heuristic, h_aristas, heuristica[0], 1000)
                 result = fs.heuristic_discrepancy_search(weight, "best")
                 tiempo = time.process_time() - inicio
                 tiempos.append(tiempo)

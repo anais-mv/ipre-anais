@@ -1,0 +1,222 @@
+PROBLEMA NUM 1
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 5
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 2
+PROBLEMA NUM 2
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 6
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 3
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 3
+PROBLEMA NUM 3
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 9
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 2
+PROBLEMA NUM 4
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 99
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 4
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 4
+PROBLEMA NUM 5
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.171875
+nodos expandidos A*: 70
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 5
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 5
+PROBLEMA NUM 6
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 3
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 2
+PROBLEMA NUM 7
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 12
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+PROBLEMA NUM 8
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 3
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 3
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 3
+PROBLEMA NUM 9
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 7
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 3
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 3
+PROBLEMA NUM 10
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 7
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 3
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 3
+PROBLEMA NUM 11
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 1
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 1
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 1
+PROBLEMA NUM 12
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 1
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 1
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 1
+PROBLEMA NUM 13
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 54
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 6
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 8
+PROBLEMA NUM 14
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 6
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+PROBLEMA NUM 15
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 59
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 3
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 3
+PROBLEMA NUM 16
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 64
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 3
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 3
+PROBLEMA NUM 17
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 5
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+PROBLEMA NUM 18
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 10
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+PROBLEMA NUM 19
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 7
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 2
+PROBLEMA NUM 20
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 7
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+PROBLEMA NUM 21
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 8
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 2
+PROBLEMA NUM 22
+-------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 12
+-------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.015625
+nodos expandidos A*: 2
+-------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 2
+PROBLEMA NUM 23
+-------------------W: 1.5-------------------

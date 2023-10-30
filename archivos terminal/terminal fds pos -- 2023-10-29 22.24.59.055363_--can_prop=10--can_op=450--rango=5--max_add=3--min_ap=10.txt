@@ -1,0 +1,59 @@
+-------------------k: 2-------------------
+PROBLEMA NUM 1 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy pos: 2
+tiempo focal discrepancy pos: 0.03125
+
+MSE: 5
+nodos expandidos focal discrepancy pos: 5
+tiempo focal discrepancy pos: 0.140625
+
+MSE: 10
+nodos expandidos focal discrepancy pos: 5
+tiempo focal discrepancy pos: 0.140625
+
+MSE: 20
+nodos expandidos focal discrepancy pos: 4
+tiempo focal discrepancy pos: 0.140625
+
+MSE: 100
+nodos expandidos focal discrepancy pos: 5
+tiempo focal discrepancy pos: 0.140625
+
+MSE: 200
+nodos expandidos focal discrepancy pos: 3
+tiempo focal discrepancy pos: 0.078125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy pos: 2
+tiempo focal discrepancy pos: 0.078125
+
+MSE: 5
+nodos expandidos focal discrepancy pos: 9
+tiempo focal discrepancy pos: 0.125
+
+MSE: 10
+nodos expandidos focal discrepancy pos: 5
+tiempo focal discrepancy pos: 0.125
+
+MSE: 20
+nodos expandidos focal discrepancy pos: 6
+tiempo focal discrepancy pos: 0.125
+
+MSE: 100
+nodos expandidos focal discrepancy pos: 6
+tiempo focal discrepancy pos: 0.140625
+
+MSE: 200
+nodos expandidos focal discrepancy pos: 7
+tiempo focal discrepancy pos: 0.140625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy pos: 2
+tiempo focal discrepancy pos: 0.078125
+
+MSE: 5
