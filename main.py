@@ -11,6 +11,7 @@ from multi_node import MultiNode
 import random
 from creacion_problemas import correr_fs
 from planning_problem import Estado
+from aristas import nuevos_operadores, revisar_h_diferentes, nuevos_operadores_alternativo
 
 cantidad = 30
 
@@ -100,6 +101,8 @@ if __name__ == "__main__":
                 mse_ += (h_nn - depth)**2
                 new_heuristic[state] = h_nn
             mse_heuristics.append(new_heuristic)
+            print("\nMSE Real:", mse_/len(dic_h))
+            print("MSE Esperado:", mse)
         if k == 2:
             grafo.heuristics_k2 = mse_heuristics
         else:
@@ -113,8 +116,9 @@ if __name__ == "__main__":
     for i in range(0, 6):
         heuristic_k2 = grafo.heuristics_k2[i]
         heuristic_k4 = grafo.heuristics_k4[i]
-        coincidentes_k2, coincidentes_k4 = 0, 0
+        total_k2, total_k4, coincidentes_k2, coincidentes_k4 = 0, 0, 0, 0
         for info in heuristic_k2:
+            total_k2 += 1
             succ_mse = []
             succ_perfect = []
             estado = Estado(info, op_disp)
@@ -129,6 +133,7 @@ if __name__ == "__main__":
             if succ_mse[0][0] == succ_perfect[0][0]:
                 coincidentes_k2 += 1
         for info in heuristic_k4:
+            total_k4 += 1
             succ_mse = []
             succ_perfect = []
             estado = Estado(info, op_disp)
@@ -142,13 +147,27 @@ if __name__ == "__main__":
             succ_perfect.sort(key=h_menor)
             if succ_mse[0][0] == succ_perfect[0][0]:
                 coincidentes_k4 += 1
-        percentage_k2 = coincidentes_k2/len(heuristic_k2)*100
-        percentage_k4 = coincidentes_k4/len(heuristic_k4)*100
+        percentage_k2 = (coincidentes_k2/total_k2) *100
+        percentage_k4 = (coincidentes_k4/total_k4) *100
         percentages_k2.append(percentage_k2)
         percentages_k4.append(percentage_k4)
-        print("porcentaje coincidentes k2:", percentage_k2)
-        print("porcentaje coincidentes k4:", percentage_k4)
+        print(f"\nporcentaje coincidentes k = 2 mse = {mses[i]}: {percentage_k2}")
+        print(f"porcentaje coincidentes k = 4 mse = {mses[i]}: {percentage_k4}")
+    print("\n")
     grafo.percentages_k2 = percentages_k2
     grafo.percentages_k4 = percentages_k4
+
+    inicio = time.process_time()
+    print("Creando aristas...")
+    # op_aristas = nuevos_operadores(grafo, args.can_prop, args.can_op, args.rango, args.max_add)
+    op_aristas = nuevos_operadores_alternativo(grafo)
+    print(f"Tiempo en crear aristas: {time.process_time() - inicio}")
+    
+    inicio = time.process_time()
+    # print("Creando heurística aristas...")
+    grafo.h_aristas = Heuristica(op_aristas, grafo.estados, estado_objetivo).heuristica
+    print(f"Tiempo en crear heurística aristas: {time.process_time() - inicio}")
+
+    revisar_h_diferentes(grafo, dic_h, grafo.h_aristas)
 
     grafo.guardar_grafo(file_name)
