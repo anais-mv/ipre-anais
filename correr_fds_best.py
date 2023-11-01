@@ -8,6 +8,7 @@ from focal_search import FocalSearch
 
 # file_name = "grafos//grafo_2023-10-29 22.24.59.055363_--can_prop=10--can_op=450--rango=5--max_add=3--min_ap=10.pickle"
 file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
+file_name = "../storage/grafo_2023_10_29_22_59_49_274734_can_prop=20_can_op=500_rango=5.pickle"
 
 grafo = cargar_grafo(file_name)
 weights = [1.5, 2, 4]
