@@ -1,6 +1,8 @@
 from grafo import cargar_grafo
 from operadores import crear_operadores
 from planning_problem import Operador
+import numpy as np
+from clase_datos import escribir_archivo
 
 def nuevos_operadores(grafo, can_prop, can_op, rango, max_add):
     can_op = can_op // 2
@@ -19,16 +21,31 @@ def nuevos_operadores(grafo, can_prop, can_op, rango, max_add):
     print(f"operadores nuevos: {can_nuevos}")
     return set_final
 
-def revisar_h_diferentes(grafo, perfect, aristas):
+def revisar_h_diferentes(grafo, perfect, aristas, archivo):
     dif = 0
+    razones = []
     for estado in perfect:
         h_perfect = perfect[estado]
         h_aristas = aristas[estado]
+        if h_perfect == 0 and h_aristas == 0:
+            razon = 1
+        elif h_aristas != 0:
+            razon = h_perfect / h_aristas
+        razones.append(razon)
         if h_perfect != h_aristas:
             dif += 1
-    print(f"Porcentaje de heurísticas diferentes: {round(dif/len(perfect) * 100, 2)}")
+    print(f"Porcentaje de heurísticas diferentes: {round(dif/len(perfect) * 100, 2)}%")
+    print(f"Promedio razón h_perfect a h_aristas: {np.mean(razones)}")
+    print(f"Mediana razón h_perfect a h_aristas: {np.median(razones)}")
+    print(f"Desviación estándar h_perfect a h_aristas: {np.std(razones)}")
+    print(f"Razón h_perfect a h_aristas mayor: {max(razones)}")
+    escribir_archivo(archivo, f"Porcentaje de heurísticas diferentes: {round(dif/len(perfect) * 100, 2)}%")
+    escribir_archivo(archivo, f"Promedio razón h_perfect a h_aristas: {np.mean(razones)}")
+    escribir_archivo(archivo, f"Mediana razón h_perfect a h_aristas: {np.median(razones)}")
+    escribir_archivo(archivo, f"Desviación estándar h_perfect a h_aristas: {np.std(razones)}")
+    escribir_archivo(archivo, f"Razón h_perfect a h_aristas mayor: {max(razones)}")
 
-def nuevos_operadores_alternativo(grafo):
+def nuevos_operadores_alternativo(grafo, archivo):
     set_operadores = set()
     set_final = set()
     can_nuevos = 0
@@ -58,5 +75,6 @@ def nuevos_operadores_alternativo(grafo):
     # print((nuevo_prec, op.add, op.delet))
     # print((nuevo_inverso.prec, nuevo_inverso.add, nuevo_inverso.delet))
     print(f"operadores nuevos: {can_nuevos}")
+    escribir_archivo(archivo, f"operadores nuevos: {can_nuevos}")
     return set_final
     

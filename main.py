@@ -12,6 +12,7 @@ import random
 from creacion_problemas import correr_fs
 from planning_problem import Estado
 from aristas import nuevos_operadores, revisar_h_diferentes, nuevos_operadores_alternativo
+from clase_datos import escribir_archivo
 
 cantidad = 30
 
@@ -37,12 +38,28 @@ if __name__ == "__main__":
     grafo = Grafo(prop_disp, args.min_ap, op_disp, estadisticas)
     estados = grafo.estados
     time_crear_grafo = time.process_time() - inicio
+
+    cmd_args = "".join(sys.argv[1:])
+    file_name = f"grafos//grafo_{datetime.now()}_{cmd_args}.pickle"
+    file_name = file_name.replace(":", ".")
+    final_archivo = file_name.replace("pickle", "txt").replace("grafos//","")
+    archivo = f"archivos terminal// main {final_archivo}"
+    open_archivo = open(archivo, "w")
+    open_archivo.close()
+
     print(f"Tiempo en crear grafo: {time_crear_grafo}")
     print(f"CANTIDAD DE OPERADORES: {len(op_disp)}")
     print(f"CANTIDAD DE ESTADOS: {len(grafo.estados)}")
     print(f"PROMEDIO FACTOR RAMIFICACIÓN: {grafo.promedio_exp}")
     print(f"MÁXIMA RAMIFICACIÓN: {grafo.maximo_exp}")
     print(f"MEDIANA FACTOR RAMIFICACIÓN: {grafo.mediana_exp}")
+
+    escribir_archivo(archivo, f"Tiempo en crear grafo: {time_crear_grafo}")
+    escribir_archivo(archivo, f"CANTIDAD DE OPERADORES: {len(op_disp)}")
+    escribir_archivo(archivo, f"CANTIDAD DE ESTADOS: {len(grafo.estados)}")
+    escribir_archivo(archivo, f"PROMEDIO FACTOR RAMIFICACIÓN: {grafo.promedio_exp}")
+    escribir_archivo(archivo, f"MÁXIMA RAMIFICACIÓN: {grafo.maximo_exp}")
+    escribir_archivo(archivo, f"MEDIANA FACTOR RAMIFICACIÓN: {grafo.mediana_exp}")
 
     inicio = time.process_time()
     # estados_2 = cargar_grafo(file_name)
@@ -63,6 +80,7 @@ if __name__ == "__main__":
     bus_heuristica = Heuristica(op_disp, grafo.estados, estado_objetivo)
     grafo.perfect_heuristic = bus_heuristica
     print(f"Tiempo en crear heurística: {time.process_time() - inicio}")
+    escribir_archivo(archivo, f"Tiempo en crear heurística: {time.process_time() - inicio}")
 
     iniciales = []
 
@@ -70,9 +88,6 @@ if __name__ == "__main__":
         iniciales.append(grafo.obtener_aleatorio_inicial())
 
     grafo.iniciales = iniciales
-    cmd_args = "".join(sys.argv[1:])
-    file_name = f"grafos//grafo_{datetime.now()}_{cmd_args}.pickle"
-    file_name = file_name.replace(":", ".")
     dic_h = bus_heuristica.heuristica
     # grafo.guardar_grafo(file_name)
 
@@ -82,6 +97,7 @@ if __name__ == "__main__":
     # k = 2 # exponent for k multiplied to c
     for k in valores_k:
         print(f"-------------------k: {k}------------------- \n")
+        escribir_archivo(archivo, f"-------------------k: {k}------------------- \n")
         sum_h = sum([dic_h[estado]**(2*k) for estado in dic_h])/len(dic_h)
         mse_heuristics = []
         for mse in mses:
@@ -103,6 +119,8 @@ if __name__ == "__main__":
             mse_heuristics.append(new_heuristic)
             print("\nMSE Real:", mse_/len(dic_h))
             print("MSE Esperado:", mse)
+            escribir_archivo(archivo, f"\nMSE Real: {mse_/len(dic_h)}")
+            escribir_archivo(archivo, f"MSE Esperado: {mse}")
         if k == 2:
             grafo.heuristics_k2 = mse_heuristics
         else:
@@ -153,21 +171,26 @@ if __name__ == "__main__":
         percentages_k4.append(percentage_k4)
         print(f"\nporcentaje coincidentes k = 2 mse = {mses[i]}: {percentage_k2}")
         print(f"porcentaje coincidentes k = 4 mse = {mses[i]}: {percentage_k4}")
+        escribir_archivo(archivo, f"\nporcentaje coincidentes k = 2 mse = {mses[i]}: {percentage_k2}")
+        escribir_archivo(archivo, f"porcentaje coincidentes k = 4 mse = {mses[i]}: {percentage_k4}")
     print("\n")
+    escribir_archivo(archivo, "\n")
     grafo.percentages_k2 = percentages_k2
     grafo.percentages_k4 = percentages_k4
 
     inicio = time.process_time()
     print("Creando aristas...")
     # op_aristas = nuevos_operadores(grafo, args.can_prop, args.can_op, args.rango, args.max_add)
-    op_aristas = nuevos_operadores_alternativo(grafo)
+    op_aristas = nuevos_operadores_alternativo(grafo, archivo)
     print(f"Tiempo en crear aristas: {time.process_time() - inicio}")
+    escribir_archivo(archivo, f"Tiempo en crear aristas: {time.process_time() - inicio}")
     
     inicio = time.process_time()
     # print("Creando heurística aristas...")
     grafo.h_aristas = Heuristica(op_aristas, grafo.estados, estado_objetivo).heuristica
     print(f"Tiempo en crear heurística aristas: {time.process_time() - inicio}")
+    escribir_archivo(archivo, f"Tiempo en crear heurística aristas: {time.process_time() - inicio}")
 
-    revisar_h_diferentes(grafo, dic_h, grafo.h_aristas)
+    revisar_h_diferentes(grafo, dic_h, grafo.h_aristas, archivo)
 
     grafo.guardar_grafo(file_name)

@@ -1,0 +1,9 @@
+Tiempo en crear grafo: 0.5
+CANTIDAD DE OPERADORES: 1000
+CANTIDAD DE ESTADOS: 1023
+PROMEDIO FACTOR RAMIFICACIÓN: 7.984375
+MÁXIMA RAMIFICACIÓN: 42
+MEDIANA FACTOR RAMIFICACIÓN: 5.0
+Tiempo en crear heurística: 0.5
+-------------------k: 2------------------- 
+

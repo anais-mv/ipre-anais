@@ -1,0 +1,75 @@
+Tiempo en crear grafo: 0.515625
+CANTIDAD DE OPERADORES: 996
+CANTIDAD DE ESTADOS: 1023
+PROMEDIO FACTOR RAMIFICACIÓN: 6.8133333333333335
+MÁXIMA RAMIFICACIÓN: 49
+MEDIANA FACTOR RAMIFICACIÓN: 3.0
+Tiempo en crear heurística: 0.5
+-------------------k: 2------------------- 
+
+
+MSE Real: 0.0
+MSE Esperado: 0
+
+MSE Real: 4.692033828001185
+MSE Esperado: 5
+
+MSE Real: 9.674410000622814
+MSE Esperado: 10
+
+MSE Real: 19.560340033230887
+MSE Esperado: 20
+
+MSE Real: 104.32193562505591
+MSE Esperado: 100
+
+MSE Real: 183.9618993744154
+MSE Esperado: 200
+-------------------k: 4------------------- 
+
+
+MSE Real: 0.0
+MSE Esperado: 0
+
+MSE Real: 4.944597300959108
+MSE Esperado: 5
+
+MSE Real: 9.447416297918382
+MSE Esperado: 10
+
+MSE Real: 20.1617340253428
+MSE Esperado: 20
+
+MSE Real: 102.32363491907714
+MSE Esperado: 100
+
+MSE Real: 169.5182341581895
+MSE Esperado: 200
+
+porcentaje coincidentes k = 2 mse = 0: 100.0
+porcentaje coincidentes k = 4 mse = 0: 100.0
+
+porcentaje coincidentes k = 2 mse = 5: 11.730205278592376
+porcentaje coincidentes k = 4 mse = 5: 7.820136852394917
+
+porcentaje coincidentes k = 2 mse = 10: 10.654936461388074
+porcentaje coincidentes k = 4 mse = 10: 7.9178885630498534
+
+porcentaje coincidentes k = 2 mse = 20: 11.534701857282501
+porcentaje coincidentes k = 4 mse = 20: 7.429130009775172
+
+porcentaje coincidentes k = 2 mse = 100: 11.436950146627565
+porcentaje coincidentes k = 4 mse = 100: 12.41446725317693
+
+porcentaje coincidentes k = 2 mse = 200: 16.226783968719452
+porcentaje coincidentes k = 4 mse = 200: 12.70772238514174
+
+
+operadores nuevos: 1288
+Tiempo en crear aristas: 0.0
+Tiempo en crear heurística aristas: 1.234375
+Porcentaje de heurísticas diferentes: 13.49%
+Promedio razón h_perfect a h_aristas: 1.08455522971652
+Mediana razón h_perfect a h_aristas: 1.0
+Desviación estándar h_perfect a h_aristas: 0.2317344450233596
+Razón h_perfect a h_aristas mayor: 3.0
