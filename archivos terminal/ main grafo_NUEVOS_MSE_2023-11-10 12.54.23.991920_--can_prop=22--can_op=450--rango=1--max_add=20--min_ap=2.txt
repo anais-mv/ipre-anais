@@ -1,0 +1,60 @@
+-------------------k: 2------------------- 
+
+
+MSE Real: 0.0
+MSE Esperado: 0
+
+MSE Real: 1.000449896548508
+MSE Esperado: 1
+
+MSE Real: 2.000224093797068
+MSE Esperado: 2
+
+MSE Real: 3.0032485377440703
+MSE Esperado: 3
+
+MSE Real: 4.000263722164209
+MSE Esperado: 4
+
+MSE Real: 4.99848316438968
+MSE Esperado: 5
+-------------------k: 4------------------- 
+
+
+MSE Real: 0.0
+MSE Esperado: 0
+
+MSE Real: 1.0075409410539948
+MSE Esperado: 1
+
+MSE Real: 2.0140548086009917
+MSE Esperado: 2
+
+MSE Real: 2.998153065281089
+MSE Esperado: 3
+
+MSE Real: 4.000307151112109
+MSE Esperado: 4
+
+MSE Real: 5.061238867078562
+MSE Esperado: 5
+
+porcentaje coincidentes k = 2 mse = 0: 100.0
+porcentaje coincidentes k = 4 mse = 0: 100.0
+
+porcentaje coincidentes k = 2 mse = 1: 76.84944186451271
+porcentaje coincidentes k = 4 mse = 1: 79.54553876760919
+
+porcentaje coincidentes k = 2 mse = 2: 71.48801848057403
+porcentaje coincidentes k = 4 mse = 2: 76.48756670915122
+
+porcentaje coincidentes k = 2 mse = 3: 67.98310499792434
+porcentaje coincidentes k = 4 mse = 3: 74.1732478867715
+
+porcentaje coincidentes k = 2 mse = 4: 65.43548891452859
+porcentaje coincidentes k = 4 mse = 4: 72.30445479933229
+
+porcentaje coincidentes k = 2 mse = 5: 63.59925667986728
+porcentaje coincidentes k = 4 mse = 5: 70.81315108693707
+
+

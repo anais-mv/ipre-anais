@@ -1,0 +1,4562 @@
+-------------------k: 2-------------------
+PROBLEMA NUM 1 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 5983
+tiempo focal discrepancy best: 5.515625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23020
+tiempo focal discrepancy best: 197.5
+
+MSE: 2
+nodos expandidos focal discrepancy best: 30853
+tiempo focal discrepancy best: 18.1875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 10178
+tiempo focal discrepancy best: 5.125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 8623
+tiempo focal discrepancy best: 4.46875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 13111
+tiempo focal discrepancy best: 5.953125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 6249
+tiempo focal discrepancy best: 2.875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 786
+tiempo focal discrepancy best: 0.5625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1469
+tiempo focal discrepancy best: 0.796875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 968
+tiempo focal discrepancy best: 0.609375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 729
+tiempo focal discrepancy best: 0.515625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 197
+tiempo focal discrepancy best: 0.234375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 573
+tiempo focal discrepancy best: 0.4375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 206
+tiempo focal discrepancy best: 0.25
+
+MSE: 2
+nodos expandidos focal discrepancy best: 100
+tiempo focal discrepancy best: 0.21875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 96
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 69
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 135
+tiempo focal discrepancy best: 0.296875
+PROBLEMA NUM 2 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 27555
+tiempo focal discrepancy best: 13.9375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 40061
+tiempo focal discrepancy best: 16.328125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 32638
+tiempo focal discrepancy best: 12.265625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 38993
+tiempo focal discrepancy best: 14.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 40451
+tiempo focal discrepancy best: 14.65625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 19734
+tiempo focal discrepancy best: 218.375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8560
+tiempo focal discrepancy best: 5.484375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3300
+tiempo focal discrepancy best: 2.125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 4414
+tiempo focal discrepancy best: 2.4375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2153
+tiempo focal discrepancy best: 1.234375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2428
+tiempo focal discrepancy best: 1.5625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1451
+tiempo focal discrepancy best: 0.90625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 50
+tiempo focal discrepancy best: 0.21875
+PROBLEMA NUM 3 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 19761
+tiempo focal discrepancy best: 10.21875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 11675
+tiempo focal discrepancy best: 5.8125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 20678
+tiempo focal discrepancy best: 9.234375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 17473
+tiempo focal discrepancy best: 7.640625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 15254
+tiempo focal discrepancy best: 6.546875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 15018
+tiempo focal discrepancy best: 6.734375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2409
+tiempo focal discrepancy best: 1.28125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 2140
+tiempo focal discrepancy best: 1.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2653
+tiempo focal discrepancy best: 1.234375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1231
+tiempo focal discrepancy best: 0.71875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 460
+tiempo focal discrepancy best: 0.4375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 881
+tiempo focal discrepancy best: 0.578125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 52
+tiempo focal discrepancy best: 0.21875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 57
+tiempo focal discrepancy best: 0.25
+
+MSE: 4
+nodos expandidos focal discrepancy best: 44
+tiempo focal discrepancy best: 0.25
+
+MSE: 5
+nodos expandidos focal discrepancy best: 75
+tiempo focal discrepancy best: 0.234375
+PROBLEMA NUM 4 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 10525
+tiempo focal discrepancy best: 5.4375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 12597
+tiempo focal discrepancy best: 5.390625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 6634
+tiempo focal discrepancy best: 3.0
+
+MSE: 3
+nodos expandidos focal discrepancy best: 6329
+tiempo focal discrepancy best: 2.59375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7329
+tiempo focal discrepancy best: 3.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 5818
+tiempo focal discrepancy best: 2.375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 4978
+tiempo focal discrepancy best: 2.0625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 7014
+tiempo focal discrepancy best: 2.6875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 4207
+tiempo focal discrepancy best: 1.8125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2276
+tiempo focal discrepancy best: 1.03125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1552
+tiempo focal discrepancy best: 0.78125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1906
+tiempo focal discrepancy best: 0.90625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.1875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 41
+tiempo focal discrepancy best: 0.234375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 35
+tiempo focal discrepancy best: 0.21875
+PROBLEMA NUM 5 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 546
+tiempo focal discrepancy best: 0.640625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 585
+tiempo focal discrepancy best: 0.390625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 598
+tiempo focal discrepancy best: 0.453125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 819
+tiempo focal discrepancy best: 0.53125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 581
+tiempo focal discrepancy best: 0.375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 760
+tiempo focal discrepancy best: 0.484375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 102
+tiempo focal discrepancy best: 0.203125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 102
+tiempo focal discrepancy best: 0.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 107
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 187
+tiempo focal discrepancy best: 0.21875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 103
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 211
+tiempo focal discrepancy best: 0.25
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 6 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 20534
+tiempo focal discrepancy best: 9.734375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24387
+tiempo focal discrepancy best: 10.359375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 29108
+tiempo focal discrepancy best: 213.09375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 15222
+tiempo focal discrepancy best: 7.6875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 19532
+tiempo focal discrepancy best: 8.546875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 19711
+tiempo focal discrepancy best: 9.375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 4242
+tiempo focal discrepancy best: 2.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 2814
+tiempo focal discrepancy best: 1.515625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2299
+tiempo focal discrepancy best: 1.0625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 610
+tiempo focal discrepancy best: 0.53125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 3046
+tiempo focal discrepancy best: 1.4375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1994
+tiempo focal discrepancy best: 1.0625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.140625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 94
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 55
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 65
+tiempo focal discrepancy best: 0.203125
+PROBLEMA NUM 7 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8950
+tiempo focal discrepancy best: 4.015625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 9084
+tiempo focal discrepancy best: 3.859375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7626
+tiempo focal discrepancy best: 2.765625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 6715
+tiempo focal discrepancy best: 2.609375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7184
+tiempo focal discrepancy best: 3.0
+
+MSE: 5
+nodos expandidos focal discrepancy best: 6651
+tiempo focal discrepancy best: 2.75
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2965
+tiempo focal discrepancy best: 1.421875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3695
+tiempo focal discrepancy best: 1.484375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2630
+tiempo focal discrepancy best: 1.25
+
+MSE: 3
+nodos expandidos focal discrepancy best: 466
+tiempo focal discrepancy best: 0.359375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1072
+tiempo focal discrepancy best: 0.59375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 532
+tiempo focal discrepancy best: 0.46875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.203125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 62
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 30
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 83
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 8 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8012
+tiempo focal discrepancy best: 3.296875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 8351
+tiempo focal discrepancy best: 3.328125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 6394
+tiempo focal discrepancy best: 2.421875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 5875
+tiempo focal discrepancy best: 2.4375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 6004
+tiempo focal discrepancy best: 2.453125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 6160
+tiempo focal discrepancy best: 2.546875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 181
+tiempo focal discrepancy best: 0.25
+
+MSE: 1
+nodos expandidos focal discrepancy best: 164
+tiempo focal discrepancy best: 0.234375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 427
+tiempo focal discrepancy best: 0.296875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 406
+tiempo focal discrepancy best: 0.296875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 424
+tiempo focal discrepancy best: 0.3125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 466
+tiempo focal discrepancy best: 0.390625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.125
+PROBLEMA NUM 9 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 13738
+tiempo focal discrepancy best: 5.546875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 13490
+tiempo focal discrepancy best: 5.34375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 10367
+tiempo focal discrepancy best: 4.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 13050
+tiempo focal discrepancy best: 5.359375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 11106
+tiempo focal discrepancy best: 4.578125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 10451
+tiempo focal discrepancy best: 4.484375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3053
+tiempo focal discrepancy best: 1.34375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 4376
+tiempo focal discrepancy best: 1.921875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1563
+tiempo focal discrepancy best: 0.828125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1422
+tiempo focal discrepancy best: 3.96875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2650
+tiempo focal discrepancy best: 2.984375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1477
+tiempo focal discrepancy best: 1.015625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.15625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 42
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.140625
+PROBLEMA NUM 10 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 10994
+tiempo focal discrepancy best: 6.015625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 9022
+tiempo focal discrepancy best: 4.671875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7643
+tiempo focal discrepancy best: 3.65625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 10047
+tiempo focal discrepancy best: 4.765625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 6944
+tiempo focal discrepancy best: 3.390625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 7617
+tiempo focal discrepancy best: 3.671875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 474
+tiempo focal discrepancy best: 0.453125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 484
+tiempo focal discrepancy best: 0.53125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 486
+tiempo focal discrepancy best: 0.5
+
+MSE: 3
+nodos expandidos focal discrepancy best: 489
+tiempo focal discrepancy best: 0.53125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 171
+tiempo focal discrepancy best: 0.28125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 452
+tiempo focal discrepancy best: 0.46875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 52
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 11 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 22099
+tiempo focal discrepancy best: 9.03125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 28307
+tiempo focal discrepancy best: 11.40625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 32984
+tiempo focal discrepancy best: 12.453125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 20530
+tiempo focal discrepancy best: 7.671875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 27936
+tiempo focal discrepancy best: 10.015625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 34603
+tiempo focal discrepancy best: 11.984375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3745
+tiempo focal discrepancy best: 1.6875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3632
+tiempo focal discrepancy best: 1.453125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7510
+tiempo focal discrepancy best: 2.828125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 5953
+tiempo focal discrepancy best: 2.25
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1221
+tiempo focal discrepancy best: 0.6875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 2231
+tiempo focal discrepancy best: 0.921875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.171875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.15625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.15625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.15625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 37
+tiempo focal discrepancy best: 0.15625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.171875
+PROBLEMA NUM 12 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 555
+tiempo focal discrepancy best: 0.53125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 286
+tiempo focal discrepancy best: 0.34375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 588
+tiempo focal discrepancy best: 0.4375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 560
+tiempo focal discrepancy best: 0.4375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 614
+tiempo focal discrepancy best: 0.390625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 414
+tiempo focal discrepancy best: 0.375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 67
+tiempo focal discrepancy best: 0.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 64
+tiempo focal discrepancy best: 0.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 62
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 59
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 65
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 30
+tiempo focal discrepancy best: 0.09375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.09375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.09375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.09375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.09375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.09375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 20
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 13 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 20895
+tiempo focal discrepancy best: 203.359375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 25547
+tiempo focal discrepancy best: 12.625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 18081
+tiempo focal discrepancy best: 8.296875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 24487
+tiempo focal discrepancy best: 9.9375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 14543
+tiempo focal discrepancy best: 6.25
+
+MSE: 5
+nodos expandidos focal discrepancy best: 7433
+tiempo focal discrepancy best: 3.203125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 121
+tiempo focal discrepancy best: 0.234375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 269
+tiempo focal discrepancy best: 0.328125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 149
+tiempo focal discrepancy best: 0.21875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 472
+tiempo focal discrepancy best: 0.40625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 92
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 90
+tiempo focal discrepancy best: 0.1875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 591
+tiempo focal discrepancy best: 0.46875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 59
+tiempo focal discrepancy best: 0.1875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 87
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 58
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 70
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 90
+tiempo focal discrepancy best: 0.203125
+PROBLEMA NUM 14 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 5228
+tiempo focal discrepancy best: 2.3125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 5004
+tiempo focal discrepancy best: 2.15625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2477
+tiempo focal discrepancy best: 1.234375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 3240
+tiempo focal discrepancy best: 1.453125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2175
+tiempo focal discrepancy best: 1.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 3093
+tiempo focal discrepancy best: 1.390625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 376
+tiempo focal discrepancy best: 0.34375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 292
+tiempo focal discrepancy best: 0.28125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 218
+tiempo focal discrepancy best: 0.234375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 264
+tiempo focal discrepancy best: 0.328125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 173
+tiempo focal discrepancy best: 0.21875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 229
+tiempo focal discrepancy best: 0.234375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.09375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 35
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.09375
+PROBLEMA NUM 15 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 7734
+tiempo focal discrepancy best: 3.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 8823
+tiempo focal discrepancy best: 3.484375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 8010
+tiempo focal discrepancy best: 2.953125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 4218
+tiempo focal discrepancy best: 1.65625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 6510
+tiempo focal discrepancy best: 2.734375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 4172
+tiempo focal discrepancy best: 1.796875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2646
+tiempo focal discrepancy best: 1.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 7933
+tiempo focal discrepancy best: 2.90625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 5121
+tiempo focal discrepancy best: 2.296875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1164
+tiempo focal discrepancy best: 0.828125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2022
+tiempo focal discrepancy best: 0.921875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 301
+tiempo focal discrepancy best: 0.328125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 174
+tiempo focal discrepancy best: 0.25
+
+MSE: 1
+nodos expandidos focal discrepancy best: 30
+tiempo focal discrepancy best: 0.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 38
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 51
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 78
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 138
+tiempo focal discrepancy best: 0.203125
+PROBLEMA NUM 16 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 16276
+tiempo focal discrepancy best: 7.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 15351
+tiempo focal discrepancy best: 6.28125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 20516
+tiempo focal discrepancy best: 8.671875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 15106
+tiempo focal discrepancy best: 6.015625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 24197
+tiempo focal discrepancy best: 197.25
+
+MSE: 5
+nodos expandidos focal discrepancy best: 10487
+tiempo focal discrepancy best: 5.09375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 1068
+tiempo focal discrepancy best: 0.8125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 822
+tiempo focal discrepancy best: 0.6875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 712
+tiempo focal discrepancy best: 0.5625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 437
+tiempo focal discrepancy best: 0.453125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 750
+tiempo focal discrepancy best: 0.609375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 943
+tiempo focal discrepancy best: 0.765625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.140625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 33
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.125
+PROBLEMA NUM 17 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 7527
+tiempo focal discrepancy best: 3.6875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 4125
+tiempo focal discrepancy best: 2.25
+
+MSE: 2
+nodos expandidos focal discrepancy best: 9090
+tiempo focal discrepancy best: 4.078125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 8703
+tiempo focal discrepancy best: 3.953125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1208
+tiempo focal discrepancy best: 0.65625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1997
+tiempo focal discrepancy best: 0.984375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 215
+tiempo focal discrepancy best: 0.296875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1154
+tiempo focal discrepancy best: 0.6875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 502
+tiempo focal discrepancy best: 0.4375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 120
+tiempo focal discrepancy best: 0.21875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 93
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 227
+tiempo focal discrepancy best: 0.359375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.234375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.21875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 36
+tiempo focal discrepancy best: 0.21875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 46
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 83
+tiempo focal discrepancy best: 0.21875
+PROBLEMA NUM 18 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 9534
+tiempo focal discrepancy best: 4.609375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 9458
+tiempo focal discrepancy best: 4.265625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 42354
+tiempo focal discrepancy best: 18.515625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 45156
+tiempo focal discrepancy best: 17.8125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7999
+tiempo focal discrepancy best: 3.421875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 24918
+tiempo focal discrepancy best: 9.421875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 11820
+tiempo focal discrepancy best: 4.734375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 11679
+tiempo focal discrepancy best: 4.640625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 8020
+tiempo focal discrepancy best: 3.09375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 8829
+tiempo focal discrepancy best: 3.34375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 10236
+tiempo focal discrepancy best: 3.890625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1877
+tiempo focal discrepancy best: 0.828125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.15625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.15625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 45
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 106
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 19 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8622
+tiempo focal discrepancy best: 3.0625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 8157
+tiempo focal discrepancy best: 205.53125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 8312
+tiempo focal discrepancy best: 4.46875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 9260
+tiempo focal discrepancy best: 4.484375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 6095
+tiempo focal discrepancy best: 3.15625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 9117
+tiempo focal discrepancy best: 3.875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2602
+tiempo focal discrepancy best: 1.4375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1232
+tiempo focal discrepancy best: 0.703125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1497
+tiempo focal discrepancy best: 0.875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2980
+tiempo focal discrepancy best: 1.46875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1405
+tiempo focal discrepancy best: 0.8125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 2345
+tiempo focal discrepancy best: 1.15625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.140625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.140625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 20 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8159
+tiempo focal discrepancy best: 4.8125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 11686
+tiempo focal discrepancy best: 5.484375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 13932
+tiempo focal discrepancy best: 7.390625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 8045
+tiempo focal discrepancy best: 3.65625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7745
+tiempo focal discrepancy best: 3.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 16367
+tiempo focal discrepancy best: 7.109375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 18177
+tiempo focal discrepancy best: 8.046875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 5190
+tiempo focal discrepancy best: 2.375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1918
+tiempo focal discrepancy best: 0.953125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1503
+tiempo focal discrepancy best: 1.34375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1118
+tiempo focal discrepancy best: 0.59375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 567
+tiempo focal discrepancy best: 0.46875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 31
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 42
+tiempo focal discrepancy best: 0.1875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 64
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 116
+tiempo focal discrepancy best: 0.21875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 53
+tiempo focal discrepancy best: 0.140625
+PROBLEMA NUM 21 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8481
+tiempo focal discrepancy best: 4.5625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 21423
+tiempo focal discrepancy best: 10.984375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1857
+tiempo focal discrepancy best: 1.046875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1879
+tiempo focal discrepancy best: 1.046875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7719
+tiempo focal discrepancy best: 3.578125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 6208
+tiempo focal discrepancy best: 2.765625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 7013
+tiempo focal discrepancy best: 2.984375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 7231
+tiempo focal discrepancy best: 2.921875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3205
+tiempo focal discrepancy best: 1.5
+
+MSE: 3
+nodos expandidos focal discrepancy best: 4480
+tiempo focal discrepancy best: 1.953125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 3898
+tiempo focal discrepancy best: 1.703125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 5261
+tiempo focal discrepancy best: 2.3125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 49
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 84
+tiempo focal discrepancy best: 0.234375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 108
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 73
+tiempo focal discrepancy best: 0.21875
+PROBLEMA NUM 22 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 1683
+tiempo focal discrepancy best: 1.375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1664
+tiempo focal discrepancy best: 0.953125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2683
+tiempo focal discrepancy best: 1.53125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1641
+tiempo focal discrepancy best: 0.921875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2319
+tiempo focal discrepancy best: 1.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1547
+tiempo focal discrepancy best: 0.9375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 565
+tiempo focal discrepancy best: 0.484375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 577
+tiempo focal discrepancy best: 0.484375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 512
+tiempo focal discrepancy best: 0.453125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 365
+tiempo focal discrepancy best: 0.40625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 301
+tiempo focal discrepancy best: 0.296875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 361
+tiempo focal discrepancy best: 0.4375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.203125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.1875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.140625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.21875
+PROBLEMA NUM 23 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 67313
+tiempo focal discrepancy best: 258.890625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23342
+tiempo focal discrepancy best: 9.296875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 52370
+tiempo focal discrepancy best: 20.75
+
+MSE: 3
+nodos expandidos focal discrepancy best: 57608
+tiempo focal discrepancy best: 21.015625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 50637
+tiempo focal discrepancy best: 18.609375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 39049
+tiempo focal discrepancy best: 13.9375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 13691
+tiempo focal discrepancy best: 5.390625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 6914
+tiempo focal discrepancy best: 2.9375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 6713
+tiempo focal discrepancy best: 2.703125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 8514
+tiempo focal discrepancy best: 234.578125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 5412
+tiempo focal discrepancy best: 3.0
+
+MSE: 5
+nodos expandidos focal discrepancy best: 5765
+tiempo focal discrepancy best: 3.0625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.15625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 36
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 42
+tiempo focal discrepancy best: 0.203125
+PROBLEMA NUM 24 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 18582
+tiempo focal discrepancy best: 8.078125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 20986
+tiempo focal discrepancy best: 8.484375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 23877
+tiempo focal discrepancy best: 9.609375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 7835
+tiempo focal discrepancy best: 3.265625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 8454
+tiempo focal discrepancy best: 3.328125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 10853
+tiempo focal discrepancy best: 4.21875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 492
+tiempo focal discrepancy best: 0.40625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 327
+tiempo focal discrepancy best: 0.3125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1238
+tiempo focal discrepancy best: 0.640625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 319
+tiempo focal discrepancy best: 0.34375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 180
+tiempo focal discrepancy best: 0.296875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 307
+tiempo focal discrepancy best: 0.328125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 172
+tiempo focal discrepancy best: 0.296875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 53
+tiempo focal discrepancy best: 0.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 29
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 45
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 43
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 66
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 25 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 5876
+tiempo focal discrepancy best: 2.5625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 4454
+tiempo focal discrepancy best: 1.984375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 4471
+tiempo focal discrepancy best: 1.859375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 5078
+tiempo focal discrepancy best: 1.953125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1784
+tiempo focal discrepancy best: 1.046875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 3825
+tiempo focal discrepancy best: 1.546875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 634
+tiempo focal discrepancy best: 0.53125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 737
+tiempo focal discrepancy best: 0.484375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 183
+tiempo focal discrepancy best: 0.296875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 673
+tiempo focal discrepancy best: 0.546875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 171
+tiempo focal discrepancy best: 0.265625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 93
+tiempo focal discrepancy best: 0.21875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.140625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.21875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.1875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 42
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 26 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 11783
+tiempo focal discrepancy best: 4.96875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 11176
+tiempo focal discrepancy best: 4.265625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 9884
+tiempo focal discrepancy best: 3.4375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 5781
+tiempo focal discrepancy best: 2.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 6357
+tiempo focal discrepancy best: 2.578125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 7488
+tiempo focal discrepancy best: 3.0
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3933
+tiempo focal discrepancy best: 1.59375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3789
+tiempo focal discrepancy best: 1.625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1021
+tiempo focal discrepancy best: 0.703125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1151
+tiempo focal discrepancy best: 0.859375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 361
+tiempo focal discrepancy best: 0.40625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1100
+tiempo focal discrepancy best: 0.8125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.203125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.140625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 48
+tiempo focal discrepancy best: 0.28125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 29
+tiempo focal discrepancy best: 0.21875
+PROBLEMA NUM 27 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8368
+tiempo focal discrepancy best: 4.03125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 8016
+tiempo focal discrepancy best: 3.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1636
+tiempo focal discrepancy best: 0.75
+
+MSE: 3
+nodos expandidos focal discrepancy best: 5263
+tiempo focal discrepancy best: 2.078125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 4293
+tiempo focal discrepancy best: 1.65625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 6567
+tiempo focal discrepancy best: 2.578125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2176
+tiempo focal discrepancy best: 1.0
+
+MSE: 1
+nodos expandidos focal discrepancy best: 2067
+tiempo focal discrepancy best: 0.875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1704
+tiempo focal discrepancy best: 0.75
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1115
+tiempo focal discrepancy best: 0.5625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1133
+tiempo focal discrepancy best: 0.578125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 558
+tiempo focal discrepancy best: 0.40625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.09375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.09375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 30
+tiempo focal discrepancy best: 0.09375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 48
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 69
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 28 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3322
+tiempo focal discrepancy best: 1.515625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3378
+tiempo focal discrepancy best: 268.03125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3395
+tiempo focal discrepancy best: 3.6875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 3429
+tiempo focal discrepancy best: 2.078125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 3581
+tiempo focal discrepancy best: 1.65625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 3110
+tiempo focal discrepancy best: 1.609375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 1573
+tiempo focal discrepancy best: 0.90625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1607
+tiempo focal discrepancy best: 0.875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1589
+tiempo focal discrepancy best: 0.828125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1547
+tiempo focal discrepancy best: 0.828125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1589
+tiempo focal discrepancy best: 0.859375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1568
+tiempo focal discrepancy best: 0.859375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.203125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.1875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.1875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 29 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2116
+tiempo focal discrepancy best: 1.4375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 6153
+tiempo focal discrepancy best: 2.796875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2316
+tiempo focal discrepancy best: 1.140625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2592
+tiempo focal discrepancy best: 1.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1202
+tiempo focal discrepancy best: 0.8125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1262
+tiempo focal discrepancy best: 0.828125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3509
+tiempo focal discrepancy best: 1.453125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1134
+tiempo focal discrepancy best: 0.6875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 360
+tiempo focal discrepancy best: 0.328125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 467
+tiempo focal discrepancy best: 0.359375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 403
+tiempo focal discrepancy best: 0.328125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 185
+tiempo focal discrepancy best: 0.234375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 38
+tiempo focal discrepancy best: 0.15625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 85
+tiempo focal discrepancy best: 0.234375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 63
+tiempo focal discrepancy best: 0.140625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 94
+tiempo focal discrepancy best: 0.21875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 140
+tiempo focal discrepancy best: 0.21875
+PROBLEMA NUM 30 - k: 2
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2245
+tiempo focal discrepancy best: 1.40625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1837
+tiempo focal discrepancy best: 1.09375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 618
+tiempo focal discrepancy best: 0.453125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1081
+tiempo focal discrepancy best: 0.671875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 222
+tiempo focal discrepancy best: 0.28125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1305
+tiempo focal discrepancy best: 0.765625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 9014
+tiempo focal discrepancy best: 3.84375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 822
+tiempo focal discrepancy best: 0.609375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 342
+tiempo focal discrepancy best: 0.375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2908
+tiempo focal discrepancy best: 1.328125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 423
+tiempo focal discrepancy best: 0.5
+
+MSE: 5
+nodos expandidos focal discrepancy best: 547
+tiempo focal discrepancy best: 0.421875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 101
+tiempo focal discrepancy best: 0.234375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 99
+tiempo focal discrepancy best: 0.21875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 82
+tiempo focal discrepancy best: 0.296875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 30
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 45
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 89
+tiempo focal discrepancy best: 0.21875
+-------------------k: 4-------------------
+PROBLEMA NUM 1 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 5983
+tiempo focal discrepancy best: 3.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 10799
+tiempo focal discrepancy best: 4.671875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 27806
+tiempo focal discrepancy best: 12.09375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 15579
+tiempo focal discrepancy best: 7.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 32948
+tiempo focal discrepancy best: 13.359375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 23395
+tiempo focal discrepancy best: 10.1875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 6249
+tiempo focal discrepancy best: 2.578125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3760
+tiempo focal discrepancy best: 1.59375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1281
+tiempo focal discrepancy best: 0.671875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2151
+tiempo focal discrepancy best: 1.0
+
+MSE: 4
+nodos expandidos focal discrepancy best: 998
+tiempo focal discrepancy best: 0.78125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1009
+tiempo focal discrepancy best: 0.640625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 573
+tiempo focal discrepancy best: 0.40625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 56
+tiempo focal discrepancy best: 0.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 311
+tiempo focal discrepancy best: 0.328125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 93
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 73
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 68
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 2 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 27555
+tiempo focal discrepancy best: 10.921875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 41886
+tiempo focal discrepancy best: 269.546875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 46665
+tiempo focal discrepancy best: 19.25
+
+MSE: 3
+nodos expandidos focal discrepancy best: 22010
+tiempo focal discrepancy best: 15.765625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 21760
+tiempo focal discrepancy best: 17.5625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 23390
+tiempo focal discrepancy best: 15.671875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8560
+tiempo focal discrepancy best: 5.5625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 4296
+tiempo focal discrepancy best: 2.25
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3444
+tiempo focal discrepancy best: 1.8125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 4362
+tiempo focal discrepancy best: 1.96875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7903
+tiempo focal discrepancy best: 3.546875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 8276
+tiempo focal discrepancy best: 3.578125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.25
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.1875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.171875
+PROBLEMA NUM 3 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 19761
+tiempo focal discrepancy best: 7.671875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23789
+tiempo focal discrepancy best: 9.921875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7282
+tiempo focal discrepancy best: 3.3125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 18055
+tiempo focal discrepancy best: 7.703125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 11252
+tiempo focal discrepancy best: 4.71875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 18043
+tiempo focal discrepancy best: 7.40625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2409
+tiempo focal discrepancy best: 1.15625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3404
+tiempo focal discrepancy best: 1.453125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2960
+tiempo focal discrepancy best: 1.28125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 3625
+tiempo focal discrepancy best: 163.21875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2083
+tiempo focal discrepancy best: 1.625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1789
+tiempo focal discrepancy best: 1.140625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.1875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 45
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.15625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 44
+tiempo focal discrepancy best: 0.171875
+PROBLEMA NUM 4 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 10525
+tiempo focal discrepancy best: 4.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 5840
+tiempo focal discrepancy best: 2.4375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 13007
+tiempo focal discrepancy best: 5.328125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 12102
+tiempo focal discrepancy best: 4.65625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 12389
+tiempo focal discrepancy best: 4.96875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 9528
+tiempo focal discrepancy best: 3.765625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 4978
+tiempo focal discrepancy best: 2.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 5241
+tiempo focal discrepancy best: 2.140625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 4739
+tiempo focal discrepancy best: 1.921875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 3987
+tiempo focal discrepancy best: 1.734375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 6204
+tiempo focal discrepancy best: 2.578125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1283
+tiempo focal discrepancy best: 0.8125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.09375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 5 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 546
+tiempo focal discrepancy best: 0.421875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 362
+tiempo focal discrepancy best: 0.28125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 387
+tiempo focal discrepancy best: 0.28125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 553
+tiempo focal discrepancy best: 0.359375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 589
+tiempo focal discrepancy best: 0.421875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 544
+tiempo focal discrepancy best: 0.421875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 102
+tiempo focal discrepancy best: 0.21875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 122
+tiempo focal discrepancy best: 0.21875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 121
+tiempo focal discrepancy best: 0.21875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 106
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 106
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 106
+tiempo focal discrepancy best: 0.203125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 6 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 20534
+tiempo focal discrepancy best: 8.359375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 28821
+tiempo focal discrepancy best: 11.21875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 26837
+tiempo focal discrepancy best: 11.078125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 14285
+tiempo focal discrepancy best: 5.78125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 31627
+tiempo focal discrepancy best: 11.984375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 23001
+tiempo focal discrepancy best: 8.90625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 4242
+tiempo focal discrepancy best: 1.859375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3787
+tiempo focal discrepancy best: 1.515625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2202
+tiempo focal discrepancy best: 0.9375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2238
+tiempo focal discrepancy best: 1.140625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2387
+tiempo focal discrepancy best: 1.046875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 2712
+tiempo focal discrepancy best: 1.3125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.1875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 37
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.09375
+PROBLEMA NUM 7 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8950
+tiempo focal discrepancy best: 3.28125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 8991
+tiempo focal discrepancy best: 153.078125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7418
+tiempo focal discrepancy best: 3.453125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 7137
+tiempo focal discrepancy best: 2.59375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 6184
+tiempo focal discrepancy best: 2.796875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 7835
+tiempo focal discrepancy best: 2.875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2965
+tiempo focal discrepancy best: 1.359375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 2945
+tiempo focal discrepancy best: 1.265625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3010
+tiempo focal discrepancy best: 1.359375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2700
+tiempo focal discrepancy best: 1.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2243
+tiempo focal discrepancy best: 1.078125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 3412
+tiempo focal discrepancy best: 1.390625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.171875
+PROBLEMA NUM 8 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8012
+tiempo focal discrepancy best: 3.890625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 8003
+tiempo focal discrepancy best: 3.234375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7263
+tiempo focal discrepancy best: 3.0
+
+MSE: 3
+nodos expandidos focal discrepancy best: 6019
+tiempo focal discrepancy best: 2.546875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 8220
+tiempo focal discrepancy best: 3.484375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 6991
+tiempo focal discrepancy best: 2.84375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 181
+tiempo focal discrepancy best: 0.28125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 195
+tiempo focal discrepancy best: 0.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 460
+tiempo focal discrepancy best: 0.3125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 408
+tiempo focal discrepancy best: 0.296875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 194
+tiempo focal discrepancy best: 0.265625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 181
+tiempo focal discrepancy best: 0.25
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.09375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 9 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 13738
+tiempo focal discrepancy best: 5.671875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 10922
+tiempo focal discrepancy best: 4.4375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 12322
+tiempo focal discrepancy best: 4.9375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 11875
+tiempo focal discrepancy best: 4.8125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 12717
+tiempo focal discrepancy best: 5.3125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 9041
+tiempo focal discrepancy best: 3.703125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3053
+tiempo focal discrepancy best: 1.359375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1689
+tiempo focal discrepancy best: 0.875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 4710
+tiempo focal discrepancy best: 2.140625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2577
+tiempo focal discrepancy best: 1.328125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2825
+tiempo focal discrepancy best: 1.21875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 2649
+tiempo focal discrepancy best: 1.34375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 10 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 10994
+tiempo focal discrepancy best: 4.90625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 7604
+tiempo focal discrepancy best: 3.390625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7499
+tiempo focal discrepancy best: 3.3125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 7713
+tiempo focal discrepancy best: 3.28125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 11145
+tiempo focal discrepancy best: 4.671875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 11533
+tiempo focal discrepancy best: 4.6875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 474
+tiempo focal discrepancy best: 0.4375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 485
+tiempo focal discrepancy best: 0.40625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 480
+tiempo focal discrepancy best: 0.390625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 553
+tiempo focal discrepancy best: 0.421875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 554
+tiempo focal discrepancy best: 0.4375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 512
+tiempo focal discrepancy best: 0.421875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 11 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 22099
+tiempo focal discrepancy best: 159.796875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 22113
+tiempo focal discrepancy best: 8.5
+
+MSE: 2
+nodos expandidos focal discrepancy best: 22852
+tiempo focal discrepancy best: 8.375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 36889
+tiempo focal discrepancy best: 13.765625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 35412
+tiempo focal discrepancy best: 12.90625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 22624
+tiempo focal discrepancy best: 7.9375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3745
+tiempo focal discrepancy best: 1.625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3784
+tiempo focal discrepancy best: 1.609375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3238
+tiempo focal discrepancy best: 1.390625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 5575
+tiempo focal discrepancy best: 2.25
+
+MSE: 4
+nodos expandidos focal discrepancy best: 4359
+tiempo focal discrepancy best: 1.828125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 6296
+tiempo focal discrepancy best: 2.453125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.203125
+PROBLEMA NUM 12 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 555
+tiempo focal discrepancy best: 0.390625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 592
+tiempo focal discrepancy best: 0.46875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 588
+tiempo focal discrepancy best: 0.453125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 298
+tiempo focal discrepancy best: 0.34375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 564
+tiempo focal discrepancy best: 0.421875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 556
+tiempo focal discrepancy best: 0.4375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 67
+tiempo focal discrepancy best: 0.1875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 70
+tiempo focal discrepancy best: 0.1875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 63
+tiempo focal discrepancy best: 0.1875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 63
+tiempo focal discrepancy best: 0.25
+
+MSE: 4
+nodos expandidos focal discrepancy best: 60
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 68
+tiempo focal discrepancy best: 0.203125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.09375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 16
+tiempo focal discrepancy best: 0.09375
+PROBLEMA NUM 13 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 20895
+tiempo focal discrepancy best: 7.8125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 31912
+tiempo focal discrepancy best: 12.40625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 16714
+tiempo focal discrepancy best: 6.90625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 23625
+tiempo focal discrepancy best: 166.703125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 18685
+tiempo focal discrepancy best: 10.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 22298
+tiempo focal discrepancy best: 8.640625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 121
+tiempo focal discrepancy best: 0.3125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 589
+tiempo focal discrepancy best: 0.625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1125
+tiempo focal discrepancy best: 1.015625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 173
+tiempo focal discrepancy best: 0.28125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 533
+tiempo focal discrepancy best: 0.5625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 527
+tiempo focal discrepancy best: 0.53125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 591
+tiempo focal discrepancy best: 0.421875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 54
+tiempo focal discrepancy best: 0.125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 50
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 63
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 56
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 63
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 14 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 5228
+tiempo focal discrepancy best: 2.171875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 4486
+tiempo focal discrepancy best: 1.90625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3042
+tiempo focal discrepancy best: 1.453125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 4619
+tiempo focal discrepancy best: 1.8125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 3314
+tiempo focal discrepancy best: 1.609375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 4740
+tiempo focal discrepancy best: 2.1875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 376
+tiempo focal discrepancy best: 0.296875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 262
+tiempo focal discrepancy best: 0.234375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 257
+tiempo focal discrepancy best: 0.3125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 257
+tiempo focal discrepancy best: 0.265625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 279
+tiempo focal discrepancy best: 0.265625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 266
+tiempo focal discrepancy best: 0.265625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 15 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 7734
+tiempo focal discrepancy best: 3.515625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 13539
+tiempo focal discrepancy best: 5.625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7747
+tiempo focal discrepancy best: 3.234375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 8418
+tiempo focal discrepancy best: 3.609375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7945
+tiempo focal discrepancy best: 3.265625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 8955
+tiempo focal discrepancy best: 3.828125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2646
+tiempo focal discrepancy best: 1.21875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 7487
+tiempo focal discrepancy best: 3.078125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 2567
+tiempo focal discrepancy best: 1.15625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 7806
+tiempo focal discrepancy best: 3.40625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 950
+tiempo focal discrepancy best: 0.625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1302
+tiempo focal discrepancy best: 0.6875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 174
+tiempo focal discrepancy best: 0.234375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 30
+tiempo focal discrepancy best: 0.1875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 36
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 30
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 37
+tiempo focal discrepancy best: 0.125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 48
+tiempo focal discrepancy best: 0.203125
+PROBLEMA NUM 16 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 16276
+tiempo focal discrepancy best: 7.171875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 20773
+tiempo focal discrepancy best: 8.09375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 15064
+tiempo focal discrepancy best: 5.71875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 16405
+tiempo focal discrepancy best: 6.515625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 20822
+tiempo focal discrepancy best: 7.9375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 11531
+tiempo focal discrepancy best: 4.4375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 1068
+tiempo focal discrepancy best: 0.65625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1173
+tiempo focal discrepancy best: 0.78125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 726
+tiempo focal discrepancy best: 0.5
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1021
+tiempo focal discrepancy best: 0.59375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 705
+tiempo focal discrepancy best: 0.484375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 932
+tiempo focal discrepancy best: 0.5625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.09375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 23
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 17 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 7527
+tiempo focal discrepancy best: 152.765625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 2803
+tiempo focal discrepancy best: 1.890625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 9917
+tiempo focal discrepancy best: 4.3125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 7472
+tiempo focal discrepancy best: 3.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 9213
+tiempo focal discrepancy best: 4.03125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 6249
+tiempo focal discrepancy best: 2.5625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 215
+tiempo focal discrepancy best: 0.328125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1266
+tiempo focal discrepancy best: 0.703125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1270
+tiempo focal discrepancy best: 0.671875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1168
+tiempo focal discrepancy best: 0.671875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1116
+tiempo focal discrepancy best: 0.640625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 198
+tiempo focal discrepancy best: 0.3125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.171875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.15625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 29
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 38
+tiempo focal discrepancy best: 0.15625
+PROBLEMA NUM 18 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 9534
+tiempo focal discrepancy best: 4.6875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 30322
+tiempo focal discrepancy best: 11.078125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 27185
+tiempo focal discrepancy best: 10.34375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 28466
+tiempo focal discrepancy best: 11.578125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 43984
+tiempo focal discrepancy best: 17.953125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 40218
+tiempo focal discrepancy best: 16.234375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 11820
+tiempo focal discrepancy best: 4.96875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 12051
+tiempo focal discrepancy best: 5.078125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 12883
+tiempo focal discrepancy best: 5.25
+
+MSE: 3
+nodos expandidos focal discrepancy best: 8608
+tiempo focal discrepancy best: 166.984375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 8583
+tiempo focal discrepancy best: 4.75
+
+MSE: 5
+nodos expandidos focal discrepancy best: 5340
+tiempo focal discrepancy best: 2.890625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.25
+
+MSE: 1
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.234375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 31
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 19 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8622
+tiempo focal discrepancy best: 3.75
+
+MSE: 1
+nodos expandidos focal discrepancy best: 8964
+tiempo focal discrepancy best: 3.78125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 8249
+tiempo focal discrepancy best: 3.84375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 8702
+tiempo focal discrepancy best: 3.875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7985
+tiempo focal discrepancy best: 3.546875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 7974
+tiempo focal discrepancy best: 3.453125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2602
+tiempo focal discrepancy best: 1.328125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 2893
+tiempo focal discrepancy best: 1.484375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1384
+tiempo focal discrepancy best: 0.796875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2829
+tiempo focal discrepancy best: 1.359375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2207
+tiempo focal discrepancy best: 1.125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1193
+tiempo focal discrepancy best: 0.703125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 17
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 20 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8159
+tiempo focal discrepancy best: 3.390625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 22921
+tiempo focal discrepancy best: 8.84375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 19147
+tiempo focal discrepancy best: 8.0
+
+MSE: 3
+nodos expandidos focal discrepancy best: 12483
+tiempo focal discrepancy best: 5.28125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7307
+tiempo focal discrepancy best: 3.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 8194
+tiempo focal discrepancy best: 3.5625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 18177
+tiempo focal discrepancy best: 7.09375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 7826
+tiempo focal discrepancy best: 3.171875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 5437
+tiempo focal discrepancy best: 2.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 5452
+tiempo focal discrepancy best: 2.453125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2257
+tiempo focal discrepancy best: 1.015625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 3311
+tiempo focal discrepancy best: 1.359375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 31
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 31
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 43
+tiempo focal discrepancy best: 0.1875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 41
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 21 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8481
+tiempo focal discrepancy best: 3.59375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1833
+tiempo focal discrepancy best: 0.921875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 5039
+tiempo focal discrepancy best: 1.921875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 14299
+tiempo focal discrepancy best: 5.5
+
+MSE: 4
+nodos expandidos focal discrepancy best: 15450
+tiempo focal discrepancy best: 5.984375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 22927
+tiempo focal discrepancy best: 8.234375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 7013
+tiempo focal discrepancy best: 145.296875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 4785
+tiempo focal discrepancy best: 2.59375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 9621
+tiempo focal discrepancy best: 3.9375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2159
+tiempo focal discrepancy best: 1.03125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 4079
+tiempo focal discrepancy best: 1.84375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 9310
+tiempo focal discrepancy best: 3.625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 28
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 117
+tiempo focal discrepancy best: 0.21875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 40
+tiempo focal discrepancy best: 0.109375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 56
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 53
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 31
+tiempo focal discrepancy best: 0.09375
+PROBLEMA NUM 22 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 1683
+tiempo focal discrepancy best: 0.9375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1644
+tiempo focal discrepancy best: 0.796875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1995
+tiempo focal discrepancy best: 0.9375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2103
+tiempo focal discrepancy best: 1.046875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2143
+tiempo focal discrepancy best: 1.015625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 2787
+tiempo focal discrepancy best: 1.140625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 565
+tiempo focal discrepancy best: 0.46875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 579
+tiempo focal discrepancy best: 0.546875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 458
+tiempo focal discrepancy best: 0.421875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 509
+tiempo focal discrepancy best: 0.4375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 581
+tiempo focal discrepancy best: 0.4375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 510
+tiempo focal discrepancy best: 0.40625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.171875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 22
+tiempo focal discrepancy best: 0.171875
+PROBLEMA NUM 23 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 67313
+tiempo focal discrepancy best: 24.75
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24252
+tiempo focal discrepancy best: 9.828125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 56628
+tiempo focal discrepancy best: 22.53125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 23223
+tiempo focal discrepancy best: 9.453125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 25436
+tiempo focal discrepancy best: 10.546875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 44077
+tiempo focal discrepancy best: 164.234375
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 13691
+tiempo focal discrepancy best: 5.78125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 8275
+tiempo focal discrepancy best: 3.3125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7722
+tiempo focal discrepancy best: 3.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 8021
+tiempo focal discrepancy best: 3.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 18440
+tiempo focal discrepancy best: 7.359375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 8999
+tiempo focal discrepancy best: 3.765625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.09375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 25
+tiempo focal discrepancy best: 0.171875
+PROBLEMA NUM 24 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 18582
+tiempo focal discrepancy best: 7.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 18726
+tiempo focal discrepancy best: 6.90625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 21836
+tiempo focal discrepancy best: 8.921875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 18141
+tiempo focal discrepancy best: 7.21875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 29118
+tiempo focal discrepancy best: 11.53125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 18542
+tiempo focal discrepancy best: 7.703125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 492
+tiempo focal discrepancy best: 0.546875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1503
+tiempo focal discrepancy best: 0.796875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1602
+tiempo focal discrepancy best: 0.84375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 921
+tiempo focal discrepancy best: 0.625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1369
+tiempo focal discrepancy best: 0.8125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 507
+tiempo focal discrepancy best: 0.46875
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 172
+tiempo focal discrepancy best: 0.328125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 152
+tiempo focal discrepancy best: 0.3125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 110
+tiempo focal discrepancy best: 0.234375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 29
+tiempo focal discrepancy best: 0.171875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.203125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 52
+tiempo focal discrepancy best: 0.203125
+PROBLEMA NUM 25 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 5876
+tiempo focal discrepancy best: 2.71875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 6035
+tiempo focal discrepancy best: 2.71875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3918
+tiempo focal discrepancy best: 1.859375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 7041
+tiempo focal discrepancy best: 3.09375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7073
+tiempo focal discrepancy best: 3.265625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 7572
+tiempo focal discrepancy best: 3.3125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 634
+tiempo focal discrepancy best: 0.546875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 680
+tiempo focal discrepancy best: 0.46875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 630
+tiempo focal discrepancy best: 0.46875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 310
+tiempo focal discrepancy best: 0.359375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 730
+tiempo focal discrepancy best: 0.515625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 678
+tiempo focal discrepancy best: 0.59375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.203125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 26 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 11783
+tiempo focal discrepancy best: 159.5
+
+MSE: 1
+nodos expandidos focal discrepancy best: 7549
+tiempo focal discrepancy best: 3.0
+
+MSE: 2
+nodos expandidos focal discrepancy best: 7796
+tiempo focal discrepancy best: 3.015625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 12015
+tiempo focal discrepancy best: 4.640625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 7727
+tiempo focal discrepancy best: 3.140625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 11614
+tiempo focal discrepancy best: 4.546875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3933
+tiempo focal discrepancy best: 1.5625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3476
+tiempo focal discrepancy best: 1.546875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3347
+tiempo focal discrepancy best: 1.453125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 4340
+tiempo focal discrepancy best: 1.734375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1761
+tiempo focal discrepancy best: 0.9375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 3871
+tiempo focal discrepancy best: 1.515625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.109375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.1875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 24
+tiempo focal discrepancy best: 0.125
+PROBLEMA NUM 27 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 8368
+tiempo focal discrepancy best: 3.734375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 7771
+tiempo focal discrepancy best: 3.25
+
+MSE: 2
+nodos expandidos focal discrepancy best: 5340
+tiempo focal discrepancy best: 2.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1610
+tiempo focal discrepancy best: 0.875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 6698
+tiempo focal discrepancy best: 2.84375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 4070
+tiempo focal discrepancy best: 1.8125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2176
+tiempo focal discrepancy best: 1.0625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1827
+tiempo focal discrepancy best: 0.890625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1818
+tiempo focal discrepancy best: 0.859375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1928
+tiempo focal discrepancy best: 1.015625
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2230
+tiempo focal discrepancy best: 0.984375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1237
+tiempo focal discrepancy best: 0.65625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 27
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.109375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 26
+tiempo focal discrepancy best: 0.109375
+PROBLEMA NUM 28 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3322
+tiempo focal discrepancy best: 1.625
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3403
+tiempo focal discrepancy best: 1.65625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 3076
+tiempo focal discrepancy best: 1.25
+
+MSE: 3
+nodos expandidos focal discrepancy best: 3404
+tiempo focal discrepancy best: 1.484375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 3315
+tiempo focal discrepancy best: 1.703125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 3318
+tiempo focal discrepancy best: 1.515625
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 1573
+tiempo focal discrepancy best: 1.234375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1581
+tiempo focal discrepancy best: 1.15625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1421
+tiempo focal discrepancy best: 1.015625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 1592
+tiempo focal discrepancy best: 0.84375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 1473
+tiempo focal discrepancy best: 0.796875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1488
+tiempo focal discrepancy best: 0.8125
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.171875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.171875
+
+MSE: 3
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.109375
+
+MSE: 4
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.171875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 19
+tiempo focal discrepancy best: 0.1875
+PROBLEMA NUM 29 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2116
+tiempo focal discrepancy best: 1.3125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 6266
+tiempo focal discrepancy best: 3.125
+
+MSE: 2
+nodos expandidos focal discrepancy best: 4802
+tiempo focal discrepancy best: 2.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2958
+tiempo focal discrepancy best: 1.25
+
+MSE: 4
+nodos expandidos focal discrepancy best: 803
+tiempo focal discrepancy best: 0.515625
+
+MSE: 5
+nodos expandidos focal discrepancy best: 7577
+tiempo focal discrepancy best: 3.453125
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 3509
+tiempo focal discrepancy best: 1.546875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 1703
+tiempo focal discrepancy best: 0.96875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 266
+tiempo focal discrepancy best: 0.28125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 138
+tiempo focal discrepancy best: 0.21875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 898
+tiempo focal discrepancy best: 0.578125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 423
+tiempo focal discrepancy best: 0.40625
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.125
+
+MSE: 1
+nodos expandidos focal discrepancy best: 32
+tiempo focal discrepancy best: 0.109375
+
+MSE: 2
+nodos expandidos focal discrepancy best: 72
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 82
+tiempo focal discrepancy best: 0.1875
+
+MSE: 4
+nodos expandidos focal discrepancy best: 40
+tiempo focal discrepancy best: 0.125
+
+MSE: 5
+nodos expandidos focal discrepancy best: 76
+tiempo focal discrepancy best: 0.203125
+PROBLEMA NUM 30 - k: 4
+-------------------W: 1.5-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 2245
+tiempo focal discrepancy best: 1.375
+
+MSE: 1
+nodos expandidos focal discrepancy best: 2208
+tiempo focal discrepancy best: 1.140625
+
+MSE: 2
+nodos expandidos focal discrepancy best: 267
+tiempo focal discrepancy best: 0.359375
+
+MSE: 3
+nodos expandidos focal discrepancy best: 2227
+tiempo focal discrepancy best: 1.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2213
+tiempo focal discrepancy best: 1.046875
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1692
+tiempo focal discrepancy best: 0.921875
+-------------------W: 2-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 9014
+tiempo focal discrepancy best: 3.71875
+
+MSE: 1
+nodos expandidos focal discrepancy best: 3609
+tiempo focal discrepancy best: 1.71875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 1685
+tiempo focal discrepancy best: 1.015625
+
+MSE: 3
+nodos expandidos focal discrepancy best: 6369
+tiempo focal discrepancy best: 2.953125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 2992
+tiempo focal discrepancy best: 1.4375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 1927
+tiempo focal discrepancy best: 0.9375
+-------------------W: 4-------------------
+
+MSE: 0
+nodos expandidos focal discrepancy best: 101
+tiempo focal discrepancy best: 0.25
+
+MSE: 1
+nodos expandidos focal discrepancy best: 39
+tiempo focal discrepancy best: 0.21875
+
+MSE: 2
+nodos expandidos focal discrepancy best: 40
+tiempo focal discrepancy best: 0.203125
+
+MSE: 3
+nodos expandidos focal discrepancy best: 36
+tiempo focal discrepancy best: 0.203125
+
+MSE: 4
+nodos expandidos focal discrepancy best: 31
+tiempo focal discrepancy best: 0.234375
+
+MSE: 5
+nodos expandidos focal discrepancy best: 34
+tiempo focal discrepancy best: 0.21875

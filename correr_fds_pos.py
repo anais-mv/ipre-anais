@@ -48,7 +48,7 @@ for k in valores_k:
                 # lm_cut = Astar(inicial, objetivo, op, heuristica[mse], prop, 1, "lmcut").h_function
                 h_aristas = Astar(inicial, objetivo, op, grafo.h_aristas, prop, 1, "h*").h_function
                 inicio = time.process_time()
-                fs = FocalSearch(grafo.estado_inicial, perfect_heuristic, h_aristas, heuristica[0], 1000)
+                fs = FocalSearch(inicial, perfect_heuristic, h_aristas, heuristica[0], 1000)
                 result = fs.heuristic_discrepancy_search(weight, "position")
                 tiempo = time.process_time() - inicio
                 tiempos.append(tiempo)

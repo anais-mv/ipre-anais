@@ -1,0 +1,51 @@
+Tiempo en crear grafo: 6.1875
+CANTIDAD DE OPERADORES: 600
+CANTIDAD DE ESTADOS: 32349
+PROMEDIO FACTOR RAMIFICACIÓN: 2.195466268494638
+MÁXIMA RAMIFICACIÓN: 50
+MEDIANA FACTOR RAMIFICACIÓN: 1.0
+MÁXIMA PROFUNDIDAD: 14
+Tiempo en crear heurística: 7.296875
+-------------------k: 2------------------- 
+
+
+MSE Real: 0.0
+MSE Esperado: 0
+
+MSE Real: 4.992958938929044
+MSE Esperado: 5
+
+MSE Real: 10.039547536325333
+MSE Esperado: 10
+
+MSE Real: 20.174699981533223
+MSE Esperado: 20
+
+MSE Real: 100.8975777271248
+MSE Esperado: 100
+
+MSE Real: 204.8867795577926
+MSE Esperado: 200
+-------------------k: 4------------------- 
+
+
+MSE Real: 0.0
+MSE Esperado: 0
+
+MSE Real: 4.982624674680309
+MSE Esperado: 5
+
+MSE Real: 9.950656916549315
+MSE Esperado: 10
+
+MSE Real: 20.171679895686644
+MSE Esperado: 20
+
+MSE Real: 102.7180001148921
+MSE Esperado: 100
+
+MSE Real: 197.8388962708773
+MSE Esperado: 200
+
+porcentaje coincidentes k = 2 mse = 0: 100.0
+porcentaje coincidentes k = 4 mse = 0: 100.0

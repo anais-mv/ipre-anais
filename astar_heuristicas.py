@@ -22,6 +22,7 @@ class Heuristica:
         self.explorados = 0
         self.estados = estados
         self.heuristica = defaultdict(default_heuristic)
+        self.valores_h = []
         self.iniciar()
 
     def zero_heuristic(self, estado):
@@ -46,6 +47,7 @@ class Heuristica:
                         self.open.append(hijo)
                         self.vistos.add(hijo.prop)
                         self.heuristica[hijo.prop] = hijo.largo
+                        self.valores_h.append(hijo.largo)
                         # if hijo in self.estados:
                         #     self.heuristica[hijo.prop] = hijo.largo
             if len(self.open) == 0:

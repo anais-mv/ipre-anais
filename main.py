@@ -79,6 +79,9 @@ if __name__ == "__main__":
     inicio = time.process_time()
     bus_heuristica = Heuristica(op_disp, grafo.estados, estado_objetivo)
     grafo.perfect_heuristic = bus_heuristica
+
+    print(f"MÁXIMA PROFUNDIDAD: {max(bus_heuristica.valores_h)}")
+    escribir_archivo(archivo, f"MÁXIMA PROFUNDIDAD: {max(bus_heuristica.valores_h)}")
     print(f"Tiempo en crear heurística: {time.process_time() - inicio}")
     escribir_archivo(archivo, f"Tiempo en crear heurística: {time.process_time() - inicio}")
 
