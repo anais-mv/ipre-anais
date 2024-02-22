@@ -303,3 +303,54 @@ def graficar(archivo, w, num, log=False, astar=True):
         if log:
             plt.yscale("log")
     graficar_per(nombre, w, num)
+    
+def graficar_nuevomse(astar, fs_k2, fs_k4, pos_k2, pos_k4, best_k2, best_k4, w, log=False):
+    astar = astar.sacar_promedio(w)
+    fs_k2_p = fs_k2.sacar_promedio(w)
+    fs_k4_p = fs_k4.sacar_promedio(w)
+    pos_k2_p = pos_k2.sacar_promedio(w)
+    pos_k4_p = pos_k4.sacar_promedio(w)
+    best_k2_p = best_k2.sacar_promedio(w)
+    best_k4_p = best_k4.sacar_promedio(w)
+    
+    for i in range(0, 2):
+        if i == 0:
+            fs, pos, best = fs_k2_p, pos_k2_p, best_k2_p
+        else:
+            fs, pos, best = fs_k4_p, pos_k4_p, best_k4_p
+        # gráfico tiempo vs mse
+        fig,ax = plt.subplots(dpi=144, figsize = [10,4], ncols=2)
+        fig.tight_layout(pad=3)
+        ax[0].plot([1,2,3,4,5,6], astar[0], label="A*", c="purple")
+        ax[0].plot([1,2,3,4,5,6], fs[0], label="FS", c="red")
+        ax[0].plot([1,2,3,4,5,6], pos[0], label="FDS pos", c="blue")
+        ax[0].plot([1,2,3,4,5,6], best[0], label="FDS best", c="green")
+        ax[0].set_xticks([1,2,3,4,5,6], mse)
+        # ax[0].legend(fontsize=8, loc="upper left")
+        ax[0].legend(fontsize=8)
+        ax[0].set_xlabel("Heuristic MSE", fontsize=10)
+        ax[0].set_ylabel("Runtime (s)", fontsize=10)
+        ax[0].set_title(f"Mean Time vs MSE - W: {w} - k: {(i + 1)*2}", fontsize=10)
+        if log:
+            plt.yscale("log")
+        # gráfico expansiones vs mse
+        fig.tight_layout(pad=3)
+        ax[1].plot([1,2,3,4,5,6], astar[1], label="A*", c="purple")
+        ax[1].plot([1,2,3,4,5,6], fs[1], label="FS", c="red")
+        ax[1].plot([1,2,3,4,5,6], pos[1], label="FDS pos", c="blue")
+        ax[1].plot([1,2,3,4,5,6], best[1], label="FDS best", c="green")
+        ax[1].set_xticks([1,2,3,4,5,6], mse)
+        # ax[0].legend(fontsize=8, loc="upper left")
+        ax[1].legend(fontsize=8)
+        ax[1].set_xlabel("Heuristic MSE", fontsize=10)
+        ax[1].set_ylabel("Expansions", fontsize=10)
+        ax[1].set_title(f"Mean Expansions vs MSE - W: {w} - k: {(i + 1)*2}", fontsize=10)
+        if log:
+            plt.yscale("log")
+    # graficar_per_k(fs_k2, fs_k4, pos_k2, pos_k4, best_k2, best_k4, w, log)
+
+def cargar(archivo):
+    file = open(archivo, "rb")
+    clase = pickle.load(file)
+    file.close()
+    return clase

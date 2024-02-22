@@ -3,10 +3,22 @@ from copy import copy
 
 class Operador:
     def __init__(self, id_prop, prec, add, delet):
-        self.id = id_prop
+        self.id = int(id_prop)
         self.prec = frozenset(prec)
         self.add = frozenset(add)
         self.delet = frozenset(delet)
+
+    def __gt__(self, other):
+        return int(self.id) > int(other.id)
+    
+    def __lt__(self, other):
+        return int(self.id) < int(other.id)
+    
+    def __ge__(self, other):
+        return int(self.id) >= int(other.id)
+    
+    def __le__(self, other):
+        return int(self.id) <= int(other.id)
 
     def __str__(self):
         texto_id = "OPERADOR NUM " + str(self.id) + "\n"
@@ -60,9 +72,10 @@ class Estado:
                 hijo = self.aplicar_operador(op)
                 sucesores.append(hijo.prop)
         if self.posibles is not None:
+            print("HOLA")
             return self.revisar_succ(sucesores)
         else:
-            return sucesores
+            return sorted(sucesores)
     
     def revisar_succ(self, succ):
         sucesores = []

@@ -21,7 +21,7 @@ def nuevos_operadores(grafo, can_prop, can_op, rango, max_add):
     print(f"operadores nuevos: {can_nuevos}")
     return set_final
 
-def revisar_h_diferentes(grafo, perfect, aristas, archivo):
+def revisar_h_diferentes(grafo, perfect, aristas, archivo=None):
     dif = 0
     razones = []
     for estado in perfect:
@@ -39,13 +39,14 @@ def revisar_h_diferentes(grafo, perfect, aristas, archivo):
     print(f"Mediana razón h_perfect a h_aristas: {np.median(razones)}")
     print(f"Desviación estándar h_perfect a h_aristas: {np.std(razones)}")
     print(f"Razón h_perfect a h_aristas mayor: {max(razones)}")
-    escribir_archivo(archivo, f"Porcentaje de heurísticas diferentes: {round(dif/len(perfect) * 100, 2)}%")
-    escribir_archivo(archivo, f"Promedio razón h_perfect a h_aristas: {np.mean(razones)}")
-    escribir_archivo(archivo, f"Mediana razón h_perfect a h_aristas: {np.median(razones)}")
-    escribir_archivo(archivo, f"Desviación estándar h_perfect a h_aristas: {np.std(razones)}")
-    escribir_archivo(archivo, f"Razón h_perfect a h_aristas mayor: {max(razones)}")
+    if archivo != None:
+        escribir_archivo(archivo, f"Porcentaje de heurísticas diferentes: {round(dif/len(perfect) * 100, 2)}%")
+        escribir_archivo(archivo, f"Promedio razón h_perfect a h_aristas: {np.mean(razones)}")
+        escribir_archivo(archivo, f"Mediana razón h_perfect a h_aristas: {np.median(razones)}")
+        escribir_archivo(archivo, f"Desviación estándar h_perfect a h_aristas: {np.std(razones)}")
+        escribir_archivo(archivo, f"Razón h_perfect a h_aristas mayor: {max(razones)}")
 
-def nuevos_operadores_alternativo(grafo, archivo):
+def nuevos_operadores_alternativo(grafo, archivo=None):
     set_operadores = set()
     set_final = set()
     can_nuevos = 0
@@ -74,7 +75,8 @@ def nuevos_operadores_alternativo(grafo, archivo):
                 can_nuevos += 1
     # print((nuevo_prec, op.add, op.delet))
     # print((nuevo_inverso.prec, nuevo_inverso.add, nuevo_inverso.delet))
-    print(f"operadores nuevos: {can_nuevos}")
-    escribir_archivo(archivo, f"operadores nuevos: {can_nuevos}")
+    if archivo != None:
+        print(f"operadores nuevos: {can_nuevos}")
+        escribir_archivo(archivo, f"operadores nuevos: {can_nuevos}")
     return set_final
     

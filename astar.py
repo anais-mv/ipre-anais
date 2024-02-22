@@ -12,6 +12,7 @@ from pyperplan.heuristics.blind import BlindHeuristic
 from pyperplan.heuristics.lm_cut import LmCutHeuristic
 from pyperplan.search.searchspace import SearchNode
 from pyperplan.heuristics.relaxation import hFFHeuristic
+from SortedSet.sorted_set import SortedSet
 
 
 class Astar(object):
@@ -32,7 +33,7 @@ class Astar(object):
         for op in self.operadores:
             op_pyperplan = Operator("op"+str(op.id), op.prec, op.add, op.delet)
             self.pyperplan_operators.append(op_pyperplan)
-        self.pyperplan_task = Task("task", set(prop), self.inicial, self.final, self.pyperplan_operators)
+        self.pyperplan_task = Task("task", SortedSet(prop), SortedSet(self.inicial), SortedSet(self.final), self.pyperplan_operators)
         if h_type == "lmcut":
             self.h_function = LmCutHeuristic(self.pyperplan_task)
         elif h_type == "h*":
@@ -44,7 +45,12 @@ class Astar(object):
         elif h_type == "zero":
             def zero(state):
                 return 0
-            self.h_function = zero 
+            self.h_function = zero
+        # elif h_type == "random":
+        #     self.h_function = self.heuristic_random
+
+    # def heuristic_random(self, estado):
+    #     return self.heuristica[estado]
 
     def perfect_heuristic(self, estado):
         return self.heuristica[estado.state]
@@ -73,6 +79,9 @@ class Astar(object):
         self.vistos[self.inicial] = nodo_inicial
         while not self.open.is_empty():
             n = self.open.extract()
+            lista = list(n.state)
+            if self.expansions >= 100:
+                return None
             if self.is_goal(n.state):
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 self.camino = list(reversed(self.camino))
@@ -84,6 +93,7 @@ class Astar(object):
                 self.closed.add(n.state)
                 estado_n = Estado(n.state, self.operadores)
                 sucesores = estado_n.succ()
+                print(n.h, len(sucesores), n.key, sorted(lista))
                 for hijo in sucesores:
                     child_node = self.vistos.get(hijo)
                     # vistos get retorna none si no está en vistos (si es nuevo)

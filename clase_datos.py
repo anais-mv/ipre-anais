@@ -12,18 +12,21 @@ class Resultados:
         return str_tiempo + "\n" + str_nodos
 
 class Datos:
-    def __init__(self, w15, w2, w4):
+    def __init__(self, w15, w2, w4, w_extra=None):
         self.datos_w15 = w15
         self.datos_w2 = w2
         self.datos_w4 = w4
+        self.datos_wextra = w_extra
 
     def sacar_promedio(self, peso):
         if peso == 1.5:
             datos = self.datos_w15
         elif peso == 2:
             datos = self.datos_w2
-        else:
+        elif peso == 4:
             datos = self.datos_w4
+        else:
+            datos = self.datos_wextra
         tiempo_0, tiempo_5, tiempo_10, tiempo_20, tiempo_100, tiempo_200 = [], [], [], [], [], []
         nodos_0, nodos_5, nodos_10, nodos_20, nodos_100, nodos_200 = [], [], [], [], [], []
         for dato in datos:

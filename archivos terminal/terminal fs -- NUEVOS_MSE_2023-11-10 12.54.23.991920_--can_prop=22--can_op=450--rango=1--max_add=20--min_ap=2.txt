@@ -1,4562 +1,2642 @@
 -------------------k: 2-------------------
 PROBLEMA NUM 1 - k: 2
--------------------W: 1.5-------------------
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 201.796875
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 35
 
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 26.296875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.46875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 25.0625
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 2.4375
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 5.828125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 7.390625
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 18.5625
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 18.78125
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 17.671875
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 226.890625
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 7.46875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.203125
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.203125
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.203125
-PROBLEMA NUM 2 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 19.515625
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 19.15625
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.296875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.375
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.0625
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.78125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.828125
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.5625
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 17.765625
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 204.234375
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 19.015625
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.828125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.234375
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.1875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.1875
-PROBLEMA NUM 3 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.90625
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.96875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.203125
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.484375
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.96875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.796875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.6875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.546875
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 194.875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 21.296875
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 18.15625
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.734375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.234375
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.25
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.1875
-PROBLEMA NUM 4 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.71875
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.984375
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.03125
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.25
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.921875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.8125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 200.109375
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 24.34375
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 19.765625
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 18.875
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 18.328125
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.703125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.140625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.140625
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 5 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.71875
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 17.5
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.0
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 222.765625
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.921875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.609375
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 17.15625
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 17.078125
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 18.0
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 17.125
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.328125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.21875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.1875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.203125
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.203125
-PROBLEMA NUM 6 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 234.5
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 21.78125
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.1875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.6875
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.265625
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.859375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.0
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 16.28125
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.5
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.140625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.796875
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 237.921875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.234375
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.203125
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.1875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.203125
-PROBLEMA NUM 7 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 18.0
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 17.5625
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 0.984375
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.109375
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.078125
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.703125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.84375
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.671875
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.25
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 276.140625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 17.78125
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.21875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.15625
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.21875
-PROBLEMA NUM 8 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 15.890625
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.40625
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.0
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.609375
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.046875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.65625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.671875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.921875
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 197.5625
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 17.703125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 17.046875
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.390625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.15625
-PROBLEMA NUM 9 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.078125
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.578125
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 0.96875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.203125
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.203125
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.65625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.6875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 206.203125
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 19.1875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 18.375
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 17.859375
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 7.09375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.234375
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.15625
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 10 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.5625
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.453125
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 0.96875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 202.859375
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.84375
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.15625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.1875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 17.53125
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.265625
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.53125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.953125
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.4375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.1875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 11 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.96875
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 180.015625
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 2.5
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 18.25
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.125
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.078125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.9375
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 16.6875
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.296875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 15.828125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.03125
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 183.640625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 35
 tiempo focal: 0.265625
 
 MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.203125
+Tiempo en realizar búsqueda A*: 0.3125
+nodos expandidos A*: 40
+
+nodos expandidos focal: 40
+tiempo focal: 0.375
 
 MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
+Tiempo en realizar búsqueda A*: 0.203125
+nodos expandidos A*: 45
+
+nodos expandidos focal: 45
+tiempo focal: 0.296875
 
 MSE: 3
+Tiempo en realizar búsqueda A*: 0.15625
+nodos expandidos A*: 47
+
+nodos expandidos focal: 47
+tiempo focal: 0.296875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.171875
+nodos expandidos A*: 57
+
+nodos expandidos focal: 57
+tiempo focal: 0.28125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.15625
+nodos expandidos A*: 44
+
+nodos expandidos focal: 44
+tiempo focal: 0.265625
+PROBLEMA NUM 2 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.203125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.234375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.21875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.21875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.203125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.203125
+PROBLEMA NUM 3 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.203125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 28
+
 nodos expandidos focal: 28
 tiempo focal: 0.1875
 
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 33
+
+nodos expandidos focal: 33
+tiempo focal: 0.234375
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.203125
+
 MSE: 4
-nodos expandidos focal: 31
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.21875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 35
+
+nodos expandidos focal: 35
+tiempo focal: 0.265625
+PROBLEMA NUM 4 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.15625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.21875
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.734375
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.546875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.296875
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.21875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.421875
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.34375
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.296875
+PROBLEMA NUM 5 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.171875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.171875
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.171875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.1875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
 tiempo focal: 0.171875
 
 MSE: 5
-nodos expandidos focal: 30
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.140625
+PROBLEMA NUM 6 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.28125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.140625
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.25
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.21875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 34
+
+nodos expandidos focal: 34
+tiempo focal: 0.21875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 37
+
+nodos expandidos focal: 37
+tiempo focal: 0.203125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.25
+PROBLEMA NUM 7 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.1875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.203125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.1875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.21875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.203125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.203125
+PROBLEMA NUM 8 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.109375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.21875
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.40625
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.1875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 18
+
+nodos expandidos focal: 18
+tiempo focal: 0.1875
+PROBLEMA NUM 9 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.171875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.171875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.15625
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.15625
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.25
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.15625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.15625
+PROBLEMA NUM 10 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.25
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.140625
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.140625
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 21
+
+nodos expandidos focal: 21
+tiempo focal: 0.1875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.109375
+PROBLEMA NUM 11 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.203125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.203125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.21875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.203125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.203125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 35
+
+nodos expandidos focal: 35
 tiempo focal: 0.1875
 PROBLEMA NUM 12 - k: 2
--------------------W: 1.5-------------------
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 18.984375
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.109375
 
 MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 17.921875
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.109375
 
 MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.15625
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.109375
 
 MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.515625
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.109375
 
 MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.0
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.109375
 
 MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.890625
--------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 20
 
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.921875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.84375
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.0
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 15.890625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 22.8125
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 7.15625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.203125
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.1875
+nodos expandidos focal: 20
+tiempo focal: 0.109375
 PROBLEMA NUM 13 - k: 2
--------------------W: 1.5-------------------
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.671875
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 37
 
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 17.984375
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.109375
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.640625
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.890625
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.921875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.921875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.828125
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 226.578125
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 20.953125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 17.546875
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.5625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.140625
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.15625
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.15625
-PROBLEMA NUM 14 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.46875
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.859375
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 0.984375
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.3125
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.96875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.65625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.609375
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 195.21875
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 17.921875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.578125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.71875
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.171875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.203125
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.21875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.1875
-PROBLEMA NUM 15 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.078125
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.390625
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.1875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.546875
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.109375
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 191.5
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 7.625
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 18.171875
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.3125
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.40625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 17.0
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 16 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.4375
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 185.796875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.65625
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 24.765625
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.359375
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 7.515625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 12.71875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 21.90625
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.421875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 15.8125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.09375
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 5.859375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 37
 tiempo focal: 0.1875
 
 MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 50
 
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.15625
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.15625
-PROBLEMA NUM 17 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 174.203125
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 17.5625
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.0625
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.875
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.046875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.609375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.671875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.84375
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.671875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.28125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 216.5625
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 7.5625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 50
 tiempo focal: 0.25
 
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
 MSE: 2
-nodos expandidos focal: 26
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 49
+
+nodos expandidos focal: 49
 tiempo focal: 0.234375
 
 MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.140625
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 49
 
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.15625
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.1875
-PROBLEMA NUM 18 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 15.78125
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 17.1875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.015625
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 18.0625
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.921875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.0625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.234375
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 17.078125
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 18.796875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 171.265625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.25
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.09375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
+nodos expandidos focal: 49
 tiempo focal: 0.1875
 
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.15625
-
 MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.1875
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 53
 
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.15625
-PROBLEMA NUM 19 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.0625
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.71875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.078125
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.59375
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.96875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.671875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.71875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.84375
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 177.96875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.734375
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.421875
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.078125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.21875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.15625
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 20 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.25
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.671875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 0.953125
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.328125
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.171875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.671875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 155.25
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 21.609375
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.203125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.140625
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.421875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.21875
-
-MSE: 4
-nodos expandidos focal: 31
+nodos expandidos focal: 53
 tiempo focal: 0.234375
 
 MSE: 5
-nodos expandidos focal: 30
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 49
+
+nodos expandidos focal: 49
 tiempo focal: 0.1875
-PROBLEMA NUM 21 - k: 2
--------------------W: 1.5-------------------
+PROBLEMA NUM 14 - k: 2
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.21875
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.109375
 
 MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.421875
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.109375
 
 MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 0.96875
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.109375
 
 MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 192.734375
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.109375
 
 MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.15625
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.109375
 
 MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.078125
--------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.109375
+PROBLEMA NUM 15 - k: 2
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.984375
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.125
 
 MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 16.765625
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 30
 
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.703125
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.09375
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.453125
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.078125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.234375
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.3125
-
-MSE: 5
 nodos expandidos focal: 30
 tiempo focal: 0.21875
-PROBLEMA NUM 22 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.421875
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 178.796875
 
 MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.359375
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.1875
 
 MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.25
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 36
+
+nodos expandidos focal: 37
+tiempo focal: 0.1875
 
 MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.921875
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 42
 
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.921875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.796875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 16.28125
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 17.6875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 17.09375
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 18.25
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 159.0625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 43
 tiempo focal: 0.203125
 
-MSE: 1
-nodos expandidos focal: 25
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 42
+
+nodos expandidos focal: 43
 tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.1875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 23 - k: 2
--------------------W: 1.5-------------------
+PROBLEMA NUM 16 - k: 2
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.796875
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.125
 
 MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.953125
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
 
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.109375
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.859375
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.859375
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.84375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.78125
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.984375
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.4375
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 183.078125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 18.34375
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.109375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 24 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.1875
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 17.578125
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.046875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.78125
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.984375
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.984375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.1875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 17.0
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 288.609375
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 17.515625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 17.109375
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.640625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.140625
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 25 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.140625
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 18.734375
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.15625
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.734375
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.03125
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.90625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.203125
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 193.34375
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.078125
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.515625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.4375
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.15625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.15625
-PROBLEMA NUM 26 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.109375
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.484375
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.0
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 165.015625
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.71875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.6875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.578125
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 18.15625
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 17.46875
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.703125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.921875
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.140625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.15625
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 27 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.078125
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 178.46875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.296875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.828125
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.234375
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.4375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.25
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 16.671875
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 17.0
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.0625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.515625
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 162.953125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.234375
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.203125
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.1875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.203125
-PROBLEMA NUM 28 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 18.109375
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 18.1875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.078125
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 17.90625
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 0.9375
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.046875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.875
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 15.71875
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 16.15625
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 221.328125
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 22.390625
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.6875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 29 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.578125
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 19.5625
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 1.140625
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 19.625
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.0
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 4.046875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.40625
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 17.140625
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 179.890625
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 19.640625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.765625
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.09375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.171875
-PROBLEMA NUM 30 - k: 2
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.078125
-
-MSE: 1
-nodos expandidos focal: 48775
-tiempo focal: 16.71875
-
-MSE: 2
-nodos expandidos focal: 2090
-tiempo focal: 0.96875
-
-MSE: 3
-nodos expandidos focal: 49424
-tiempo focal: 16.296875
-
-MSE: 4
-nodos expandidos focal: 2089
-tiempo focal: 1.046875
-
-MSE: 5
-nodos expandidos focal: 10460
-tiempo focal: 3.671875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.78125
-
-MSE: 1
-nodos expandidos focal: 47274
-tiempo focal: 197.5
-
-MSE: 2
-nodos expandidos focal: 47595
-tiempo focal: 19.203125
-
-MSE: 3
-nodos expandidos focal: 47558
-tiempo focal: 16.390625
-
-MSE: 4
-nodos expandidos focal: 47553
-tiempo focal: 16.28125
-
-MSE: 5
-nodos expandidos focal: 16816
-tiempo focal: 6.21875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.203125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 28
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 31
-tiempo focal: 0.171875
-
-MSE: 5
-nodos expandidos focal: 30
-tiempo focal: 0.1875
--------------------k: 4-------------------
-PROBLEMA NUM 1 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.53125
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.578125
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 17.5
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 10.78125
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 60.21875
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.28125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.3125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 17.96875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.0625
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.90625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 17.328125
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.8125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.265625
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 28
+nodos expandidos focal: 23
 tiempo focal: 0.09375
 
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-PROBLEMA NUM 2 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 162.390625
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 16.359375
-
 MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 17.875
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.09375
 
 MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.734375
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.125
 
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 18.421875
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 27
 
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.84375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.6875
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 17.5
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.546875
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.640625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 163.3125
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 15.515625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.265625
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
 nodos expandidos focal: 27
+tiempo focal: 0.1875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.125
+PROBLEMA NUM 17 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.21875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.1875
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.203125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.203125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 33
+
+nodos expandidos focal: 33
+tiempo focal: 0.21875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 41
+
+nodos expandidos focal: 41
+tiempo focal: 0.203125
+PROBLEMA NUM 18 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.1875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.21875
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.234375
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.25
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.234375
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 40
+
+nodos expandidos focal: 40
+tiempo focal: 0.25
+PROBLEMA NUM 19 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.15625
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.15625
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.15625
+PROBLEMA NUM 20 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.328125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
 tiempo focal: 0.171875
 
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 37
+
+nodos expandidos focal: 37
+tiempo focal: 0.3125
+
 MSE: 3
-nodos expandidos focal: 26
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 35
+
+nodos expandidos focal: 35
 tiempo focal: 0.15625
 
 MSE: 4
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 48
+
+nodos expandidos focal: 49
+tiempo focal: 0.265625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 40
+
+nodos expandidos focal: 40
+tiempo focal: 0.125
+PROBLEMA NUM 21 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 28
+
 nodos expandidos focal: 28
 tiempo focal: 0.125
 
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-PROBLEMA NUM 3 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.578125
-
 MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.484375
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.109375
 
 MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 17.796875
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 33
 
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.609375
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.640625
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 17.15625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.25
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 152.546875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.375
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.421875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 16.296875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.5625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.296875
-
-MSE: 1
-nodos expandidos focal: 25
+nodos expandidos focal: 33
 tiempo focal: 0.171875
 
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.15625
-
 MSE: 3
-nodos expandidos focal: 26
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 37
+
+nodos expandidos focal: 37
+tiempo focal: 0.109375
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 37
+
+nodos expandidos focal: 37
+tiempo focal: 0.109375
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 38
+
+nodos expandidos focal: 38
+tiempo focal: 0.109375
+PROBLEMA NUM 22 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
 tiempo focal: 0.1875
 
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.234375
-PROBLEMA NUM 4 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.0625
-
 MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.390625
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 22
 
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 17.359375
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.578125
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 160.40625
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 16.875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.828125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 16.328125
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.078125
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.296875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 16.09375
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.03125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 22
 tiempo focal: 0.25
 
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
 MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.15625
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.203125
 
 MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
+Tiempo en realizar búsqueda A*: 0.21875
+nodos expandidos A*: 22
 
-MSE: 4
-nodos expandidos focal: 28
+nodos expandidos focal: 22
 tiempo focal: 0.109375
 
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.234375
-PROBLEMA NUM 5 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 164.53125
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 18.046875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 20.0625
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.625
-
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 18.34375
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 23
 
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 17.78125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.203125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 16.421875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.21875
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.453125
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 165.46875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.78125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.28125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 27
+nodos expandidos focal: 23
 tiempo focal: 0.1875
 
-MSE: 3
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.234375
+PROBLEMA NUM 23 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 26
+
 nodos expandidos focal: 26
 tiempo focal: 0.171875
 
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 6 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.890625
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 19.203125
-
 MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.96875
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.09375
 
 MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.703125
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.1875
 
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.265625
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 28
 
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 16.828125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 148.5625
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 18.25
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.421875
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 16.0
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.296875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.265625
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
 nodos expandidos focal: 28
 tiempo focal: 0.09375
 
 MSE: 5
-nodos expandidos focal: 25
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
 tiempo focal: 0.1875
-PROBLEMA NUM 7 - k: 4
--------------------W: 1.5-------------------
+PROBLEMA NUM 24 - k: 2
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.96875
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.203125
 
 MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.296875
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.21875
 
 MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 165.765625
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.109375
 
 MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.859375
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.109375
 
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 16.328125
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 34
+
+nodos expandidos focal: 34
+tiempo focal: 0.1875
 
 MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 16.96875
--------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 33
+
+nodos expandidos focal: 33
+tiempo focal: 0.1875
+PROBLEMA NUM 25 - k: 2
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 5.9375
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.1875
 
 MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 15.953125
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.1875
 
 MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.015625
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 25
 
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 5.9375
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 15.546875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 15.65625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.296875
-
-MSE: 1
 nodos expandidos focal: 25
 tiempo focal: 0.171875
 
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.21875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.1875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.125
+PROBLEMA NUM 26 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.234375
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.125
+
 MSE: 2
-nodos expandidos focal: 27
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
 tiempo focal: 0.1875
 
 MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.265625
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.109375
 
 MSE: 4
-nodos expandidos focal: 28
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
 tiempo focal: 0.140625
 
 MSE: 5
-nodos expandidos focal: 25
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.140625
+PROBLEMA NUM 27 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.09375
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.109375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.203125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.1875
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
 tiempo focal: 0.1875
-PROBLEMA NUM 8 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 229.21875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 33.234375
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 24.578125
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.953125
 
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 22.53125
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.21875
 
 MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 21.703125
--------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.140625
+PROBLEMA NUM 28 - k: 2
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 7.171875
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
 
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 19.75
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.71875
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 8.890625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 186.28125
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.546875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 19
 tiempo focal: 0.28125
 
 MSE: 1
-nodos expandidos focal: 25
+Tiempo en realizar búsqueda A*: 0.15625
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.3125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.1875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.328125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.25
+PROBLEMA NUM 29 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.171875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 37
+
+nodos expandidos focal: 37
 tiempo focal: 0.171875
 
 MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.15625
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 40
+
+nodos expandidos focal: 40
+tiempo focal: 0.234375
 
 MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 36
+
+nodos expandidos focal: 36
+tiempo focal: 0.125
 
 MSE: 4
-nodos expandidos focal: 28
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 33
+
+nodos expandidos focal: 33
 tiempo focal: 0.109375
 
 MSE: 5
-nodos expandidos focal: 25
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 49
+
+nodos expandidos focal: 49
+tiempo focal: 0.203125
+PROBLEMA NUM 30 - k: 2
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.25
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.234375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 35
+
+nodos expandidos focal: 35
+tiempo focal: 0.265625
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.296875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.328125
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.3125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.296875
+nodos expandidos A*: 37
+
+nodos expandidos focal: 37
+tiempo focal: 0.21875
+-------------------k: 4-------------------
+PROBLEMA NUM 1 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 35
+
+nodos expandidos focal: 35
+tiempo focal: 0.359375
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 36
+
+nodos expandidos focal: 36
+tiempo focal: 0.375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.171875
+nodos expandidos A*: 46
+
+nodos expandidos focal: 46
+tiempo focal: 0.578125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.328125
+nodos expandidos A*: 42
+
+nodos expandidos focal: 42
+tiempo focal: 0.109375
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.359375
+nodos expandidos A*: 46
+
+nodos expandidos focal: 46
+tiempo focal: 0.234375
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 42
+
+nodos expandidos focal: 42
+tiempo focal: 0.359375
+PROBLEMA NUM 2 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.1875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.359375
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.328125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.15625
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.296875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.25
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.234375
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.21875
+PROBLEMA NUM 3 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.234375
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.296875
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.25
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.28125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.15625
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.265625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.15625
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.3125
+PROBLEMA NUM 4 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.21875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.34375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.96875
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.28125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.21875
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.4375
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.25
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.4375
+PROBLEMA NUM 5 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.203125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.203125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
 tiempo focal: 0.1875
-PROBLEMA NUM 9 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.34375
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 20.125
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.78125
 
 MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.734375
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.1875
 
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 18.84375
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.140625
 
 MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 19.09375
--------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.140625
+PROBLEMA NUM 6 - k: 4
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 165.3125
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.140625
 
 MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 26.34375
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.171875
 
 MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 8.875
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.140625
 
 MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 8.953125
+Tiempo en realizar búsqueda A*: 0.859375
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.265625
 
 MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 22.421875
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.21875
 
 MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 22.359375
--------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.203125
+PROBLEMA NUM 7 - k: 4
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 25
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
 tiempo focal: 0.375
 
 MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.234375
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.3125
 
 MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.234375
+Tiempo en realizar búsqueda A*: 0.34375
+nodos expandidos A*: 25
 
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.234375
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.125
-
-MSE: 5
 nodos expandidos focal: 25
-tiempo focal: 0.234375
-PROBLEMA NUM 10 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 20.609375
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 19.765625
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 219.8125
+tiempo focal: 0.28125
 
 MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 1.34375
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 24
 
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 28.234375
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 23.328125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 7.59375
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 22.671875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 8.265625
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 8.21875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 20.109375
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 19.984375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 24
 tiempo focal: 0.328125
 
-MSE: 1
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 25
+
 nodos expandidos focal: 25
-tiempo focal: 0.21875
+tiempo focal: 0.390625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.296875
+PROBLEMA NUM 8 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.328125
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.171875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
 
 MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.21875
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
 
 MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.234375
+Tiempo en realizar búsqueda A*: 0.25
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
 
 MSE: 4
-nodos expandidos focal: 28
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
+PROBLEMA NUM 9 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.109375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.203125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
 tiempo focal: 0.125
 
 MSE: 5
-nodos expandidos focal: 25
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.109375
+PROBLEMA NUM 10 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.1875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.28125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
 tiempo focal: 0.21875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.265625
 PROBLEMA NUM 11 - k: 4
--------------------W: 1.5-------------------
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 221.359375
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.21875
 
 MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 26.4375
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.234375
 
 MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 23.1875
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.203125
 
 MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 1.0
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.1875
 
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 23.34375
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.234375
 
 MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 23.15625
--------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.234375
+PROBLEMA NUM 12 - k: 4
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 7.5625
+Tiempo en realizar búsqueda A*: 0.265625
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.15625
 
 MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 20.640625
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 16
 
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.625
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 8.421875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 202.46875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.65625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.296875
-
-MSE: 1
-nodos expandidos focal: 25
+nodos expandidos focal: 16
 tiempo focal: 0.203125
 
 MSE: 2
-nodos expandidos focal: 27
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.25
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.171875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 16
+
+nodos expandidos focal: 16
+tiempo focal: 0.296875
+PROBLEMA NUM 13 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 37
+
+nodos expandidos focal: 37
+tiempo focal: 0.28125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 1.171875
+nodos expandidos A*: 39
+
+nodos expandidos focal: 39
+tiempo focal: 0.296875
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 43
+
+nodos expandidos focal: 43
+tiempo focal: 0.3125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.15625
+nodos expandidos A*: 44
+
+nodos expandidos focal: 44
+tiempo focal: 0.1875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 47
+
+nodos expandidos focal: 47
+tiempo focal: 0.171875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 51
+
+nodos expandidos focal: 51
+tiempo focal: 0.25
+PROBLEMA NUM 14 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.140625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.140625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.203125
+PROBLEMA NUM 15 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.140625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.265625
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 34
+
+nodos expandidos focal: 34
+tiempo focal: 0.15625
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.28125
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.25
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.96875
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.296875
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 1.265625
+nodos expandidos A*: 36
+
+nodos expandidos focal: 36
+tiempo focal: 0.59375
+PROBLEMA NUM 16 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.4375
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.8125
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.15625
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.1875
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.203125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.1875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.15625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 23
+
+nodos expandidos focal: 23
+tiempo focal: 0.140625
+PROBLEMA NUM 17 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.21875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.21875
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
 tiempo focal: 0.21875
 
 MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.1875
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.265625
 
 MSE: 4
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.25
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.265625
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.203125
+PROBLEMA NUM 18 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.21875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.265625
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.21875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.25
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.234375
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.28125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 28
+
 nodos expandidos focal: 28
+tiempo focal: 0.265625
+PROBLEMA NUM 19 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
 tiempo focal: 0.125
 
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-PROBLEMA NUM 12 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.9375
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 18.8125
-
 MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 21.375
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.125
 
 MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.859375
+Tiempo en realizar búsqueda A*: 0.28125
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.203125
 
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 18.34375
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.140625
 
 MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 17.46875
--------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 17
+
+nodos expandidos focal: 17
+tiempo focal: 0.15625
+PROBLEMA NUM 20 - k: 4
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 192.34375
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.296875
 
 MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 19.265625
+Tiempo en realizar búsqueda A*: 0.265625
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.171875
 
 MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.3125
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.203125
 
 MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.390625
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.171875
 
 MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 17.09375
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 34
+
+nodos expandidos focal: 34
+tiempo focal: 0.25
 
 MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.9375
--------------------W: 4-------------------
+Tiempo en realizar búsqueda A*: 0.234375
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.125
+PROBLEMA NUM 21 - k: 4
+-------------------W: 10000-------------------
 
 MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 28
+
+nodos expandidos focal: 28
+tiempo focal: 0.15625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.3125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.4375
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.359375
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 36
+
+nodos expandidos focal: 36
+tiempo focal: 0.171875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.15625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 29
+
+nodos expandidos focal: 29
+tiempo focal: 0.109375
+PROBLEMA NUM 22 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.21875
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.203125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.21875
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.296875
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.25
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.234375
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 22
+
+nodos expandidos focal: 22
+tiempo focal: 0.265625
+PROBLEMA NUM 23 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 25
+
 nodos expandidos focal: 25
+tiempo focal: 0.15625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.140625
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.203125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.109375
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 25
+
+nodos expandidos focal: 25
+tiempo focal: 0.109375
+PROBLEMA NUM 24 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.265625
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
 tiempo focal: 0.25
 
 MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 26
 
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
 nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 13 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.375
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 16.46875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 173.40625
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.734375
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 16.609375
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.84375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.8125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 19.015625
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.140625
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 7.375
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 18.234375
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 17.1875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.28125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-PROBLEMA NUM 14 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 156.4375
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 18.4375
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.84375
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.8125
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 19.0625
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 19.21875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.546875
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 17.171875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.453125
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.578125
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 312.5625
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.71875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.296875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.15625
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 15 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.03125
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.765625
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 17.34375
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.734375
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.03125
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 398.28125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 10.703125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 19.90625
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.25
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.015625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 15.890625
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 15.703125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.265625
-
-MSE: 1
-nodos expandidos focal: 25
 tiempo focal: 0.234375
 
 MSE: 2
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 27
+
 nodos expandidos focal: 27
-tiempo focal: 0.1875
+tiempo focal: 0.140625
 
 MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 28
 
-MSE: 4
 nodos expandidos focal: 28
-tiempo focal: 0.09375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 16 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 16.21875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 16.71875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 276.703125
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.921875
+tiempo focal: 0.203125
 
 MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 16.28125
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.265625
 
 MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.40625
--------------------W: 2-------------------
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
+tiempo focal: 0.28125
+PROBLEMA NUM 25 - k: 4
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.671875
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 24
 
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 19.109375
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.25
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 7.171875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 18.046875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.234375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 24
 tiempo focal: 0.28125
 
 MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
+Tiempo en realizar búsqueda A*: 0.421875
+nodos expandidos A*: 24
 
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 17 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 311.390625
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 18.953125
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.515625
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.671875
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.453125
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 16.890625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.09375
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 16.0
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.0
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 5.890625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 178.21875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 17.375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.3125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.1875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 18 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.921875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 19.53125
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 19.25
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.71875
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.75
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 185.6875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.5625
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 16.265625
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.078125
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 7.09375
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 18.1875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.53125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.28125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 19 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 18.171875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 18.046875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 165.15625
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.90625
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.28125
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.515625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.625
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 18.6875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.90625
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 7.0625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 17.15625
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.890625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.28125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 20 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 339.03125
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 19.171875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.4375
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.609375
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.625
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 17.09375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 16.046875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.015625
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.34375
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 215.375
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 19.140625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.3125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-PROBLEMA NUM 21 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 18.546875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 19.140625
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.28125
-
-MSE: 3
-nodos expandidos focal: 978
+nodos expandidos focal: 24
 tiempo focal: 0.59375
 
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 16.84375
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 163.125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 7.328125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 16.390625
-
 MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.6875
+Tiempo en realizar búsqueda A*: 0.484375
+nodos expandidos A*: 24
 
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 18.203125
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.171875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.296875
-
-MSE: 1
-nodos expandidos focal: 25
+nodos expandidos focal: 24
 tiempo focal: 0.1875
 
-MSE: 2
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 27
+
 nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
+tiempo focal: 0.1875
 
 MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
+Tiempo en realizar búsqueda A*: 0.203125
+nodos expandidos A*: 24
 
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-PROBLEMA NUM 22 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 18.296875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 18.328125
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 160.640625
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.984375
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.640625
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.671875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.796875
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 18.9375
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.234375
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 7.0625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 17.25
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.96875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 24
 tiempo focal: 0.328125
 
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
-
 MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-PROBLEMA NUM 23 - k: 4
--------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 24
 
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 165.265625
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.96875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.65625
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.671875
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 18.609375
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 19.359375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.65625
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 18.234375
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.671875
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 7.109375
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 165.203125
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.890625
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.328125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-PROBLEMA NUM 24 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 18.921875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 19.171875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.078125
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.6875
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 16.953125
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 159.8125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 7.96875
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 15.71875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.5625
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.84375
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 18.453125
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.5
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.296875
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 25 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.65625
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.421875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 169.84375
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 1.71875
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.40625
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.65625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.703125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 18.546875
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.078125
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.90625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 16.75
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.109375
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.265625
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
+nodos expandidos focal: 24
 tiempo focal: 0.15625
 PROBLEMA NUM 26 - k: 4
--------------------W: 1.5-------------------
+-------------------W: 10000-------------------
 
 MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 150.59375
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.15625
 
 MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 19.59375
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.15625
 
 MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 18.953125
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.125
 
 MSE: 3
-nodos expandidos focal: 978
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.140625
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.03125
+nodos expandidos A*: 24
+
+nodos expandidos focal: 24
+tiempo focal: 0.125
+PROBLEMA NUM 27 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.140625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.125
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.203125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 27
+
+nodos expandidos focal: 27
+tiempo focal: 0.28125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.40625
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.140625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 26
+
+nodos expandidos focal: 26
+tiempo focal: 0.15625
+PROBLEMA NUM 28 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.140625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.046875
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.109375
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.109375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.203125
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.125
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.203125
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 19
+
+nodos expandidos focal: 19
+tiempo focal: 0.203125
+PROBLEMA NUM 29 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.15625
+
+MSE: 1
+Tiempo en realizar búsqueda A*: 0.078125
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.15625
+
+MSE: 2
+Tiempo en realizar búsqueda A*: 0.09375
+nodos expandidos A*: 44
+
+nodos expandidos focal: 44
+tiempo focal: 0.296875
+
+MSE: 3
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 42
+
+nodos expandidos focal: 42
+tiempo focal: 0.140625
+
+MSE: 4
+Tiempo en realizar búsqueda A*: 0.25
+nodos expandidos A*: 39
+
+nodos expandidos focal: 39
+tiempo focal: 0.140625
+
+MSE: 5
+Tiempo en realizar búsqueda A*: 0.0625
+nodos expandidos A*: 41
+
+nodos expandidos focal: 42
+tiempo focal: 0.21875
+PROBLEMA NUM 30 - k: 4
+-------------------W: 10000-------------------
+
+MSE: 0
+Tiempo en realizar búsqueda A*: 0.453125
+nodos expandidos A*: 30
+
+nodos expandidos focal: 30
 tiempo focal: 0.703125
 
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 18.859375
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.921875
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.671875
-
 MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 17.375
+Tiempo en realizar búsqueda A*: 0.21875
+nodos expandidos A*: 30
 
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.46875
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.765625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 186.046875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 17.671875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.28125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.15625
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-PROBLEMA NUM 27 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.6875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.78125
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 17.09375
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.640625
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 16.28125
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 16.578125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 170.09375
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 17.34375
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 7.796875
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 7.140625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 18.515625
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 18.671875
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
+nodos expandidos focal: 30
 tiempo focal: 0.296875
 
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
 MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
+Tiempo en realizar búsqueda A*: 0.140625
+nodos expandidos A*: 32
+
+nodos expandidos focal: 32
+tiempo focal: 0.34375
 
 MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
+Tiempo en realizar búsqueda A*: 0.1875
+nodos expandidos A*: 33
+
+nodos expandidos focal: 33
+tiempo focal: 0.53125
 
 MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
+Tiempo en realizar búsqueda A*: 0.21875
+nodos expandidos A*: 31
+
+nodos expandidos focal: 31
+tiempo focal: 0.25
 
 MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.234375
-PROBLEMA NUM 28 - k: 4
--------------------W: 1.5-------------------
+Tiempo en realizar búsqueda A*: 0.125
+nodos expandidos A*: 31
 
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 18.453125
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 18.0625
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 153.765625
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.96875
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 17.4375
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 20.484375
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 7.375
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 18.40625
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.8125
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.90625
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 17.0
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.03125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.28125
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.15625
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.15625
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.21875
-PROBLEMA NUM 29 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 163.171875
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 16.65625
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 17.40625
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.640625
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 18.0625
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 18.828125
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 6.78125
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 17.953125
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 6.828125
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 7.046875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 171.796875
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 17.453125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.296875
-
-MSE: 1
-nodos expandidos focal: 25
+nodos expandidos focal: 31
 tiempo focal: 0.203125
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.203125
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.109375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.1875
-PROBLEMA NUM 30 - k: 4
--------------------W: 1.5-------------------
-
-MSE: 0
-nodos expandidos focal: 49675
-tiempo focal: 17.53125
-
-MSE: 1
-nodos expandidos focal: 48904
-tiempo focal: 17.875
-
-MSE: 2
-nodos expandidos focal: 47700
-tiempo focal: 17.4375
-
-MSE: 3
-nodos expandidos focal: 978
-tiempo focal: 0.65625
-
-MSE: 4
-nodos expandidos focal: 47541
-tiempo focal: 16.234375
-
-MSE: 5
-nodos expandidos focal: 47325
-tiempo focal: 171.65625
--------------------W: 2-------------------
-
-MSE: 0
-nodos expandidos focal: 16922
-tiempo focal: 11.640625
-
-MSE: 1
-nodos expandidos focal: 47158
-tiempo focal: 20.40625
-
-MSE: 2
-nodos expandidos focal: 16979
-tiempo focal: 8.625
-
-MSE: 3
-nodos expandidos focal: 16965
-tiempo focal: 6.71875
-
-MSE: 4
-nodos expandidos focal: 46276
-tiempo focal: 17.640625
-
-MSE: 5
-nodos expandidos focal: 45571
-tiempo focal: 16.453125
--------------------W: 4-------------------
-
-MSE: 0
-nodos expandidos focal: 25
-tiempo focal: 0.265625
-
-MSE: 1
-nodos expandidos focal: 25
-tiempo focal: 0.171875
-
-MSE: 2
-nodos expandidos focal: 27
-tiempo focal: 0.171875
-
-MSE: 3
-nodos expandidos focal: 26
-tiempo focal: 0.171875
-
-MSE: 4
-nodos expandidos focal: 28
-tiempo focal: 0.09375
-
-MSE: 5
-nodos expandidos focal: 25
-tiempo focal: 0.171875
