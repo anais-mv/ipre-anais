@@ -50,6 +50,19 @@ class Datos:
         nodos = [np.mean(lista) for lista in lista_nodos]
         return tiempos, nodos
     
+class Valores_g():
+    def __init__(self, weight):
+        self.weight = weight
+        self.mse_0 = []
+        self.mse_25 = []
+        self.mse_5 = []
+        self.mse_10 = []
+        self.mse_20 = []
+        self.mse_100 = []
+        self.mse_200 = []
+        self.all_mse = [self.mse_0, self.mse_25, self.mse_5, self.mse_10, self.mse_20, self.mse_100, self.mse_200]
+
+    
 def escribir_archivo(nombre, escribir):
     file = open(nombre, "a")
     file.write(escribir + "\n")

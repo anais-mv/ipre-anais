@@ -2,7 +2,7 @@ from astar import Astar
 import time
 from grafo import cargar_grafo
 from main import cantidad
-from clase_datos import Resultados, Datos, escribir_archivo
+from clase_datos import Resultados, Datos, escribir_archivo, Valores_g
 import pickle
 from SortedSet.sorted_set import SortedSet
 
@@ -10,9 +10,9 @@ file_name = "grafos//grafo_NUEVO_2023-08-27 22.33.24.589415_--can_prop=16--can_o
 # file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
 
 grafo = cargar_grafo(file_name)
-# weights = [1.2, 1.5, 2, 4]
+weights = [1.2, 1.5, 2, 4]
 # weights = [1.2]
-weights = [1]
+# weights = [1]
 weight_15 = []
 weight_2 = []
 weight_4 = []
@@ -23,10 +23,14 @@ op = SortedSet(grafo.op_disp)
 heuristica = grafo.heuristics_k4[0]
 prop = grafo.prop_disp
 can_mse = 7
-archivo = "archivos terminal//terminal astar LMCUT NUEVO -- " + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+archivo = "archivos terminal//terminal astar H ARISTAS" + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
 # archivo = "logs_ejecuciones/exec_astar--" + file_name.replace("../storage/grafo_", "")[:-7] + ".txt"
 
 g_problemas = []
+for weight in weights:
+   valor_g = Valores_g(weight) 
+   g_problemas.append(valor_g)
+
 open_archivo = open(archivo, "w")
 open_archivo.close()
 for i in range(0, cantidad):
@@ -36,16 +40,19 @@ for i in range(0, cantidad):
     for weight in weights:
         print(f"-------------------W: {weight}-------------------")
         escribir_archivo(archivo, f"-------------------W: {weight}-------------------")
+        for valor in g_problemas:
+            if valor.weight == weight:
+                valor_g = valor
         # a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "h*")
         a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "h*")
-        # a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "lmcut")
+        # a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "hff")
         inicio = time.process_time()
         sol, exp, tim = a_star.search()
         tiempo = time.process_time() - inicio
         tiempos_astar = [tiempo] * can_mse
         nodos_astar = [exp] * can_mse
         valores_g = [a_star.g_final] * can_mse
-        g_problemas.append(a_star.g_final)
+        valor_g.mse_0.append(a_star.g_final)
         print(f"Valor g: {a_star.g_final}")
         escribir_archivo(archivo, f"Valor g: {a_star.g_final}")
         print(f"Tiempo en realizar búsqueda A*: {tiempo}")
@@ -68,10 +75,12 @@ else:
     dato = Datos(weight_15, weight_2, weight_4)
 file_name = file_name.replace("grafo","dato")
 file_name = file_name.replace(".pickle", "")
-nombre = file_name + "--a_star - LMCUT NUEVO.pickle"
+nombre = file_name + "--a_star - H ARISTAS.pickle"
 # nombre = file_name + "--a_star.pickle"
-# nombre = file_name + "--a_star - LISTA G.pickle"
+nombre_g = file_name + "--a_star - LISTA G H ARISTAS.pickle"
 file = open(nombre, "wb")
 # pickle.dump(dato, file)
 pickle.dump(dato, file)
+file_g = open(nombre_g, "wb")
+pickle.dump(g_problemas, file_g)
     

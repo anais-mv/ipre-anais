@@ -80,8 +80,8 @@ class Astar(object):
         while not self.open.is_empty():
             n = self.open.extract()
             lista = list(n.state)
-            if self.expansions >= 100:
-                return None
+            # if self.expansions >= 100:
+            #     return None
             if self.is_goal(n.state):
                 self.tiempo_final = time.process_time() - self.tiempo_inicio
                 self.camino = list(reversed(self.camino))
@@ -93,7 +93,7 @@ class Astar(object):
                 self.closed.add(n.state)
                 estado_n = Estado(n.state, self.operadores)
                 sucesores = estado_n.succ()
-                print(n.h, len(sucesores), n.key, sorted(lista))
+                # print(n.h, len(sucesores), n.key, sorted(lista))
                 for hijo in sucesores:
                     child_node = self.vistos.get(hijo)
                     # vistos get retorna none si no está en vistos (si es nuevo)
