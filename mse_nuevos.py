@@ -6,18 +6,26 @@ import time
 from aristas import nuevos_operadores, revisar_h_diferentes, nuevos_operadores_alternativo
 from astar_heuristicas import Heuristica
 
-file_name = "grafos//grafo_NUEVO_2023-08-27 22.33.24.589415_--can_prop=16--can_op=100--rango=5--max_add=2--min_ap=3.pickle"
+def can_prop(grafo):
+    mayores = []
+    for estado in grafo.estados:
+        lista_props = list(estado.prop)
+        props = [int(num) for num in lista_props]
+        mayor_estado = max(props)
+        mayores.append(mayor_estado)
+    return max(mayores)
+
+print("OLA")
+file_name = "grafos//grafo_2023-11-10 12.54.23.991920_--can_prop=22--can_op=450--rango=1--max_add=20--min_ap=2.pickle"
 grafo = cargar_grafo(file_name)
-file_name = "grafos//grafo_MSE_CHICO_2023-08-27 22.33.24.589415_--can_prop=16--can_op=100--rango=5--max_add=2--min_ap=3.pickle"
-file_name = file_name.replace(":", ".")
 final_archivo = file_name.replace("pickle", "txt").replace("grafos//","")
 archivo = f"archivos terminal// main {final_archivo}"
 open_archivo = open(archivo, "w")
 open_archivo.close()
 valores_k = [2, 4]
 # mses = [0, 1, 2, 3, 4, 5]
-# mses = [0, 2.5, 5, 10, 20, 100, 200]
-mses = [0, 0.25, 0.5, 1, 1.75, 2.5]
+mses = [0, 2.5, 5, 10, 20, 100, 200]
+# mses = [0, 0.25, 0.5, 1, 1.75, 2.5]
 dic_h = grafo.perfect_heuristic.heuristica
 cantidad = 30
 print("CAN:", len(dic_h))
@@ -107,7 +115,8 @@ grafo.objetivo = estado_objetivo
 inicio = time.process_time()
 print("Creando aristas...")
 # op_aristas = nuevos_operadores(grafo, args.can_prop, args.can_op, args.rango, args.max_add)
-op_aristas = nuevos_operadores_alternativo(grafo, archivo)
+# op_aristas = nuevos_operadores_alternativo(grafo, archivo)
+op_aristas = nuevos_operadores(grafo, can_prop(grafo), 3000, 3, 2)
 print(f"Tiempo en crear aristas: {time.process_time() - inicio}")
 escribir_archivo(archivo, f"Tiempo en crear aristas: {time.process_time() - inicio}")
     

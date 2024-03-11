@@ -6,7 +6,7 @@ from clase_datos import Resultados, Datos, escribir_archivo, Valores_g
 import pickle
 from focal_search import FocalSearch
 
-file_name = "grafos//grafo_NUEVO_2023-08-27 22.33.24.589415_--can_prop=16--can_op=100--rango=5--max_add=2--min_ap=3.pickle"
+file_name =  "grafos//grafo_2023-11-10 12.54.23.991920_--can_prop=22--can_op=450--rango=1--max_add=20--min_ap=2.pickle"
 # file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
 
 grafo = cargar_grafo(file_name)
