@@ -10,9 +10,9 @@ file_name = "grafos//grafo_2023-11-10 12.54.23.991920_--can_prop=22--can_op=450-
 # file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
 
 grafo = cargar_grafo(file_name)
-weights = [1.2, 1.5, 2, 4]
+# weights = [1.2, 1.5, 2, 4]
 # weights = [1.2]
-# weights = [1]
+weights = [1]
 weight_15 = []
 weight_2 = []
 weight_4 = []
@@ -23,7 +23,7 @@ op = SortedSet(grafo.op_disp)
 heuristica = grafo.heuristics_k4[0]
 prop = grafo.prop_disp
 can_mse = 7
-archivo = "archivos terminal//terminal astar H ARISTAS" + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+archivo = "archivos terminal//terminal astar H PERFECT" + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
 # archivo = "logs_ejecuciones/exec_astar--" + file_name.replace("../storage/grafo_", "")[:-7] + ".txt"
 
 g_problemas = []
@@ -43,8 +43,8 @@ for i in range(0, cantidad):
         for valor in g_problemas:
             if valor.weight == weight:
                 valor_g = valor
-        # a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "h*")
-        a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "h*")
+        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "h*")
+        # a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "h*")
         # a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "hff")
         inicio = time.process_time()
         sol, exp, tim = a_star.search()
@@ -77,7 +77,7 @@ file_name = file_name.replace("grafo","dato")
 file_name = file_name.replace(".pickle", "")
 nombre = file_name + "--a_star - H ARISTAS.pickle"
 # nombre = file_name + "--a_star.pickle"
-nombre_g = file_name + "--a_star - LISTA G H ARISTAS.pickle"
+nombre_g = file_name + "--a_star - LISTA G H PERFECT.pickle"
 file = open(nombre, "wb")
 # pickle.dump(dato, file)
 pickle.dump(dato, file)
