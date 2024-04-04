@@ -16,8 +16,6 @@ file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_
 file_name = f"../storage/{args.graph_path}"
 
 grafo = cargar_grafo(file_name)
-# weights = [1.5, 2, 4]
-# weights = [1.2]
 weights = [1.2, 1.5, 2, 4]
 objetivo = grafo.objetivo
 op = grafo.op_disp

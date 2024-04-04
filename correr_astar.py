@@ -17,9 +17,7 @@ file_name = f"../storage/{args.graph_path}"
 
 
 grafo = cargar_grafo(file_name)
-# weights = [1.2, 1.5, 2, 4]
-# weights = [1.2]
-weights = [1]
+weights = [1.2, 1.5, 2, 4]
 weight_15 = []
 weight_2 = []
 weight_4 = []
