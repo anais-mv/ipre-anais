@@ -48,8 +48,8 @@ for i in range(0, cantidad):
         for valor in g_problemas:
             if valor.weight == weight:
                 valor_g = valor
-        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "h*")
-        # a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "h*")
+        #a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "h*")
+        a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "h*")
         # a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "hff")
         inicio = time.process_time()
         sol, exp, tim = a_star.search()
