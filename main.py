@@ -13,6 +13,7 @@ from creacion_problemas import correr_fs
 from planning_problem import Estado
 from aristas import nuevos_operadores, revisar_h_diferentes, nuevos_operadores_alternativo
 from clase_datos import escribir_archivo
+# from aumentar_aristas import can_prop
 
 cantidad = 30
 
@@ -95,7 +96,7 @@ if __name__ == "__main__":
     # grafo.guardar_grafo(file_name)
 
     # weights = [1.5, 2, 4]
-    mses = [0, 5, 10, 20, 100, 200]
+    mses = [0, 2.5, 5, 10, 20, 100, 200]
     valores_k = [2, 4]
     # k = 2 # exponent for k multiplied to c
     for k in valores_k:
@@ -134,7 +135,7 @@ if __name__ == "__main__":
     perfect_heuristic_k4 = grafo.heuristics_k4[0]
     percentages_k2, percentages_k4 = [], []
 
-    for i in range(0, 6):
+    for i in range(0, 7):
         heuristic_k2 = grafo.heuristics_k2[i]
         heuristic_k4 = grafo.heuristics_k4[i]
         total_k2, total_k4, coincidentes_k2, coincidentes_k4 = 0, 0, 0, 0
@@ -184,7 +185,20 @@ if __name__ == "__main__":
     inicio = time.process_time()
     print("Creando aristas...")
     # op_aristas = nuevos_operadores(grafo, args.can_prop, args.can_op, args.rango, args.max_add)
-    op_aristas = nuevos_operadores_alternativo(grafo, archivo)
+    # op_aristas = nuevos_operadores_alternativo(grafo, archivo)
+
+    def can_prop(grafo):
+        mayores = []
+        for estado in grafo.estados:
+            lista_props = list(estado.prop)
+            props = [int(num) for num in lista_props]
+            mayor_estado = max(props)
+            mayores.append(mayor_estado)
+        return max(mayores)
+
+    nuevos_op = nuevos_operadores(grafo, can_prop(grafo), args.can_op * 4, 3, 2)
+    lista_op_aristas = list(nuevos_op) # + list(op_aristas)
+    op_aristas = set(lista_op_aristas)
     print(f"Tiempo en crear aristas: {time.process_time() - inicio}")
     escribir_archivo(archivo, f"Tiempo en crear aristas: {time.process_time() - inicio}")
     
