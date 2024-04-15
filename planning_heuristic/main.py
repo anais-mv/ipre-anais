@@ -16,7 +16,7 @@ op1 = Operator("op1", set((1,2)), set((3,4)), set((1,2)))
 op2 = Operator("op2", set((3,4)), set((1,2)), set((3,4)))
 
 #la Task es name, facts, initial_state, goals, operators):
-t1 = Task("t1", set((1,2,3,4)), set((1,2)), set((3,4)), set((op1,op2))  )
+t1 = Task("t1", set((-1, -2, -3, -4, 1,2,3,4)), set((1,2)), set((3,4)), set((op1,op2))  )
 
 h_blind  = BlindHeuristic(t1)
 h_lmcut  = LmCutHeuristic(t1)
@@ -25,7 +25,7 @@ nodo1 = SearchNode(set((1,2)), None, "ac1", 0)
 hstate = h_blind(nodo1)
 print("heuristic nodo 1", hstate)
 
-nodo2 = SearchNode(set((3,4)), None, "ac2", 0)
+nodo2 = SearchNode(set((4,3, -1)), None, "ac2", 0)
 hstate = h_lmcut(nodo2)
-print("heuristic nodo 1", hstate)
+print("heuristic nodo 2", hstate)
 

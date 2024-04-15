@@ -6,13 +6,18 @@ from clase_datos import Resultados, Datos, escribir_archivo, Valores_g
 import pickle
 from SortedSet.sorted_set import SortedSet
 
-file_name = "grafos//grafo_2023-11-10 12.54.23.991920_--can_prop=22--can_op=450--rango=1--max_add=20--min_ap=2.pickle"
-# file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
+import argparse
+parser = argparse.ArgumentParser(description='Run')
+parser.add_argument('graph_path', type=str, help='la ubicacion del archivo del grafo')
+    
+args = parser.parse_args()
+#file_name = "grafos//grafo_2023-11-10 12.54.23.991920_--can_prop=22--can_op=450--rango=1--max_add=20--min_ap=2.pickle"
+file_name = "../storage/grafo_2023_09_13_14_25_29_283928_can_prop=21_can_op=200_rango=3.pickle"
+file_name = f"../storage/{args.graph_path}"
+
 
 grafo = cargar_grafo(file_name)
-# weights = [1.2, 1.5, 2, 4]
-# weights = [1.2]
-weights = [1]
+weights = [1.2, 1.5, 2, 4]
 weight_15 = []
 weight_2 = []
 weight_4 = []
@@ -23,8 +28,8 @@ op = SortedSet(grafo.op_disp)
 heuristica = grafo.heuristics_k4[0]
 prop = grafo.prop_disp
 can_mse = 7
-archivo = "archivos terminal//terminal astar H PERFECT" + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
-# archivo = "logs_ejecuciones/exec_astar--" + file_name.replace("../storage/grafo_", "")[:-7] + ".txt"
+#archivo = "archivos terminal//terminal astar H PERFECT" + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+archivo = "logs_ejecuciones/exec_astar--" + file_name.replace("../storage/", "")[:-7] + ".txt"
 
 g_problemas = []
 for weight in weights:
@@ -43,8 +48,8 @@ for i in range(0, cantidad):
         for valor in g_problemas:
             if valor.weight == weight:
                 valor_g = valor
-        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "h*")
-        # a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "h*")
+        #a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "h*")
+        a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "h*")
         # a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "hff")
         inicio = time.process_time()
         sol, exp, tim = a_star.search()
