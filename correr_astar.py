@@ -28,8 +28,8 @@ op = SortedSet(grafo.op_disp)
 heuristica = grafo.heuristics_k4[0]
 prop = grafo.prop_disp
 can_mse = 7
-#archivo = "archivos terminal//terminal astar H PERFECT" + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
-archivo = "logs_ejecuciones/exec_astar--" + file_name.replace("../storage/", "")[:-7] + ".txt"
+archivo = "archivos terminal//terminal astar H ARISTAS" + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+# archivo = "logs_ejecuciones/exec_astar--" + file_name.replace("../storage/", "")[:-7] + ".txt"
 
 g_problemas = []
 for weight in weights:
@@ -81,6 +81,68 @@ else:
 file_name = file_name.replace("grafo","dato")
 file_name = file_name.replace(".pickle", "")
 nombre = file_name + "--a_star - H ARISTAS.pickle"
+# nombre = file_name + "--a_star.pickle"
+nombre_g = file_name + "--a_star - LISTA G H ARISTAS.pickle"
+file = open(nombre, "wb")
+# pickle.dump(dato, file)
+pickle.dump(dato, file)
+file_g = open(nombre_g, "wb")
+pickle.dump(g_problemas, file_g)
+
+#-------------------------------H PERFECT-------------------------------
+archivo = "archivos terminal//terminal astar H PERFECT" + file_name.replace("grafos//grafo_", "")[:-7] + ".txt"
+# archivo = "logs_ejecuciones/exec_astar--" + file_name.replace("../storage/", "")[:-7] + ".txt"
+
+g_problemas = []
+for weight in weights:
+   valor_g = Valores_g(weight) 
+   g_problemas.append(valor_g)
+
+open_archivo = open(archivo, "w")
+open_archivo.close()
+for i in range(0, cantidad):
+    print(f"PROBLEMA NUM {i + 1}")
+    escribir_archivo(archivo, f"PROBLEMA NUM {i + 1}")
+    inicial = grafo.iniciales[i]
+    for weight in weights:
+        print(f"-------------------W: {weight}-------------------")
+        escribir_archivo(archivo, f"-------------------W: {weight}-------------------")
+        for valor in g_problemas:
+            if valor.weight == weight:
+                valor_g = valor
+        a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "h*")
+        # a_star = Astar(inicial, objetivo, op, grafo.h_aristas, prop, weight, "h*")
+        # a_star = Astar(inicial, objetivo, op, heuristica, prop, weight, "hff")
+        inicio = time.process_time()
+        sol, exp, tim = a_star.search()
+        tiempo = time.process_time() - inicio
+        tiempos_astar = [tiempo] * can_mse
+        nodos_astar = [exp] * can_mse
+        valores_g = [a_star.g_final] * can_mse
+        valor_g.mse_0.append(a_star.g_final)
+        print(f"Valor g: {a_star.g_final}")
+        escribir_archivo(archivo, f"Valor g: {a_star.g_final}")
+        print(f"Tiempo en realizar búsqueda A*: {tiempo}")
+        escribir_archivo(archivo, f"Tiempo en realizar búsqueda A*: {tiempo}")
+        print("nodos expandidos A*: " + str(exp))
+        escribir_archivo(archivo, "nodos expandidos A*: " + str(exp))
+        resultado = Resultados(tiempos_astar, nodos_astar)
+        if weight == 1.5:
+            weight_15.append(resultado)
+        elif weight == 2:
+            weight_2.append(resultado)
+        elif weight == 4:
+            weight_4.append(resultado)
+        else:
+            weight_extra.append(resultado)
+    print("\n")
+if len(weight_extra) > 0:
+    dato = Datos(weight_15, weight_2, weight_4, weight_extra)
+else:
+    dato = Datos(weight_15, weight_2, weight_4)
+file_name = file_name.replace("grafo","dato")
+file_name = file_name.replace(".pickle", "")
+nombre = file_name + "--a_star - H PERFECT.pickle"
 # nombre = file_name + "--a_star.pickle"
 nombre_g = file_name + "--a_star - LISTA G H PERFECT.pickle"
 file = open(nombre, "wb")
